@@ -1,0 +1,193 @@
+{
+  "tag": "T_joint_low_lr_0p2_s2026",
+  "family": "T_joint_low_lr_0p2",
+  "seed": 2026,
+  "config": {
+    "alpha": 0.2,
+    "freedom": "joint_low_lr",
+    "method": "topology",
+    "semantic": false,
+    "shuffle": false
+  },
+  "steps": 500,
+  "best_step": 250,
+  "best_source_validation_mrr": 0.4238116332810349,
+  "checkpoint": "checkpoints/T_joint_low_lr_0p2_s2026_step250.pth",
+  "checkpoint_sha256": "19642aa151e0bb306db5bc36aa7e375886fa8354d337f235a3ed90c8f279c86a",
+  "validation": [
+    {
+      "step": 0,
+      "macro_mrr": 0.42138833187655766,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 24.411693138999908,
+          "peak_allocated": 757238784,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3533250657599339,
+          "hits_at_1": 0.26171875,
+          "hits_at_3": 0.380859375,
+          "hits_at_10": 0.5400390625
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.437425254000118,
+          "peak_allocated": 468131840,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5312220312687992,
+          "hits_at_1": 0.4794921875,
+          "hits_at_3": 0.5498046875,
+          "hits_at_10": 0.6455078125
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.490850797000348,
+          "peak_allocated": 257702912,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3796178986009399,
+          "hits_at_1": 0.30078125,
+          "hits_at_3": 0.41015625,
+          "hits_at_10": 0.53125
+        }
+      ]
+    },
+    {
+      "step": 100,
+      "macro_mrr": 0.42233729280940885,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 24.548530779999965,
+          "peak_allocated": 1039773184,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.35561594521010637,
+          "hits_at_1": 0.263671875,
+          "hits_at_3": 0.3837890625,
+          "hits_at_10": 0.5400390625
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.52024259799964,
+          "peak_allocated": 750666240,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5291556493988219,
+          "hits_at_1": 0.4765625,
+          "hits_at_3": 0.544921875,
+          "hits_at_10": 0.646484375
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.564931629999592,
+          "peak_allocated": 538659328,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3822402838192982,
+          "hits_at_1": 0.3046875,
+          "hits_at_3": 0.4111328125,
+          "hits_at_10": 0.529296875
+        }
+      ]
+    },
+    {
+      "step": 250,
+      "macro_mrr": 0.4238116332810349,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 64.72651973600023,
+          "peak_allocated": 1036350464,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.35948981440968847,
+          "hits_at_1": 0.2666015625,
+          "hits_at_3": 0.3896484375,
+          "hits_at_10": 0.5439453125
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 32.24936865700056,
+          "peak_allocated": 747557888,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5280111945061938,
+          "hits_at_1": 0.474609375,
+          "hits_at_3": 0.5458984375,
+          "hits_at_10": 0.6474609375
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 23.060851580000417,
+          "peak_allocated": 536573952,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3839338909272222,
+          "hits_at_1": 0.3046875,
+          "hits_at_3": 0.41796875,
+          "hits_at_10": 0.533203125
+        }
+      ]
+    },
+    {
+      "step": 500,
+      "macro_mrr": 0.4218878778816621,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 61.79352744900007,
+          "peak_allocated": 759697408,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.356208671994329,
+          "hits_at_1": 0.26171875,
+          "hits_at_3": 0.3857421875,
+          "hits_at_10": 0.5400390625
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 14.233600833999844,
+          "peak_allocated": 470590464,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.526238936240094,
+          "hits_at_1": 0.47265625,
+          "hits_at_3": 0.546875,
+          "hits_at_10": 0.6474609375
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.46480462099953,
+          "peak_allocated": 260161536,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3832160254105633,
+          "hits_at_1": 0.3046875,
+          "hits_at_3": 0.4150390625,
+          "hits_at_10": 0.5322265625
+        }
+      ]
+    }
+  ],
+  "seconds": 576.4904229740005,
+  "gate_parameters": 6738,
+  "semantic_parameters": 0,
+  "backbone_trainable_parameters": 64000,
+  "code_hashes": {
+    "train.py": "5850ea21e64ef0cb10ad6f60f5aa64b0394c1f1676afc049e080c5a86d193626",
+    "model.py": "dbb44ed1366b90564054489c61eba037ade268327e64b0075c3c893e524f21ca",
+    "common.py": "1ecdc8d8a72acc131d355866a1d51059c607b5f358a30d8150d2a4f5c84978f6",
+    "cosine.py": "7a20b64433505cb9bbad841039b21c121656c1cdeb17b0dacece64ac8ec5ea84",
+    "mixed.py": "8f97331b8e2262f6765bc5462581f160834783ce431113a5e985fda10039d122",
+    "evaluate.py": "96c69ff5054fc9c0766791a3dfb62cda160212bbf05812bc2ae4a2aacfb621b5",
+    "weighted.py": "42e1884e46091eae00095b325b0f4d659d0d5ac858ae48e23a610f93a1a5761d",
+    "incident_api.py": "543a8332547533d276712d63ab9967c6fdb0e6ffcc28c587fa14802ae1116692",
+    "gated_model.py": "97b6c4c0498c51746bdfa9227a635aab1cde3474ab2ec0efd70ab92e6318c049",
+    "protocol.json": "a14f3d0c9a85b9f336e43676122aa910a37c23aee81e239cea88de4582ac0c58"
+  },
+  "data_stream_sha256": "be44080bbab78452188cfe7e1a4e09403153ecf497e5e7158378088870494645",
+  "peak_allocated": 1423226368
+}

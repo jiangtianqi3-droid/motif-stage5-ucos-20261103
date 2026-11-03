@@ -1,0 +1,9 @@
+{
+  "worker": "worker_b1.py",
+  "scope": "Predeclared B1-short seeds 1024,2026,3407 only; independent of topology selection",
+  "training_function": "Unmodified train.run and identical core code hashes",
+  "only_override": "Redirect non-scientific live progress JSON to separate filename to avoid concurrent file writes",
+  "budgets_and_selection": "unchanged",
+  "note": "Runs may share GPU; fixed RNG streams do not imply bitwise deterministic sparse floating reductions",
+  "source_calibration": "After all3 selected T-4D checkpoints were available, finalize.calibration ran independently while other source trajectories continued; checkpoint hashes and protocol hash bind the shared lambda choice."
+}

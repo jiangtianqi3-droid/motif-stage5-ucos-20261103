@@ -1,0 +1,193 @@
+{
+  "tag": "R-Cos-Shuffle_s3407",
+  "family": "R-Cos-Shuffle",
+  "seed": 3407,
+  "config": {
+    "alpha": 0.25,
+    "freedom": "gate_only",
+    "method": "topology",
+    "semantic": true,
+    "shuffle": true
+  },
+  "steps": 500,
+  "best_step": 500,
+  "best_source_validation_mrr": 0.4226232246598915,
+  "checkpoint": "checkpoints/R-Cos-Shuffle_s3407_step500.pth",
+  "checkpoint_sha256": "d28afbfafd291a57aba83cbc72d42da8bb98f22b5bd6730d041764b014e06a75",
+  "validation": [
+    {
+      "step": 0,
+      "macro_mrr": 0.4213935570992531,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 69.90876270400076,
+          "peak_allocated": 1498399232,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3533250657599339,
+          "hits_at_1": 0.26171875,
+          "hits_at_3": 0.380859375,
+          "hits_at_10": 0.5400390625
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.656223310999849,
+          "peak_allocated": 468305920,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5312377263131255,
+          "hits_at_1": 0.4794921875,
+          "hits_at_3": 0.5498046875,
+          "hits_at_10": 0.6455078125
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.981367066999155,
+          "peak_allocated": 259597312,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.37961787922469986,
+          "hits_at_1": 0.30078125,
+          "hits_at_3": 0.41015625,
+          "hits_at_10": 0.53125
+        }
+      ]
+    },
+    {
+      "step": 100,
+      "macro_mrr": 0.42260704008231936,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 69.77465685300012,
+          "peak_allocated": 1780150272,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3568384696516916,
+          "hits_at_1": 0.2646484375,
+          "hits_at_3": 0.3876953125,
+          "hits_at_10": 0.5419921875
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.712476728000183,
+          "peak_allocated": 750056960,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5310312189406708,
+          "hits_at_1": 0.482421875,
+          "hits_at_3": 0.546875,
+          "hits_at_10": 0.6455078125
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 10.057746192000195,
+          "peak_allocated": 541348352,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.37995143165459555,
+          "hits_at_1": 0.3017578125,
+          "hits_at_3": 0.4091796875,
+          "hits_at_10": 0.5341796875
+        }
+      ]
+    },
+    {
+      "step": 250,
+      "macro_mrr": 0.42234437825853693,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 69.64568407300067,
+          "peak_allocated": 1776180736,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.35582795282267143,
+          "hits_at_1": 0.26171875,
+          "hits_at_3": 0.388671875,
+          "hits_at_10": 0.5390625
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.653786864999347,
+          "peak_allocated": 746948608,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.5280920451417137,
+          "hits_at_1": 0.4765625,
+          "hits_at_3": 0.546875,
+          "hits_at_10": 0.6455078125
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.996157864999986,
+          "peak_allocated": 537684992,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3831131368112256,
+          "hits_at_1": 0.3046875,
+          "hits_at_3": 0.4189453125,
+          "hits_at_10": 0.533203125
+        }
+      ]
+    },
+    {
+      "step": 500,
+      "macro_mrr": 0.4226232246598915,
+      "sources": [
+        {
+          "source": "fb15k237_train",
+          "seconds": 69.47192996500053,
+          "peak_allocated": 1500074496,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.3561264058660938,
+          "hits_at_1": 0.2626953125,
+          "hits_at_3": 0.3896484375,
+          "hits_at_10": 0.5439453125
+        },
+        {
+          "source": "wn18rr_train",
+          "seconds": 12.50636868300171,
+          "peak_allocated": 469981184,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.529194438206751,
+          "hits_at_1": 0.478515625,
+          "hits_at_3": 0.546875,
+          "hits_at_10": 0.64453125
+        },
+        {
+          "source": "codex_medium_train",
+          "seconds": 9.888042996999502,
+          "peak_allocated": 261272576,
+          "queries": 512,
+          "batch_size": 4,
+          "mrr": 0.38254882990682954,
+          "hits_at_1": 0.3046875,
+          "hits_at_3": 0.4140625,
+          "hits_at_10": 0.533203125
+        }
+      ]
+    }
+  ],
+  "seconds": 794.3049515540006,
+  "gate_parameters": 6750,
+  "semantic_parameters": 12,
+  "backbone_trainable_parameters": 0,
+  "code_hashes": {
+    "train.py": "5850ea21e64ef0cb10ad6f60f5aa64b0394c1f1676afc049e080c5a86d193626",
+    "model.py": "dbb44ed1366b90564054489c61eba037ade268327e64b0075c3c893e524f21ca",
+    "common.py": "1ecdc8d8a72acc131d355866a1d51059c607b5f358a30d8150d2a4f5c84978f6",
+    "cosine.py": "7a20b64433505cb9bbad841039b21c121656c1cdeb17b0dacece64ac8ec5ea84",
+    "mixed.py": "8f97331b8e2262f6765bc5462581f160834783ce431113a5e985fda10039d122",
+    "evaluate.py": "96c69ff5054fc9c0766791a3dfb62cda160212bbf05812bc2ae4a2aacfb621b5",
+    "weighted.py": "42e1884e46091eae00095b325b0f4d659d0d5ac858ae48e23a610f93a1a5761d",
+    "incident_api.py": "543a8332547533d276712d63ab9967c6fdb0e6ffcc28c587fa14802ae1116692",
+    "gated_model.py": "97b6c4c0498c51746bdfa9227a635aab1cde3474ab2ec0efd70ab92e6318c049",
+    "protocol.json": "a14f3d0c9a85b9f336e43676122aa910a37c23aee81e239cea88de4582ac0c58"
+  },
+  "data_stream_sha256": "b504d1c62f7cf264b05254081adc8de1ae8c5c52ebb97bf98c5eadc2553212ba",
+  "peak_allocated": 2700861440
+}

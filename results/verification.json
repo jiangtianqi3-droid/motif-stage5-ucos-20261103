@@ -1,0 +1,511 @@
+{
+  "code_hashes": 35,
+  "semantic_hashes": 16,
+  "checkpoint_hashes": 15,
+  "group_hashes": 11,
+  "input_hashes": 281,
+  "historical_protected_references_unchanged": 71,
+  "frozen_parameter_audit": [
+    {
+      "family": "T-4D",
+      "seed": 1024,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {},
+      "selected_step": 500
+    },
+    {
+      "family": "T-4D",
+      "seed": 2026,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {},
+      "selected_step": 500
+    },
+    {
+      "family": "T-4D",
+      "seed": 3407,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {},
+      "selected_step": 100
+    },
+    {
+      "family": "T-4D-alt",
+      "seed": 1024,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.015265526266730153,
+      "relation_parameter_relative_drift": 0.00017885233281717222,
+      "semantic_theta": {},
+      "selected_step": 500
+    },
+    {
+      "family": "T-4D-alt",
+      "seed": 2026,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.010497409206051536,
+      "relation_parameter_relative_drift": 0.0001229886275935727,
+      "semantic_theta": {},
+      "selected_step": 250
+    },
+    {
+      "family": "T-4D-alt",
+      "seed": 3407,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.005136139945458864,
+      "relation_parameter_relative_drift": 6.017549574578447e-05,
+      "semantic_theta": {},
+      "selected_step": 100
+    },
+    {
+      "family": "B1-short",
+      "seed": 1024,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.016027385972165253,
+      "relation_parameter_relative_drift": 0.00018777835234742835,
+      "semantic_theta": {},
+      "selected_step": 500
+    },
+    {
+      "family": "B1-short",
+      "seed": 2026,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.016490790409738013,
+      "relation_parameter_relative_drift": 0.0001932076420587401,
+      "semantic_theta": {},
+      "selected_step": 500
+    },
+    {
+      "family": "B1-short",
+      "seed": 3407,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": false,
+      "relation_parameter_drift_l2": 0.005684634925854162,
+      "relation_parameter_relative_drift": 6.660171421137432e-05,
+      "semantic_theta": {},
+      "selected_step": 100
+    },
+    {
+      "family": "U-Cos",
+      "seed": 1024,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          0.011915077455341816,
+          -0.006453825626522303
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          -0.014866110868752003,
+          0.001835395349189639
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          0.04474427551031113,
+          0.025102714076638222
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.056863732635974884,
+          0.02944086119532585
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          0.010568098165094852,
+          0.02857074700295925
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          0.03897479921579361,
+          0.012111286632716656
+        ]
+      },
+      "selected_step": 500
+    },
+    {
+      "family": "U-Cos",
+      "seed": 2026,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          -0.008835690096020699,
+          0.006956249475479126
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          0.024108082056045532,
+          -0.007900957018136978
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          0.007846364751458168,
+          0.023033123463392258
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.005142701789736748,
+          0.02792433649301529
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          0.007653771433979273,
+          -0.009748251177370548
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          -1.3147620165909757e-06,
+          0.0038982362020760775
+        ]
+      },
+      "selected_step": 500
+    },
+    {
+      "family": "U-Cos",
+      "seed": 3407,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          -0.009504279121756554,
+          -0.005034545436501503
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          -0.016713429242372513,
+          0.017872726544737816
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          0.033664558082818985,
+          0.01649795100092888
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.013393601402640343,
+          0.06804467737674713
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          -0.008338096551597118,
+          -0.026594113558530807
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          0.04293198511004448,
+          0.04668154567480087
+        ]
+      },
+      "selected_step": 500
+    },
+    {
+      "family": "R-Cos-Shuffle",
+      "seed": 1024,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          0.01735236495733261,
+          0.0027328201103955507
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          -0.004722889047116041,
+          0.008305569179356098
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          0.018097639083862305,
+          0.016949422657489777
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.024914957582950592,
+          0.020609907805919647
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          0.00792645663022995,
+          0.01659414730966091
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          0.015310465358197689,
+          0.005297020077705383
+        ]
+      },
+      "selected_step": 250
+    },
+    {
+      "family": "R-Cos-Shuffle",
+      "seed": 2026,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          -1.4874010048515629e-05,
+          -0.006601887289434671
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          0.019321881234645844,
+          -0.00042659553582780063
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          -0.001928643905557692,
+          0.002374768489971757
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.015220614150166512,
+          0.02939711883664131
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          0.021655788645148277,
+          0.0026535794604569674
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          -0.0027258172631263733,
+          0.0013513372978195548
+        ]
+      },
+      "selected_step": 250
+    },
+    {
+      "family": "R-Cos-Shuffle",
+      "seed": 3407,
+      "entity_bitwise_unchanged": true,
+      "relation_bitwise_unchanged": true,
+      "relation_parameter_drift_l2": 0.0,
+      "relation_parameter_relative_drift": 0.0,
+      "semantic_theta": {
+        "relation_model.layers.0.cos_gate.theta": [
+          -0.00954187847673893,
+          0.009587719105184078
+        ],
+        "relation_model.layers.1.cos_gate.theta": [
+          0.007205277215689421,
+          0.03862125054001808
+        ],
+        "relation_model.layers.2.cos_gate.theta": [
+          0.03187011182308197,
+          0.015460621565580368
+        ],
+        "relation_model.layers.3.cos_gate.theta": [
+          0.04433568939566612,
+          0.06652122735977173
+        ],
+        "relation_model.layers.4.cos_gate.theta": [
+          0.02108306623995304,
+          -0.01326944399625063
+        ],
+        "relation_model.layers.5.cos_gate.theta": [
+          0.034778397530317307,
+          0.03431214019656181
+        ]
+      },
+      "selected_step": 500
+    }
+  ],
+  "matched_data_streams": true,
+  "training_trajectories": 21,
+  "total_optimizer_steps": 10500,
+  "source_leakage_audit": [
+    {
+      "source": "fb15k237_train",
+      "label": "validation",
+      "queries": 512,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "fb15k237_train",
+      "label": "fold0",
+      "queries": 54423,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "fb15k237_train",
+      "label": "fold1",
+      "queries": 54423,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "fb15k237_train",
+      "label": "fold2",
+      "queries": 54423,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "fb15k237_train",
+      "label": "fold3",
+      "queries": 54423,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "fb15k237_train",
+      "label": "fold4",
+      "queries": 54423,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "validation",
+      "queries": 512,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "fold0",
+      "queries": 13025,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "fold1",
+      "queries": 13025,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "fold2",
+      "queries": 13025,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "fold3",
+      "queries": 13025,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "wn18rr_train",
+      "label": "fold4",
+      "queries": 13025,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "validation",
+      "queries": 512,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "fold0",
+      "queries": 37117,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "fold1",
+      "queries": 37117,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "fold2",
+      "queries": 37117,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "fold3",
+      "queries": 37117,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    },
+    {
+      "source": "codex_medium_train",
+      "label": "fold4",
+      "queries": 37116,
+      "direct_leaks": 0,
+      "inverse_leaks": 0
+    }
+  ],
+  "target_rank_audit": [
+    {
+      "key": "NELLInductive_v2",
+      "models": 25,
+      "queries": 935,
+      "query_order_matches": true
+    },
+    {
+      "key": "NELLInductive_v3",
+      "models": 25,
+      "queries": 1620,
+      "query_order_matches": true
+    },
+    {
+      "key": "NELLInductive_v4",
+      "models": 25,
+      "queries": 1447,
+      "query_order_matches": true
+    },
+    {
+      "key": "NLIngram_50",
+      "models": 25,
+      "queries": 859,
+      "query_order_matches": true
+    },
+    {
+      "key": "NELLInductive_v1",
+      "models": 25,
+      "queries": 201,
+      "query_order_matches": true
+    },
+    {
+      "key": "NLIngram_25",
+      "models": 25,
+      "queries": 744,
+      "query_order_matches": true
+    },
+    {
+      "key": "FB15k237Inductive_v1",
+      "models": 25,
+      "queries": 411,
+      "query_order_matches": true
+    },
+    {
+      "key": "WN18RRInductive_v1",
+      "models": 25,
+      "queries": 373,
+      "query_order_matches": true
+    },
+    {
+      "key": "FBIngram_25",
+      "models": 25,
+      "queries": 5716,
+      "query_order_matches": true
+    },
+    {
+      "key": "WKIngram_25",
+      "models": 25,
+      "queries": 1131,
+      "query_order_matches": true
+    },
+    {
+      "key": "ConceptNet100k_external",
+      "models": 25,
+      "queries": 1200,
+      "query_order_matches": true
+    }
+  ],
+  "target_evaluations_including_reused": 275,
+  "status": "passed"
+}

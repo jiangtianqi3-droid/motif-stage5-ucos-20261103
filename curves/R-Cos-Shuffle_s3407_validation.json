@@ -1,0 +1,158 @@
+[
+  {
+    "step": 0,
+    "macro_mrr": 0.4213935570992531,
+    "sources": [
+      {
+        "source": "fb15k237_train",
+        "seconds": 69.90876270400076,
+        "peak_allocated": 1498399232,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.3533250657599339,
+        "hits_at_1": 0.26171875,
+        "hits_at_3": 0.380859375,
+        "hits_at_10": 0.5400390625
+      },
+      {
+        "source": "wn18rr_train",
+        "seconds": 12.656223310999849,
+        "peak_allocated": 468305920,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.5312377263131255,
+        "hits_at_1": 0.4794921875,
+        "hits_at_3": 0.5498046875,
+        "hits_at_10": 0.6455078125
+      },
+      {
+        "source": "codex_medium_train",
+        "seconds": 9.981367066999155,
+        "peak_allocated": 259597312,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.37961787922469986,
+        "hits_at_1": 0.30078125,
+        "hits_at_3": 0.41015625,
+        "hits_at_10": 0.53125
+      }
+    ]
+  },
+  {
+    "step": 100,
+    "macro_mrr": 0.42260704008231936,
+    "sources": [
+      {
+        "source": "fb15k237_train",
+        "seconds": 69.77465685300012,
+        "peak_allocated": 1780150272,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.3568384696516916,
+        "hits_at_1": 0.2646484375,
+        "hits_at_3": 0.3876953125,
+        "hits_at_10": 0.5419921875
+      },
+      {
+        "source": "wn18rr_train",
+        "seconds": 12.712476728000183,
+        "peak_allocated": 750056960,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.5310312189406708,
+        "hits_at_1": 0.482421875,
+        "hits_at_3": 0.546875,
+        "hits_at_10": 0.6455078125
+      },
+      {
+        "source": "codex_medium_train",
+        "seconds": 10.057746192000195,
+        "peak_allocated": 541348352,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.37995143165459555,
+        "hits_at_1": 0.3017578125,
+        "hits_at_3": 0.4091796875,
+        "hits_at_10": 0.5341796875
+      }
+    ]
+  },
+  {
+    "step": 250,
+    "macro_mrr": 0.42234437825853693,
+    "sources": [
+      {
+        "source": "fb15k237_train",
+        "seconds": 69.64568407300067,
+        "peak_allocated": 1776180736,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.35582795282267143,
+        "hits_at_1": 0.26171875,
+        "hits_at_3": 0.388671875,
+        "hits_at_10": 0.5390625
+      },
+      {
+        "source": "wn18rr_train",
+        "seconds": 12.653786864999347,
+        "peak_allocated": 746948608,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.5280920451417137,
+        "hits_at_1": 0.4765625,
+        "hits_at_3": 0.546875,
+        "hits_at_10": 0.6455078125
+      },
+      {
+        "source": "codex_medium_train",
+        "seconds": 9.996157864999986,
+        "peak_allocated": 537684992,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.3831131368112256,
+        "hits_at_1": 0.3046875,
+        "hits_at_3": 0.4189453125,
+        "hits_at_10": 0.533203125
+      }
+    ]
+  },
+  {
+    "step": 500,
+    "macro_mrr": 0.4226232246598915,
+    "sources": [
+      {
+        "source": "fb15k237_train",
+        "seconds": 69.47192996500053,
+        "peak_allocated": 1500074496,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.3561264058660938,
+        "hits_at_1": 0.2626953125,
+        "hits_at_3": 0.3896484375,
+        "hits_at_10": 0.5439453125
+      },
+      {
+        "source": "wn18rr_train",
+        "seconds": 12.50636868300171,
+        "peak_allocated": 469981184,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.529194438206751,
+        "hits_at_1": 0.478515625,
+        "hits_at_3": 0.546875,
+        "hits_at_10": 0.64453125
+      },
+      {
+        "source": "codex_medium_train",
+        "seconds": 9.888042996999502,
+        "peak_allocated": 261272576,
+        "queries": 512,
+        "batch_size": 4,
+        "mrr": 0.38254882990682954,
+        "hits_at_1": 0.3046875,
+        "hits_at_3": 0.4140625,
+        "hits_at_10": 0.533203125
+      }
+    ]
+  }
+]

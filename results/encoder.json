@@ -1,0 +1,110 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "pooling": "normalized CLS",
+  "projection": false,
+  "generated_descriptions": false,
+  "encoder_weights": {
+    "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+  },
+  "graphs": [
+    {
+      "key": "fb15k237_train",
+      "relations": 474,
+      "transparent": 474,
+      "opaque": 0,
+      "max_unit_error": 1.7881393432617188e-07
+    },
+    {
+      "key": "wn18rr_train",
+      "relations": 22,
+      "transparent": 22,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "codex_medium_train",
+      "relations": 102,
+      "transparent": 102,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NELLInductive_v1",
+      "relations": 28,
+      "transparent": 28,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NELLInductive_v2",
+      "relations": 176,
+      "transparent": 176,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NELLInductive_v3",
+      "relations": 284,
+      "transparent": 284,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NELLInductive_v4",
+      "relations": 152,
+      "transparent": 152,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "FB15k237Inductive_v1",
+      "relations": 360,
+      "transparent": 360,
+      "opaque": 0,
+      "max_unit_error": 1.7881393432617188e-07
+    },
+    {
+      "key": "WN18RRInductive_v1",
+      "relations": 18,
+      "transparent": 18,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NLIngram_25",
+      "relations": 240,
+      "transparent": 240,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "NLIngram_50",
+      "relations": 238,
+      "transparent": 238,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "FBIngram_25",
+      "relations": 432,
+      "transparent": 432,
+      "opaque": 0,
+      "max_unit_error": 1.7881393432617188e-07
+    },
+    {
+      "key": "WKIngram_25",
+      "relations": 148,
+      "transparent": 0,
+      "opaque": 148,
+      "max_unit_error": 1.1920928955078125e-07
+    },
+    {
+      "key": "ConceptNet100k_external",
+      "relations": 68,
+      "transparent": 68,
+      "opaque": 0,
+      "max_unit_error": 1.1920928955078125e-07
+    }
+  ]
+}

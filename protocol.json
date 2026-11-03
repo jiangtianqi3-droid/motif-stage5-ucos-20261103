@@ -1,0 +1,127 @@
+{
+  "stage": "5-corrected",
+  "seeds": [
+    1024,
+    2026,
+    3407
+  ],
+  "source_validation_queries": 512,
+  "validation_steps": [
+    0,
+    100,
+    250,
+    500
+  ],
+  "steps": 500,
+  "batch_size": 2,
+  "num_negative": 64,
+  "gate_lr": 0.001,
+  "relation_lr": 2e-06,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "alpha_topo_grid": [
+    0.15,
+    0.2,
+    0.25,
+    "adaptive"
+  ],
+  "freedoms": [
+    "gate_only",
+    "joint_low_lr"
+  ],
+  "alpha_adaptive": "0.15+0.10*CV/(1+CV), CV=std(raw_s_pmi)/max(abs(mean(raw_s_pmi)),1e-6); observed graph only",
+  "uncertainty": {
+    "alpha_max": 0.2,
+    "gamma": 2.0,
+    "tau0": 0.5,
+    "formula": "0.2*sigmoid(-2*max(z_freq,z_pmi)-0.5)*opacity"
+  },
+  "semantic_features": [
+    "z_type(0.5*(mean_nonself_cos+max_nonself_cos))",
+    "z_type(mean_adjacent_slot_cos)"
+  ],
+  "query_alignment": "exclude slots with relation==query; empty context zero after standardization; only transparent context slots",
+  "opacity": "normalized lexical name contains letters and is not an ID pattern; all occupied slots AND query must be transparent",
+  "semantic_parameters": "exactly two shared scalars per layer; no bias/projection/semantic-query state interaction",
+  "hub_lambda_grid": [
+    0,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "hub_degree": "observed inverse-augmented entity graph incoming degree; same definition for both directions",
+  "source_schedule": "same stage4 RNG; 25-step blocks across three sources and five stage2 masked folds",
+  "selection": "screen all8 topology settings seed1024 using source macroMRR; retain best setting per freedom and replicate both at2026,3407; choose main topology freedom by seed1024 source macroMRR; U and shuffle use that fixed architecture; each seed chooses own step; include step0; no target selection",
+  "shuffle_seed": 8111,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20261105,
+  "bootstrap_unit": "paired original triple with both directions; average seed-wise reciprocal ranks then resample",
+  "targets": [
+    [
+      "locked",
+      "NELLInductive",
+      "v2"
+    ],
+    [
+      "locked",
+      "NELLInductive",
+      "v3"
+    ],
+    [
+      "locked",
+      "NELLInductive",
+      "v4"
+    ],
+    [
+      "locked",
+      "NLIngram",
+      "50"
+    ],
+    [
+      "historical",
+      "NELLInductive",
+      "v1"
+    ],
+    [
+      "historical",
+      "NLIngram",
+      "25"
+    ],
+    [
+      "historical",
+      "FB15k237Inductive",
+      "v1"
+    ],
+    [
+      "historical",
+      "WN18RRInductive",
+      "v1"
+    ],
+    [
+      "historical",
+      "FBIngram",
+      "25"
+    ],
+    [
+      "historical",
+      "WKIngram",
+      "25"
+    ],
+    [
+      "external",
+      "ConceptNet100k_external",
+      null
+    ]
+  ],
+  "boundary": "historically exposed locked/historical/external replication; P0 zero target updates and no target validation selection; no claim of globally unseen tests",
+  "corrections": [
+    "sigmoid suppression is not an exact protection guarantee",
+    "two scalar kernel removes coordinate lookup channel but does not prove information-theoretic impossibility of ID inference",
+    "shuffle can still outperform by chance; empirical outcome never constrained",
+    "variable edge alpha means final incident group mean need not equal1; no final renormalization that would reactivate masked edges"
+  ],
+  "report_reference": "report_2.md absent; local completed stage4 report.md matches cited table values"
+}
