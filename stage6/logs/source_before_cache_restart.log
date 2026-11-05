@@ -1,0 +1,70 @@
+/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/torch_version.py:28: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined, no-redef]
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 1024, "proxy_seed": 6101, "rate": 0.05, "facts": 256}
+{"event": "proxy_complete", "key": "wn18rr_train", "seed": 1024, "proxy_seed": 6101, "rate": 0.05, "theta": [0.0, 0.0, "conditional"], "fallback": true, "seconds": 32.90535964399999}
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 2026, "proxy_seed": 6101, "rate": 0.05, "facts": 256}
+{"event": "proxy_complete", "key": "wn18rr_train", "seed": 2026, "proxy_seed": 6101, "rate": 0.05, "theta": [0.0, 0.0, "conditional"], "fallback": true, "seconds": 31.67052815400001}
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 3407, "proxy_seed": 6101, "rate": 0.05, "facts": 256}
+{"event": "proxy_complete", "key": "wn18rr_train", "seed": 3407, "proxy_seed": 6101, "rate": 0.05, "theta": [0.0, 0.0, "conditional"], "fallback": true, "seconds": 31.648927697000033}
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 1024, "proxy_seed": 6102, "rate": 0.05, "facts": 256}
+Traceback (most recent call last):
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 65, in <module>
+    main()
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 39, in main
+    run_one(a, key, rate, split_seed, source=True)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/adapt.py", line 67, in run_one
+    reused = None
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/evaluator.py", line 89, in safe_evaluate
+    return evaluate(model, data, truth, graph, configs, batch_size, collect)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/evaluator.py", line 52, in evaluate
+    t, h = model(data, tail), model(data, head)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/runtime/motif/models.py", line 116, in forward
+    score = self.entity_model(data, batch,  self.relation_model,  relation_hyper_flag = True)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/runtime/motif/models.py", line 318, in forward
+    relation_representations = relation_model(data.relation_hypergraph, query=r_index[:, 0])
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/evaluator.py", line 41, in cached_forward
+    out = original(hyper, torch.tensor(ix, device=query.device))
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/model.py", line 22, in forward
+    original=normalized_aggregate(state,layer.rel_embedding.weight,layer.pos_embedding.weight,a,hyper.plan,'type',True)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/weighted.py", line 158, in aggregate
+    return HyperRelConvWeightedSumAggrSegmented.apply(h,rels,pos,a.contiguous(),plan,normalization,unit).transpose(0,1)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/autograd/function.py", line 539, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/weighted.py", line 128, in forward
+    if nc: forward_parts[(nc,B)](hp,rels,a,mean,plan['hp_index'],plan['edge_ids'],plan['starts'],plan['ends'],plan['chunk_group'],parts,I,E,B,D,T,128,triton.next_power_of_2(D),unit,num_warps=4)
+  File "<string>", line 63, in forward_parts
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/triton/compiler/compiler.py", line 425, in compile
+    so_path = make_stub(name, signature, constants)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/triton/compiler/make_launcher.py", line 39, in make_stub
+    so = _build(name, src_path, tmpdir)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/triton/common/build.py", line 90, in _build
+    ret = subprocess.check_call(cc_cmd)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/subprocess.py", line 368, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/subprocess.py", line 351, in call
+    return p.wait(timeout=timeout)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/subprocess.py", line 1933, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/subprocess.py", line 1891, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

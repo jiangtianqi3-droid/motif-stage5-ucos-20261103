@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 5.158608567999181,
+    "peak_allocated": 275307520,
+    "batch_size": 8,
+    "facts": 213,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.535932115999458,
+        "cached_relations": 28
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.4876199069985887,
+        "cached_relations": 28
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 1.4931528060005803,
+        "cached_relations": 28
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 5.180541650999658,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "4d4bb0081e638bb0e8a5d2c76c1da6d69468cdb4fe27798545efd38ed3860e70",
+    "hyperedges": 7460,
+    "topology_seconds": 0.08823222499995609,
+    "cache_hit": true,
+    "residual_sha256": "57320aba0a1975f2e97b6b439c04bf1faf06a254cc39f9952bf8091f713bc514"
+  },
+  "query_sha256": "75355b036c1baca029cd56b371c9c72049b0a134a5a3ecf548ebe45c9b226522",
+  "residual_sha256": "57320aba0a1975f2e97b6b439c04bf1faf06a254cc39f9952bf8091f713bc514",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.48481534758208716,
+      "hits_at_1": 0.3215962441314554,
+      "hits_at_3": 0.5868544600938967,
+      "hits_at_10": 0.8075117370892019
+    },
+    {
+      "mrr": 0.48649697141498766,
+      "hits_at_1": 0.32629107981220656,
+      "hits_at_3": 0.5915492957746479,
+      "hits_at_10": 0.8004694835680751
+    },
+    {
+      "mrr": 0.4772631385806545,
+      "hits_at_1": 0.31220657276995306,
+      "hits_at_3": 0.5985915492957746,
+      "hits_at_10": 0.7816901408450704
+    }
+  ],
+  "ranks_sha256": "d1904cbb04d004e2c54d65f2eebb438ad160ae5f7cbf3c090a120a9666481dc0"
+}

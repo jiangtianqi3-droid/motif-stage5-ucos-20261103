@@ -1,0 +1,17 @@
+{
+  "name": "matched signed global degree control",
+  "version": 1,
+  "gamma_grid": [
+    -0.03,
+    -0.01,
+    0.0,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "scope": "fixed parameter diagnostic only; no additional target parameter selection",
+  "reason": "disentangle query conditioning from the sign/range of the global degree coefficient",
+  "registration": "added after observation-proxy diagnostics, before any stage6 formal query evaluation",
+  "primary_policy": "primary protocol, selected configurations and LCB decisions are untouched",
+  "infer": "reuse the same exact neural scores; only the permitted candidate-score correction differs"
+}

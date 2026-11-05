@@ -1,0 +1,22 @@
+{
+  "family": "WordNet",
+  "type": "inductive_entity",
+  "public_n": 9899,
+  "observation": "https://raw.githubusercontent.com/shuwen-liu-ox/INDIGO/ad1b20bb290d28cf8a19357ea059077248e25d45/data/Hamaguchi-BM_both-1000/test/test-graph.txt",
+  "test": "https://raw.githubusercontent.com/shuwen-liu-ox/INDIGO/ad1b20bb290d28cf8a19357ea059077248e25d45/data/Hamaguchi-BM_both-1000/test/test-fact.txt",
+  "risk": "New split results; shares WordNet with backbone pretraining and historical WN. Not a new independent knowledge source.",
+  "key": "HM_1k_new",
+  "file": "HM_1k_new.npz",
+  "sha256": "966d332e5c6e82e89082192bc45401e962fd87158aea70af42cd217b13a8c127",
+  "n": 9899,
+  "R": 22,
+  "observed_facts": 18417,
+  "observed_entities": 9899,
+  "anonymous_public_candidates": 0,
+  "download_sha256": "dba2a58a1879ca9a27931997a117b7061a46ea3648ede86b99710b85dad221e8",
+  "download_file": "downloads\\HM_1k_new_observed.txt",
+  "observed_sha256": "fbe23f4e333fd5e1aaafc6dbc607643baf60bf563be381028336092d4b436e32",
+  "formal_queries_loaded": false,
+  "created_utc": "2026-11-03T14:55:38.120107+00:00",
+  "upstream_commit": "ad1b20bb290d28cf8a19357ea059077248e25d45"
+}

@@ -1,0 +1,52 @@
+{
+  "key": "WKIngram_25",
+  "group": "historical",
+  "family": "B2",
+  "training_seed": 1024,
+  "frozen_sha256": "dbabe597342dac57fe4c216091f21e079653073bd543c292e3effbf2603c8306",
+  "checkpoint_sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790",
+  "observation_sha256": "12d388efab7087142f842f22242b71a92408f4cc317fa887d3ee2bcc6602ffbc",
+  "query_sha256": "7faad066425dec1a70db058e95dbf636da15ece8e8fd396809bf22f12c389df1",
+  "filtered_sha256": "65a80ad28a44f2e8bd053127815897ab1e8feb31e9084ef9960c56855c18009b",
+  "info": {
+    "seconds": 7.453441789999943,
+    "peak_allocated": 121003008,
+    "batch_size": 8,
+    "facts": 1131,
+    "alpha_records": [
+      {
+        "alpha": 1.0,
+        "entity_seconds": 6.485327750999659,
+        "cached_relations": 124
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 7.4771015370001805,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "84c6e5a38b80df8a1dcd4af8a42a3c63892b7acf4e30193178ee9958b6eee677",
+    "hyperedges": 12508,
+    "topology_seconds": 0.15414630200029933,
+    "cache_hit": true,
+    "residual_sha256": "12d388efab7087142f842f22242b71a92408f4cc317fa887d3ee2bcc6602ffbc"
+  },
+  "metrics": [
+    {
+      "mrr": 0.3073877502474654,
+      "hits_at_1": 0.21220159151193635,
+      "hits_at_3": 0.34615384615384615,
+      "hits_at_10": 0.4951370468611848
+    }
+  ],
+  "no_weight_update": true,
+  "numeric_policy": {
+    "path": "Query-wise FP32 entity Linear GEMMs, canonical relation pairs IDs(2k,2k+1)",
+    "tf32": false,
+    "batch_size": 8,
+    "oom_halving": true,
+    "ties": "Unchanged pessimistic >=; no score rounding or tie tolerance; no ensemble",
+    "all_methods_same": true
+  },
+  "ranks_sha256": "46f97138fbba183ed7bffcd3853518ea0c754e973c8316f84531632d54c90ee6"
+}

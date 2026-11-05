@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 11.768210584999906,
+    "peak_allocated": 114063872,
+    "batch_size": 8,
+    "facts": 39,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.26596390300073836,
+        "cached_relations": 60
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.22853834600027767,
+        "cached_relations": 60
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.24542917799954012,
+        "cached_relations": 60
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.24817963100031193,
+        "cached_relations": 60
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.23106288099916128,
+        "cached_relations": 60
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 11.962657264999507,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "8523d2931002128546fe68be55495e8a3bd7b09f40abdcb7a43f38027b137ff2",
+    "hyperedges": 11740,
+    "topology_seconds": 0.14964183900156058,
+    "cache_hit": false,
+    "residual_sha256": "aa54a70685ce62a341e9cb0fa1ec6481977484994ceb50f29e7f2d858df67038"
+  },
+  "query_sha256": "bb415f8e8d80415e0499a36232db81ae52a6f5215e85cae21117f698644e5253",
+  "residual_sha256": "aa54a70685ce62a341e9cb0fa1ec6481977484994ceb50f29e7f2d858df67038",
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.3314077723647492,
+      "hits_at_1": 0.23076923076923078,
+      "hits_at_3": 0.358974358974359,
+      "hits_at_10": 0.5897435897435898
+    },
+    {
+      "mrr": 0.32652975119703004,
+      "hits_at_1": 0.21794871794871795,
+      "hits_at_3": 0.3717948717948718,
+      "hits_at_10": 0.5897435897435898
+    },
+    {
+      "mrr": 0.32536112337498724,
+      "hits_at_1": 0.21794871794871795,
+      "hits_at_3": 0.358974358974359,
+      "hits_at_10": 0.6025641025641025
+    },
+    {
+      "mrr": 0.3116566325572156,
+      "hits_at_1": 0.19230769230769232,
+      "hits_at_3": 0.358974358974359,
+      "hits_at_10": 0.6025641025641025
+    },
+    {
+      "mrr": 0.29466537287029926,
+      "hits_at_1": 0.1794871794871795,
+      "hits_at_3": 0.358974358974359,
+      "hits_at_10": 0.5256410256410257
+    }
+  ],
+  "ranks_sha256": "0499c2f8d792f40181df707481c7b9dbdf55cf05ed864009b6869f6ddb664fb6"
+}

@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 10.702124225001171,
+    "peak_allocated": 227324416,
+    "batch_size": 8,
+    "facts": 222,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.3125108309995994,
+        "cached_relations": 280
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 1.2517506920012238,
+        "cached_relations": 280
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.266664483000568,
+        "cached_relations": 280
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 11.240827428000557,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "d969660d8c523d1ff165c69a5497797b05d633682436ae6c9b438a09e3a0d164",
+    "hyperedges": 483602,
+    "topology_seconds": 0.7863797049994901,
+    "cache_hit": true,
+    "residual_sha256": "5a4b918741d652003a75ba8aaeaaec82fa5f9ad79327c6e13608a8ee14e7a9a0"
+  },
+  "query_sha256": "cd2ca4eafbcf6fc2ace2a4b27d5dc2495c50f13cea0f98ee073ac4b02572b6aa",
+  "residual_sha256": "5a4b918741d652003a75ba8aaeaaec82fa5f9ad79327c6e13608a8ee14e7a9a0",
+  "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.354096927443048,
+      "hits_at_1": 0.25,
+      "hits_at_3": 0.4009009009009009,
+      "hits_at_10": 0.5585585585585585
+    },
+    {
+      "mrr": 0.3536326429319459,
+      "hits_at_1": 0.24549549549549549,
+      "hits_at_3": 0.40315315315315314,
+      "hits_at_10": 0.5585585585585585
+    },
+    {
+      "mrr": 0.35097988592591467,
+      "hits_at_1": 0.240990990990991,
+      "hits_at_3": 0.4099099099099099,
+      "hits_at_10": 0.5608108108108109
+    }
+  ],
+  "ranks_sha256": "225c4196e0698cbc4ca71059a57d67cc1129416ef6427294ce288a107cf2f338"
+}

@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 4.786202419001711,
+    "peak_allocated": 271821824,
+    "batch_size": 8,
+    "facts": 214,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.4240510929994343,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.4319354070012196,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 1.401471594999748,
+        "cached_relations": 22
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 4.814766937999593,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "c81547ec41b67bcbc4d375a80c87d6b5d721f85d7db0217fe681f6f7adab7ae1",
+    "hyperedges": 12686,
+    "topology_seconds": 0.08193398000003072,
+    "cache_hit": true,
+    "residual_sha256": "8270c6a34ee04cabcd83e033ff5d332c0b1a6e710bc68a2bd4560562120cfb6f"
+  },
+  "query_sha256": "12bafb8766072962924a9c87be0c841a5534a5056259bedf334d9c52cc7a7669",
+  "residual_sha256": "8270c6a34ee04cabcd83e033ff5d332c0b1a6e710bc68a2bd4560562120cfb6f",
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.5370293740406578,
+      "hits_at_1": 0.4462616822429907,
+      "hits_at_3": 0.5841121495327103,
+      "hits_at_10": 0.6985981308411215
+    },
+    {
+      "mrr": 0.5479910770437594,
+      "hits_at_1": 0.4485981308411215,
+      "hits_at_3": 0.602803738317757,
+      "hits_at_10": 0.7336448598130841
+    },
+    {
+      "mrr": 0.5591583961995008,
+      "hits_at_1": 0.4462616822429907,
+      "hits_at_3": 0.6214953271028038,
+      "hits_at_10": 0.7686915887850467
+    }
+  ],
+  "ranks_sha256": "39ef4ade207d7dadebcb6ae7658bb89f11aa5860ef396fe999d686b75d6c89c3"
+}

@@ -1,0 +1,40 @@
+{
+  "setting": "post-freeze explanatory diagnostic only; main B0 is never replaced",
+  "checkpoint_sha256": "0f2e4f7d21e01dc7c54d10b0db1a5de55c467a76f4ea2708f3ce6556a7654f8c",
+  "graph_sha256": "0991d7ff46d14ba0bc8798f176cd2b849df488dc02a22c9e6807abbe6b5f0240",
+  "no_weight_update": true,
+  "same_batch_relation_repeat_max_error": 0.0,
+  "relation_batch1_vs_batch2_max_error": 0.0,
+  "fixed_relation_representation_sha256": "4a862ba3087c13da5cf41c52351bef77b31c124771bd605ca587025950e5adf8",
+  "entity_batch_comparison": [
+    {
+      "batch": 8,
+      "rank_changes_vs_first": 0,
+      "mrr": 0.6700586895761756,
+      "delta_mrr_vs_first": 0.0,
+      "max_true_score_change": 0.0
+    },
+    {
+      "batch": 8,
+      "rank_changes_vs_first": 0,
+      "mrr": 0.6700586895761756,
+      "delta_mrr_vs_first": 0.0,
+      "max_true_score_change": 0.0
+    },
+    {
+      "batch": 1,
+      "rank_changes_vs_first": 14,
+      "mrr": 0.6718937992714411,
+      "delta_mrr_vs_first": 0.0018351096952654385,
+      "max_true_score_change": 5.4836273193359375e-06
+    },
+    {
+      "batch": 4,
+      "rank_changes_vs_first": 26,
+      "mrr": 0.6702621904240729,
+      "delta_mrr_vs_first": 0.0002035008478971526,
+      "max_true_score_change": 5.7220458984375e-06
+    }
+  ],
+  "artifact_sha256": "062b616bf2eb61adf7c7bd4f86412cf97f632bc488e0d1f5cff8021cd2ff9fe2"
+}

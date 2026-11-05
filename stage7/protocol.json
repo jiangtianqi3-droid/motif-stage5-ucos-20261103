@@ -1,0 +1,675 @@
+{
+  "name": "Distribution-Robust Test-Time Topology Adaptation",
+  "version": 1,
+  "created_utc": "2026-11-03T16:38:32.180338+00:00",
+  "mechanism_passed": true,
+  "setting": "No target valid/test labels or target gradients; only observation self-supervision. Historical group exposed; prospective new results with provenance dependencies declared.",
+  "training_seeds": [
+    1024,
+    2026,
+    3407
+  ],
+  "proxy_seeds": [
+    6101,
+    6102,
+    6103
+  ],
+  "primary_proxy_seed": 6101,
+  "targets": [
+    [
+      "locked",
+      "NELLInductive_v2"
+    ],
+    [
+      "locked",
+      "NELLInductive_v3"
+    ],
+    [
+      "locked",
+      "NELLInductive_v4"
+    ],
+    [
+      "locked",
+      "NLIngram_50"
+    ],
+    [
+      "historical",
+      "NELLInductive_v1"
+    ],
+    [
+      "historical",
+      "NLIngram_25"
+    ],
+    [
+      "historical",
+      "FB15k237Inductive_v1"
+    ],
+    [
+      "historical",
+      "WN18RRInductive_v1"
+    ],
+    [
+      "historical",
+      "FBIngram_25"
+    ],
+    [
+      "historical",
+      "WKIngram_25"
+    ],
+    [
+      "external",
+      "ConceptNet100k_external"
+    ],
+    [
+      "new_prospective",
+      "HM_1k_new"
+    ],
+    [
+      "new_prospective",
+      "WikiTopicsMT4_health_new"
+    ],
+    [
+      "new_prospective",
+      "UMLS_external_new"
+    ]
+  ],
+  "alpha_grid": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "rates": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "physical_mask": "Unique forward facts; uniform random order; sequential min endpoint residual2, preserved random spanning forest and at least1 fact per observed relation; no relaxation. Nested prefixes, no fixed fact cap.",
+  "duplicate_policy": "Sampling units deduplicated; every masked copy and inverse removed; all unmasked multiplicities retained. Stage6 original sampler baseline retains its original deduplication behavior.",
+  "environments": {
+    "A": "Uniform within common hidden pool (natural frequency)",
+    "B": "Round-robin relations (long-tail coverage subject to available facts)",
+    "C": "Round-robin 3x3 observed head/tail degree bins",
+    "D": "Round-robin terciles of relation hypergraph incidence support (forward+inverse)"
+  },
+  "matching": "Shared physical graph and common5% hidden fact pool for A-D at all densities; equal query counts, globally disjoint selection/confirmation; overlaps across environments and density documented.",
+  "query_budget": "min(192,max(64,ceil(2*sqrt(unique_forward_facts)))) is an inference query budget, never caps removed facts. Per environment min(60%/40% budget, available common pool split).",
+  "primary_method": "robust_lcb",
+  "robust_objective": "argmax_alpha min over12 environment x density selection LCB; ties smaller alpha; then candidate only confirmation minLCB>0 else0",
+  "methods": [
+    "reference",
+    "fixed025",
+    "stage6_mean",
+    "stage6_lcb",
+    "single_mean",
+    "single_lcb",
+    "equal_mean_unconfirmed",
+    "equal_mean",
+    "sample_weighted",
+    "longtail_weighted",
+    "worst_mean",
+    "robust_lcb",
+    "four_env_lcb_10",
+    "three_density_A_lcb",
+    "four_env_mean_10",
+    "random"
+  ],
+  "weights": {
+    "equal": "1/12",
+    "sample": "selection query counts",
+    "longtail": "B weight2, others1, equal across densities"
+  },
+  "single_environment": "A at10% density; Stage6 baselines use original capped15% sampler and independent selection/confirmation",
+  "factorial_controls": "four_env_lcb_10: four environments at10% only; three_density_A_lcb: environmentA at3 densities only; four_env_mean_10: equal4-environment mean at10% then meanLCB confirmation. Isolates distribution from masking density.",
+  "confirmation": "Per independent method one candidate fixed before confirmation; no retries. single_mean/stage6_mean/equal_mean_unconfirmed deliberate no-confirmation controls; average methods use weighted sum of environment LCBs; worst/robust require every LCB>0.",
+  "confirmation_min_facts": 16,
+  "selection_min_facts": 24,
+  "lcb_kappa": 1.64,
+  "reference": "Same Stage5 T-4D checkpoint and relation weights at alpha0; no calibration; not called old B1",
+  "random": "Uniform fixed alpha grid per graph/training/proxy seed using SHA256 plus seed7197; no test labels",
+  "numeric": {
+    "path": "Query-wise FP32 entity Linear GEMMs, canonical relation pairs IDs(2k,2k+1)",
+    "tf32": false,
+    "batch_size": 8,
+    "oom_halving": true,
+    "ties": "Unchanged pessimistic >=; no score rounding or tie tolerance; no ensemble",
+    "all_methods_same": true
+  },
+  "numeric_choice": "Chosen by exact batch invariance on source/historical mechanism probes, never MRR",
+  "inference": "Actual forward per alpha, no interpolation. Source-trained weights frozen. Exact reuse within identical model/graph/config/query identities only.",
+  "paired_unit": "One forward fact, average head/tail RR first; train-seed averages do not pool scores/ranks",
+  "bootstrap": 5000,
+  "bootstrap_seed": 7197,
+  "multiplicity": "Primary robust_lcb vs stage6_lcb prespecified. Other methods/correlations exploratory; unadjusted paired95% intervals plus Holm correction on main graphwise comparisons. Overlapping environments/densities not IID.",
+  "formal_grid": "All5 alpha for diagnostic correlations (never target-driven selection); B0 official, real historical B1/B2 checkpoints under the same numeric path.",
+  "historical_replay": "Post-freeze replay old Stage6 frozen topology_lcb alphas on the new common numeric path for historical11 only. Numeric regression, not a new selector or a baseline on new graphs.",
+  "exposure": "HM1k and WikiTopicsMT4 health prospective label results but source-family dependence; Aristo/UMLS external sources have transductive within-corpus splits. Not three fully independent standard inductive benchmarks.",
+  "compatibility": {
+    "HM_1k_new": {
+      "status": "compatible_topology",
+      "key": "HM_1k_new",
+      "n": 9899,
+      "R": 22,
+      "hyperedges": 17280,
+      "block": 8,
+      "topology_key": "5c1ba1a251838b9536e2efb4f2edc122a19fe92784b91be7c3d236aa25ff41bc",
+      "residual_graphs": [
+        {
+          "seed": 6101,
+          "density_index": 0,
+          "key": "8e3732c5852c156a7f74aebfd12b4711dd96f0ffdadb8ae89954d90bd82743e5",
+          "hyperedges": 15564,
+          "residual_sha256": "93f10cdb8c48dbc7766555e852fb01f2cd65b047d905a234c52c670609418683"
+        },
+        {
+          "seed": 6101,
+          "density_index": 1,
+          "key": "c81547ec41b67bcbc4d375a80c87d6b5d721f85d7db0217fe681f6f7adab7ae1",
+          "hyperedges": 12686,
+          "residual_sha256": "8270c6a34ee04cabcd83e033ff5d332c0b1a6e710bc68a2bd4560562120cfb6f"
+        },
+        {
+          "seed": 6101,
+          "density_index": 2,
+          "key": "c81547ec41b67bcbc4d375a80c87d6b5d721f85d7db0217fe681f6f7adab7ae1",
+          "hyperedges": 12686,
+          "residual_sha256": "8270c6a34ee04cabcd83e033ff5d332c0b1a6e710bc68a2bd4560562120cfb6f"
+        },
+        {
+          "seed": 6102,
+          "density_index": 0,
+          "key": "98202d2f880bdcaaa001d713ccfd01aa2acf60d17f63e6bf7e7b0a2b316ddd38",
+          "hyperedges": 15574,
+          "residual_sha256": "e029d78ebf2068d767dc7496547a7e82df16e5966fdbdb6d1efc6044808358d3"
+        },
+        {
+          "seed": 6102,
+          "density_index": 1,
+          "key": "740bc1ccf4c1e51a4a39e599f45dfd626b6e290ae60164f699fb57861234809d",
+          "hyperedges": 12932,
+          "residual_sha256": "506a1314e28607a32b3139a339f48b98824bfdb40096da20c1afb2eab69db3da"
+        },
+        {
+          "seed": 6102,
+          "density_index": 2,
+          "key": "740bc1ccf4c1e51a4a39e599f45dfd626b6e290ae60164f699fb57861234809d",
+          "hyperedges": 12932,
+          "residual_sha256": "506a1314e28607a32b3139a339f48b98824bfdb40096da20c1afb2eab69db3da"
+        },
+        {
+          "seed": 6103,
+          "density_index": 0,
+          "key": "5439c03c95a261682c6bb43afd092e145f0021356baa5532c1058b9a3ae08dde",
+          "hyperedges": 15462,
+          "residual_sha256": "f283a8f1205121837e36fb4ba14a2cd3f2f258d90049e4c2bb098099173ac029"
+        },
+        {
+          "seed": 6103,
+          "density_index": 1,
+          "key": "8c96b7d475081108f4692d1b43ee65f12c3a3e08a5825d65c4c56badf63c5db3",
+          "hyperedges": 12750,
+          "residual_sha256": "056b57402fde162a4305cec44e10f5fe4aa8e3e7f45a498f852e061de5e2a7c7"
+        },
+        {
+          "seed": 6103,
+          "density_index": 2,
+          "key": "8c96b7d475081108f4692d1b43ee65f12c3a3e08a5825d65c4c56badf63c5db3",
+          "hyperedges": 12750,
+          "residual_sha256": "056b57402fde162a4305cec44e10f5fe4aa8e3e7f45a498f852e061de5e2a7c7"
+        }
+      ],
+      "observation_sha256": "fbe23f4e333fd5e1aaafc6dbc607643baf60bf563be381028336092d4b436e32",
+      "seconds": 1.8857732880005642,
+      "peak_rss_bytes": 74108928,
+      "address_space_budget": 7516192768,
+      "formal_labels_loaded": false,
+      "attempts": [
+        {
+          "status": "compatible_topology",
+          "key": "HM_1k_new",
+          "n": 9899,
+          "R": 22,
+          "hyperedges": 17280,
+          "block": 8,
+          "topology_key": "5c1ba1a251838b9536e2efb4f2edc122a19fe92784b91be7c3d236aa25ff41bc",
+          "residual_graphs": [
+            {
+              "seed": 6101,
+              "density_index": 0,
+              "key": "c329163ede077f48271a55eab22e8c8391f62bdf960a0669f86471194f2e558d",
+              "hyperedges": 15564
+            },
+            {
+              "seed": 6101,
+              "density_index": 1,
+              "key": "b99daab5246ebd99dd147b51fcdcae7552b2baccef7978e0ecdd88c06d2a6cf8",
+              "hyperedges": 12686
+            },
+            {
+              "seed": 6101,
+              "density_index": 2,
+              "key": "b99daab5246ebd99dd147b51fcdcae7552b2baccef7978e0ecdd88c06d2a6cf8",
+              "hyperedges": 12686
+            },
+            {
+              "seed": 6102,
+              "density_index": 0,
+              "key": "41cdbb38106378a7203cd2eb57bb4155ece5ca0f8e7c54f10a26f3f447b649c6",
+              "hyperedges": 15574
+            },
+            {
+              "seed": 6102,
+              "density_index": 1,
+              "key": "446c0aaac4d00b251a832f9880c8107038c7ad0f8bdba37d0b1b63f29e0ef18b",
+              "hyperedges": 12932
+            },
+            {
+              "seed": 6102,
+              "density_index": 2,
+              "key": "446c0aaac4d00b251a832f9880c8107038c7ad0f8bdba37d0b1b63f29e0ef18b",
+              "hyperedges": 12932
+            },
+            {
+              "seed": 6103,
+              "density_index": 0,
+              "key": "4340375046e8554d66aac51d443915307dced2027604a5eb40e8c60b45115c0b",
+              "hyperedges": 15462
+            },
+            {
+              "seed": 6103,
+              "density_index": 1,
+              "key": "14712f1f948ece24224c2b95832676338fc38f9f0056bc258672ea927d5c7fa9",
+              "hyperedges": 12750
+            },
+            {
+              "seed": 6103,
+              "density_index": 2,
+              "key": "14712f1f948ece24224c2b95832676338fc38f9f0056bc258672ea927d5c7fa9",
+              "hyperedges": 12750
+            }
+          ],
+          "observation_sha256": "fbe23f4e333fd5e1aaafc6dbc607643baf60bf563be381028336092d4b436e32",
+          "seconds": 1.8857732880005642,
+          "peak_rss_bytes": 74108928,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "record_sha256": "7e352d90900f446229bb95272816925e65a17fe28a1634de47a658cdc2aa9fe7"
+        }
+      ],
+      "multiplicity_rebuild_seconds": 1.0637882319997516,
+      "residual_identity_verified": true,
+      "mask_semantics": "masked copies all removed; unmasked multiplicity retained",
+      "masking_code_sha256": "079333825816f3c0ef3bc278cf4ed1ff8da6404c3d23664cb4db4d8119e7e028"
+    },
+    "WikiTopicsMT4_health_new": {
+      "status": "compatible_topology",
+      "key": "WikiTopicsMT4_health_new",
+      "n": 10000,
+      "R": 40,
+      "hyperedges": 7640,
+      "block": 8,
+      "topology_key": "835afa2901390cb6c49f5c132a7b73ef9d1c82ebc109ce5e5925e76c07cbb833",
+      "residual_graphs": [
+        {
+          "seed": 6101,
+          "density_index": 0,
+          "key": "4f0b7191462114b6b23d1a6f469d492920486793be9441997e2946bea3f0dfb5",
+          "hyperedges": 7414,
+          "residual_sha256": "92612473725a50551bd72b486d92d855da6ed7de27e4c188dd66f0693bb1efc8"
+        },
+        {
+          "seed": 6101,
+          "density_index": 1,
+          "key": "2d57e19bdb39b3eff129e753edd5b9e6c2685d1da61f1b8c89c794b6397b74a1",
+          "hyperedges": 7238,
+          "residual_sha256": "bd606c1b9a0d4fa419c9e2b19768fd53a20bf1f3f9cef0597e1e073f0625d01c"
+        },
+        {
+          "seed": 6101,
+          "density_index": 2,
+          "key": "1db75b9393767cea72164a3b32981d6e69d98e26b3e3bfded3077765c02bed78",
+          "hyperedges": 6978,
+          "residual_sha256": "661fb7f5d51dc0cfc88f2b3701de42fe97712eb6efd214a5c535c002f2382b4c"
+        },
+        {
+          "seed": 6102,
+          "density_index": 0,
+          "key": "ac5a5a2ae8a363169b59304accb4764dd22d299262d8addb5be3c1227995c7b5",
+          "hyperedges": 7360,
+          "residual_sha256": "ccae7fa808c820b7a9a3e997c869f966aa3fcce8611c81aabbdde7605254abbf"
+        },
+        {
+          "seed": 6102,
+          "density_index": 1,
+          "key": "6a6d551852a591d17ed7fff9ea360f3aa8722f2267439a97e8149833af189668",
+          "hyperedges": 7200,
+          "residual_sha256": "29caf74701cf52493b27c5c4292ac0ff0d07cb3f3abf19a1ec3cb16f1ab1c49e"
+        },
+        {
+          "seed": 6102,
+          "density_index": 2,
+          "key": "2320a403635a44cf4b433176fc60ce13bd6d8ac34fa26a8cfff4825bd9e44fc1",
+          "hyperedges": 6716,
+          "residual_sha256": "095951d04ee87d3fa43636caac73f06b2b41e46a6c820e86f61955d7cd445545"
+        },
+        {
+          "seed": 6103,
+          "density_index": 0,
+          "key": "4d4bb0081e638bb0e8a5d2c76c1da6d69468cdb4fe27798545efd38ed3860e70",
+          "hyperedges": 7460,
+          "residual_sha256": "57320aba0a1975f2e97b6b439c04bf1faf06a254cc39f9952bf8091f713bc514"
+        },
+        {
+          "seed": 6103,
+          "density_index": 1,
+          "key": "f73fba7d62725f334efc51bd9448b2fa2953a1d362592c072e6993f8aa4b7f85",
+          "hyperedges": 7212,
+          "residual_sha256": "14ecb61211f8ec636e7cb9e2b7766f7e0c7792da2f2f65b4cb65d90b0df20307"
+        },
+        {
+          "seed": 6103,
+          "density_index": 2,
+          "key": "f8e11c7c9e00a2337f5b4841663f03b00130698ce5b0e2a827b25cf7e1c51107",
+          "hyperedges": 6990,
+          "residual_sha256": "aa0e0b510c7ce02820f7be2005ecd7fccdb44b4eaed003a84ca040cd40c2fee7"
+        }
+      ],
+      "observation_sha256": "96fb2cd5ede8adb2f8c077941fbabb71c65579ccbb5120db78f2cbde85f34ea3",
+      "seconds": 1.8829131900001812,
+      "peak_rss_bytes": 69799936,
+      "address_space_budget": 7516192768,
+      "formal_labels_loaded": false,
+      "attempts": [
+        {
+          "status": "compatible_topology",
+          "key": "WikiTopicsMT4_health_new",
+          "n": 10000,
+          "R": 40,
+          "hyperedges": 7640,
+          "block": 8,
+          "topology_key": "835afa2901390cb6c49f5c132a7b73ef9d1c82ebc109ce5e5925e76c07cbb833",
+          "residual_graphs": [
+            {
+              "seed": 6101,
+              "density_index": 0,
+              "key": "4f0b7191462114b6b23d1a6f469d492920486793be9441997e2946bea3f0dfb5",
+              "hyperedges": 7414
+            },
+            {
+              "seed": 6101,
+              "density_index": 1,
+              "key": "2d57e19bdb39b3eff129e753edd5b9e6c2685d1da61f1b8c89c794b6397b74a1",
+              "hyperedges": 7238
+            },
+            {
+              "seed": 6101,
+              "density_index": 2,
+              "key": "1db75b9393767cea72164a3b32981d6e69d98e26b3e3bfded3077765c02bed78",
+              "hyperedges": 6978
+            },
+            {
+              "seed": 6102,
+              "density_index": 0,
+              "key": "ac5a5a2ae8a363169b59304accb4764dd22d299262d8addb5be3c1227995c7b5",
+              "hyperedges": 7360
+            },
+            {
+              "seed": 6102,
+              "density_index": 1,
+              "key": "6a6d551852a591d17ed7fff9ea360f3aa8722f2267439a97e8149833af189668",
+              "hyperedges": 7200
+            },
+            {
+              "seed": 6102,
+              "density_index": 2,
+              "key": "2320a403635a44cf4b433176fc60ce13bd6d8ac34fa26a8cfff4825bd9e44fc1",
+              "hyperedges": 6716
+            },
+            {
+              "seed": 6103,
+              "density_index": 0,
+              "key": "4d4bb0081e638bb0e8a5d2c76c1da6d69468cdb4fe27798545efd38ed3860e70",
+              "hyperedges": 7460
+            },
+            {
+              "seed": 6103,
+              "density_index": 1,
+              "key": "f73fba7d62725f334efc51bd9448b2fa2953a1d362592c072e6993f8aa4b7f85",
+              "hyperedges": 7212
+            },
+            {
+              "seed": 6103,
+              "density_index": 2,
+              "key": "f8e11c7c9e00a2337f5b4841663f03b00130698ce5b0e2a827b25cf7e1c51107",
+              "hyperedges": 6990
+            }
+          ],
+          "observation_sha256": "96fb2cd5ede8adb2f8c077941fbabb71c65579ccbb5120db78f2cbde85f34ea3",
+          "seconds": 1.8829131900001812,
+          "peak_rss_bytes": 69799936,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "record_sha256": "e5659deeb3c8b2f3e5dd93a8534eaa5d2828d8e118cf82ad3f14465b10327f44"
+        }
+      ],
+      "multiplicity_rebuild_seconds": 0.35612055199999304,
+      "residual_identity_verified": true,
+      "mask_semantics": "masked copies all removed; unmasked multiplicity retained",
+      "masking_code_sha256": "079333825816f3c0ef3bc278cf4ed1ff8da6404c3d23664cb4db4d8119e7e028"
+    },
+    "AristoV4_external_new": {
+      "status": "resource_failure",
+      "key": "AristoV4_external_new",
+      "block": 1,
+      "error": "MemoryError((3, 638619), dtype('int32'))",
+      "seconds": 353.4217008599999,
+      "address_space_budget": 7516192768,
+      "formal_labels_loaded": false,
+      "peak_rss_bytes": 7172796416,
+      "attempts": [
+        {
+          "status": "resource_failure",
+          "key": "AristoV4_external_new",
+          "block": 8,
+          "error": "MemoryError((7882270,), dtype('float64'))",
+          "seconds": 343.8605747110005,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "peak_rss_bytes": 7113314304,
+          "record_sha256": "f7898cc9614358c4ec773acb1ead43d799e62ef15c32b1bd9319429c3b26680c"
+        },
+        {
+          "status": "resource_failure",
+          "key": "AristoV4_external_new",
+          "block": 2,
+          "error": "MemoryError((2162578,), dtype('float64'))",
+          "seconds": 355.8613479169999,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "peak_rss_bytes": 7163191296,
+          "record_sha256": "ee0640691909e0063dad9638c470530de5a5d2892df1941bd4f14c57b21d29b5"
+        },
+        {
+          "status": "resource_failure",
+          "key": "AristoV4_external_new",
+          "block": 1,
+          "error": "MemoryError((3, 638619), dtype('int32'))",
+          "seconds": 353.4217008599999,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "peak_rss_bytes": 7172796416,
+          "record_sha256": "7274ea0b4cd5150499167c3df6e2c8ec28d330d4af8bc134e80b90164d609ff5"
+        }
+      ],
+      "mask_semantics": "no duplicate rows; original resource preflight remains applicable",
+      "masking_code_sha256": "079333825816f3c0ef3bc278cf4ed1ff8da6404c3d23664cb4db4d8119e7e028"
+    },
+    "UMLS_external_new": {
+      "status": "compatible_topology",
+      "key": "UMLS_external_new",
+      "n": 135,
+      "R": 92,
+      "hyperedges": 431080,
+      "block": 8,
+      "topology_key": "db983ded0c19c0d11eb96b02b0ff60f84ea95d108369aa624af8fd9599ee68c8",
+      "residual_graphs": [
+        {
+          "seed": 6101,
+          "density_index": 0,
+          "key": "68a683364966c4a0b8afad2359671a657542b4881fff164f56c3b377198c6aaa",
+          "hyperedges": 420280,
+          "residual_sha256": "13954d2ddee1223e4ddee945a1eec8996e12c75a59c4adff1b546bfecff9b6ee"
+        },
+        {
+          "seed": 6101,
+          "density_index": 1,
+          "key": "83698ba9c01d641c87da57499d818c489d8f42bd469bd9dc6da81cb1584c2144",
+          "hyperedges": 412388,
+          "residual_sha256": "65d30d84406b2a45f64c64f28f248e32f10f7c4fa0914fd1e6a06447346958c4"
+        },
+        {
+          "seed": 6101,
+          "density_index": 2,
+          "key": "c1edaa8e10964e43175053ccee63e28ae68d0868ee4cbfd4b9e9c44854873925",
+          "hyperedges": 406150,
+          "residual_sha256": "0534d05a20fb691f6223460187e897fbda3b429eb66e0feb9b701cc228025763"
+        },
+        {
+          "seed": 6102,
+          "density_index": 0,
+          "key": "395e2f123cb9450c5da49f1037cffcbe2a7394685dbdb11540b8c9c84ea5d2f6",
+          "hyperedges": 417988,
+          "residual_sha256": "46a5d0d62908266f8e14ccf2638d29295cbec27469676051a36e4365da439374"
+        },
+        {
+          "seed": 6102,
+          "density_index": 1,
+          "key": "c89e6970a07ee344f367d82f3becd478ed173b0019a7009d0ece5b092bbd5e58",
+          "hyperedges": 410748,
+          "residual_sha256": "771f4cb5d9ac655521675e1617e840b45c9b56ff0582a0e16a2f24b6d652b44c"
+        },
+        {
+          "seed": 6102,
+          "density_index": 2,
+          "key": "6307f72330c75bb30f1b556e8e7e6043232fa1e56c72f76ff16ff938d00aa864",
+          "hyperedges": 397930,
+          "residual_sha256": "3501f2217a748a156fa182c0398d4f5ad7cfc82f7db55fd895024098c4e1f521"
+        },
+        {
+          "seed": 6103,
+          "density_index": 0,
+          "key": "757cc4648be953c0b81e7f0107df16ce33dde252a475db1dd5a8e631cf17ad8e",
+          "hyperedges": 428536,
+          "residual_sha256": "33f52876d748385e65bb79ed5a37c9f47cb45b2f7c906acf7851b27f2d9abdf1"
+        },
+        {
+          "seed": 6103,
+          "density_index": 1,
+          "key": "e411ee6648eef33c2751447414403d8058efa75ee982087482174366a6dc96c7",
+          "hyperedges": 423032,
+          "residual_sha256": "4f84a0c56a52ade07cf18eb0c7f57bec7a0547105df1f75618938f88bc45ec96"
+        },
+        {
+          "seed": 6103,
+          "density_index": 2,
+          "key": "52c8807430a2a1bbaaa8f49da17998824d27a1097226e4b79c1bcb6ff174db2f",
+          "hyperedges": 411920,
+          "residual_sha256": "27088b5f6779ae33b4fbbd1c7cb0b86940ade114e469ee653f150005e5c8a7ed"
+        }
+      ],
+      "observation_sha256": "f6b734e61b405b91da5760c05903379983cfdc5b571d793b53fca96df877a2ca",
+      "seconds": 14.574221508999472,
+      "peak_rss_bytes": 185675776,
+      "address_space_budget": 7516192768,
+      "formal_labels_loaded": false,
+      "attempts": [
+        {
+          "status": "compatible_topology",
+          "key": "UMLS_external_new",
+          "n": 135,
+          "R": 92,
+          "hyperedges": 431080,
+          "block": 8,
+          "topology_key": "db983ded0c19c0d11eb96b02b0ff60f84ea95d108369aa624af8fd9599ee68c8",
+          "residual_graphs": [
+            {
+              "seed": 6101,
+              "density_index": 0,
+              "key": "68a683364966c4a0b8afad2359671a657542b4881fff164f56c3b377198c6aaa",
+              "hyperedges": 420280
+            },
+            {
+              "seed": 6101,
+              "density_index": 1,
+              "key": "83698ba9c01d641c87da57499d818c489d8f42bd469bd9dc6da81cb1584c2144",
+              "hyperedges": 412388
+            },
+            {
+              "seed": 6101,
+              "density_index": 2,
+              "key": "c1edaa8e10964e43175053ccee63e28ae68d0868ee4cbfd4b9e9c44854873925",
+              "hyperedges": 406150
+            },
+            {
+              "seed": 6102,
+              "density_index": 0,
+              "key": "395e2f123cb9450c5da49f1037cffcbe2a7394685dbdb11540b8c9c84ea5d2f6",
+              "hyperedges": 417988
+            },
+            {
+              "seed": 6102,
+              "density_index": 1,
+              "key": "c89e6970a07ee344f367d82f3becd478ed173b0019a7009d0ece5b092bbd5e58",
+              "hyperedges": 410748
+            },
+            {
+              "seed": 6102,
+              "density_index": 2,
+              "key": "6307f72330c75bb30f1b556e8e7e6043232fa1e56c72f76ff16ff938d00aa864",
+              "hyperedges": 397930
+            },
+            {
+              "seed": 6103,
+              "density_index": 0,
+              "key": "757cc4648be953c0b81e7f0107df16ce33dde252a475db1dd5a8e631cf17ad8e",
+              "hyperedges": 428536
+            },
+            {
+              "seed": 6103,
+              "density_index": 1,
+              "key": "e411ee6648eef33c2751447414403d8058efa75ee982087482174366a6dc96c7",
+              "hyperedges": 423032
+            },
+            {
+              "seed": 6103,
+              "density_index": 2,
+              "key": "52c8807430a2a1bbaaa8f49da17998824d27a1097226e4b79c1bcb6ff174db2f",
+              "hyperedges": 411920
+            }
+          ],
+          "observation_sha256": "f6b734e61b405b91da5760c05903379983cfdc5b571d793b53fca96df877a2ca",
+          "seconds": 14.574221508999472,
+          "peak_rss_bytes": 185675776,
+          "address_space_budget": 7516192768,
+          "formal_labels_loaded": false,
+          "record_sha256": "322098a4f9adc63a8c5ee92ecb61c4ffc0129d89284abbc9a28759af5d1204d9"
+        }
+      ],
+      "multiplicity_rebuild_seconds": 2.387454886999876,
+      "residual_identity_verified": true,
+      "mask_semantics": "masked copies all removed; unmasked multiplicity retained",
+      "masking_code_sha256": "079333825816f3c0ef3bc278cf4ed1ff8da6404c3d23664cb4db4d8119e7e028"
+    }
+  },
+  "failure": "Save actual OOM/failure and continue independent graphs. No hidden smaller query count or different masks. No test-driven hyperparameters.",
+  "stage6_frozen_sha256": "e6535ba979cedd249e727d9dd5c08533fc301ea25d7c99ff2cfbd0eb07d8390a",
+  "model_manifest_sha256": "1a352dc49e11c5936051685a917748c8d480df02138b4a2bb0a77ceb95eff940",
+  "new_observation_manifest_sha256": "f662b42ae270a383f75d824ffe87bd02060bc5d4ee28c5abd571614252c0d3fa",
+  "source_mechanism_summary_sha256": "0de9323e6a6081b313a9b847d58c89ece9fcd4762ae752ce01ed75de6ca10711",
+  "numeric_checks_sha256": "529750304d665df86705e42cba505d2569950df0f0914f4cf90798fb4a42108a",
+  "historical_exposure_search_sha256": "d4ea79ddd0efc07f57946fd4892d517dfaae37b4e90f0e48458436090b2e7e0e",
+  "pretraining_observation_overlap_sha256": "26e87b0676b4cef6b1cd7e125c280234e569abcd9b47f90cb743111e369c0f55",
+  "compatibility_preflight_sha256": "e5dcf522d80f679d42c39406163e0f72bbc35c61319de7b41cd92af94d90f1cb",
+  "proxy_multiplicity_verification_sha256": "86f83dfc779e32b953791dfe94abc0ada93cef71b978c8db0734a00cb5783cdd"
+}

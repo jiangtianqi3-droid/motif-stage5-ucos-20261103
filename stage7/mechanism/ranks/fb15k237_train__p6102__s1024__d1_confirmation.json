@@ -1,0 +1,47 @@
+{
+  "info": {
+    "seconds": 50.50605630500013,
+    "peak_allocated": 949129728,
+    "batch_size": 8,
+    "facts": 301,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 4.30868744899999,
+        "cached_relations": 388
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 4.316974899999877,
+        "cached_relations": 388
+      }
+    ]
+  },
+  "topology": {
+    "topology_key": "f27b27833a821f255bca017f03467dd9d9c211eec05a5948b29bc83d3004e0c1",
+    "hyperedges": 4075768,
+    "topology_seconds": 6.086177133000092,
+    "cache_hit": true,
+    "residual_sha256": "b2476bf9cdd68d47b750714751d662055e3e7747615bec802d8100f2be6fe707"
+  },
+  "query_sha256": "e30deeb2972825f7bba9f2946852a44b5d20210d2d2dd1ff40b2db9d45a7b81a",
+  "residual_sha256": "b2476bf9cdd68d47b750714751d662055e3e7747615bec802d8100f2be6fe707",
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.3812482241489735,
+      "hits_at_1": 0.27408637873754155,
+      "hits_at_3": 0.4269102990033223,
+      "hits_at_10": 0.5830564784053156
+    },
+    {
+      "mrr": 0.38169715412864946,
+      "hits_at_1": 0.2724252491694352,
+      "hits_at_3": 0.43023255813953487,
+      "hits_at_10": 0.5830564784053156
+    }
+  ],
+  "ranks_sha256": "d450ce5396926b0443df2de59182f5429102b103f6aa09be65a4b39ebed2ecc9"
+}

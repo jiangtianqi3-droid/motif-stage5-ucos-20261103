@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 5.330718127999717,
+    "peak_allocated": 275090432,
+    "batch_size": 8,
+    "facts": 212,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.5803250910012139,
+        "cached_relations": 24
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 1.5709856510002282,
+        "cached_relations": 24
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 1.5910628029996587,
+        "cached_relations": 24
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 5.3533695920014,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "2320a403635a44cf4b433176fc60ce13bd6d8ac34fa26a8cfff4825bd9e44fc1",
+    "hyperedges": 6716,
+    "topology_seconds": 0.08985251700050867,
+    "cache_hit": true,
+    "residual_sha256": "095951d04ee87d3fa43636caac73f06b2b41e46a6c820e86f61955d7cd445545"
+  },
+  "query_sha256": "642201440687903883694fd68477fd7cc5ee17cc96eed92073b33e135de603ed",
+  "residual_sha256": "095951d04ee87d3fa43636caac73f06b2b41e46a6c820e86f61955d7cd445545",
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.4238529608813689,
+      "hits_at_1": 0.2783018867924528,
+      "hits_at_3": 0.49764150943396224,
+      "hits_at_10": 0.7193396226415094
+    },
+    {
+      "mrr": 0.41103204364390195,
+      "hits_at_1": 0.2641509433962264,
+      "hits_at_3": 0.4858490566037736,
+      "hits_at_10": 0.7216981132075472
+    },
+    {
+      "mrr": 0.4096706200110445,
+      "hits_at_1": 0.25943396226415094,
+      "hits_at_3": 0.4882075471698113,
+      "hits_at_10": 0.7193396226415094
+    }
+  ],
+  "ranks_sha256": "e5e2c278b6037310c333a303d2831707338dd3770a1ec3dd8e99dde4b706c951"
+}

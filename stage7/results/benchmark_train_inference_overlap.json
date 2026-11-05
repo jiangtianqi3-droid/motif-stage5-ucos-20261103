@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "key": "HM_1k_new",
+      "source_variant": "official_Hamaguchi_source",
+      "benchmark_train_facts": 91371,
+      "inference_observed_facts": 18417,
+      "benchmark_train_entities": 36237,
+      "inference_entities": 9899,
+      "shared_entities": 7971,
+      "shared_relations": 11,
+      "shared_facts": 0,
+      "benchmark_train_sha256": "61a48533dc54dcc070a53a9543ae045bb673d5a2c77f3cfc28dc3f13c1c43646",
+      "source": "Published benchmark source graph; not used by Stage7 selector or model training",
+      "formal_queries_loaded": false
+    },
+    {
+      "key": "WikiTopicsMT4_health_new",
+      "source_variant": "runtime_health_transductive_sibling",
+      "benchmark_train_facts": 15539,
+      "inference_observed_facts": 15337,
+      "benchmark_train_entities": 10000,
+      "inference_entities": 10000,
+      "shared_entities": 3710,
+      "shared_relations": 20,
+      "shared_facts": 7003,
+      "benchmark_train_sha256": "02c7bf9de54187079ef92a46710f54e20672658488d8eaf4a1eedffc63c51878",
+      "source": "Published benchmark source graph; not used by Stage7 selector or model training",
+      "formal_queries_loaded": false
+    },
+    {
+      "key": "WikiTopicsMT4_health_new",
+      "source_variant": "published_MT4_mixture",
+      "benchmark_train_facts": 54140,
+      "inference_observed_facts": 15337,
+      "benchmark_train_entities": 10000,
+      "inference_entities": 10000,
+      "shared_entities": 3,
+      "shared_relations": 0,
+      "shared_facts": 0,
+      "benchmark_train_sha256": "ea548dc82dd5677ce092a17f3bce721b09a3fb3a0d3bb194233ff13d85ef3cd3",
+      "source": "Published benchmark source graph; not used by Stage7 selector or model training",
+      "formal_queries_loaded": false
+    }
+  ],
+  "warning": "Official inductive/OOKB categories do not imply fully disjoint entities or independent knowledge provenance."
+}

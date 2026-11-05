@@ -1,0 +1,22 @@
+{
+  "family": "UMLS-biomedical",
+  "type": "cross_graph_zero_shot_external_transductive_split",
+  "public_n": 135,
+  "observation": "https://raw.githubusercontent.com/pykeen/pykeen/5beaada8623a7bc368db9f29a7a43ddd237888a6/src/pykeen/datasets/umls/train.txt",
+  "valid": "https://raw.githubusercontent.com/pykeen/pykeen/5beaada8623a7bc368db9f29a7a43ddd237888a6/src/pykeen/datasets/umls/valid.txt",
+  "test": "https://raw.githubusercontent.com/pykeen/pykeen/5beaada8623a7bc368db9f29a7a43ddd237888a6/src/pykeen/datasets/umls/test.txt",
+  "risk": "New biomedical source and prospective results. Small dense published transductive split; external cross-graph zero-shot experiment, not a standard disjoint-entity inductive split.",
+  "key": "UMLS_external_new",
+  "file": "UMLS_external_new.npz",
+  "sha256": "30274eae7a3f174a94ebb1545289b95124344f16795c0ef165761415a15c7e26",
+  "n": 135,
+  "R": 92,
+  "observed_facts": 5216,
+  "observed_entities": 135,
+  "anonymous_public_candidates": 0,
+  "download_sha256": "873ef4925516b83e7f6f8cc02b4be51d848828710a7f65a956f0ac4a9e452f35",
+  "download_file": "downloads\\UMLS_external_new_observed.txt",
+  "observed_sha256": "f6b734e61b405b91da5760c05903379983cfdc5b571d793b53fca96df877a2ca",
+  "formal_queries_loaded": false,
+  "created_utc": "2026-11-03T15:19:01.946335+00:00"
+}

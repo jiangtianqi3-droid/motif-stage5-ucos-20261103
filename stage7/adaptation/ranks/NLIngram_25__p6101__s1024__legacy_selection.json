@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 10.356685536000441,
+    "peak_allocated": 90875904,
+    "batch_size": 8,
+    "facts": 13,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.08213804200022423,
+        "cached_relations": 36
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.08724028899996483,
+        "cached_relations": 36
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.08405349500026205,
+        "cached_relations": 36
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.07540071999937936,
+        "cached_relations": 36
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.07592510699942068,
+        "cached_relations": 36
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 10.662804081999639,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "84fdc68c0ad46ea1424fa2be05a073e4c3aad1f3c27fbbd522807020b588b4ab",
+    "hyperedges": 27136,
+    "topology_seconds": 0.22186952299853147,
+    "cache_hit": false,
+    "residual_sha256": "ea30e4214df8f7644e92a852f600be61875cff3f14d705a03006e0d4081b3672"
+  },
+  "query_sha256": "65cbf7729abe9bf3de2851e120ba023ad8c21131bce96047252497575dbf7125",
+  "residual_sha256": "ea30e4214df8f7644e92a852f600be61875cff3f14d705a03006e0d4081b3672",
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.34736555400601943,
+      "hits_at_1": 0.23076923076923078,
+      "hits_at_3": 0.4230769230769231,
+      "hits_at_10": 0.5769230769230769
+    },
+    {
+      "mrr": 0.34966180775037237,
+      "hits_at_1": 0.23076923076923078,
+      "hits_at_3": 0.4230769230769231,
+      "hits_at_10": 0.5769230769230769
+    },
+    {
+      "mrr": 0.3489029679571919,
+      "hits_at_1": 0.23076923076923078,
+      "hits_at_3": 0.4230769230769231,
+      "hits_at_10": 0.5769230769230769
+    },
+    {
+      "mrr": 0.36421855201033104,
+      "hits_at_1": 0.2692307692307692,
+      "hits_at_3": 0.38461538461538464,
+      "hits_at_10": 0.5769230769230769
+    },
+    {
+      "mrr": 0.36507684999886164,
+      "hits_at_1": 0.2692307692307692,
+      "hits_at_3": 0.38461538461538464,
+      "hits_at_10": 0.5384615384615384
+    }
+  ],
+  "ranks_sha256": "836f0f0532263fdeb835924830577315c39785d5631bbc8fd78ab5e8fb0e97e8"
+}

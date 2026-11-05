@@ -1,0 +1,126 @@
+{
+  "key": "wn18rr_train",
+  "rate": 0.1,
+  "actual_rate": 0.0999942419531295,
+  "split": {
+    "seed": 6101,
+    "rate": 0.1,
+    "requested": 8683,
+    "actual": 8683,
+    "selection": 5209,
+    "confirmation": 3474,
+    "hidden_sha256": "902286caf2b87f56f57ace90af533612ec0c3f4beea8c6a39c87fd2f1c28de86",
+    "selection_sha256": "4673ebe3b3c71a9ff9e9c39a2fd8d85cae5d07f93dfef1a7d84f15c1af3c13e7",
+    "confirmation_sha256": "b301c9b9adaee667664325bc1428414b83a4a752e2f32212f32659cafe309742",
+    "graph_sha256": "d844b02683b1883803adbcecd4b6b98ddcf6e8739091df7b6b6ad8ff81baa967",
+    "residual_sha256": "8816257b7b6d2229988563f74b79e6af5b547ab593d4793b510e032967c8676b",
+    "direct_leaks": 0,
+    "inverse_leaks": 0,
+    "component_preserved": true,
+    "relation_coverage_preserved": true,
+    "unique_observed_facts": 86835
+  },
+  "query_sha256": "b903c253894fcaac58c82ba19c2f935635a75974e66b43435f1af81c4b474b4c",
+  "configs": [
+    [
+      0.0,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.1,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.25,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.5,
+      0.0,
+      "conditional"
+    ],
+    [
+      1.0,
+      0.0,
+      "conditional"
+    ]
+  ],
+  "metrics": [
+    {
+      "mrr": 0.4646024322751945,
+      "hits_at_1": 0.396484375,
+      "hits_at_3": 0.484375,
+      "hits_at_10": 0.60546875
+    },
+    {
+      "mrr": 0.467135593811772,
+      "hits_at_1": 0.396484375,
+      "hits_at_3": 0.49609375,
+      "hits_at_10": 0.607421875
+    },
+    {
+      "mrr": 0.47998148082340786,
+      "hits_at_1": 0.416015625,
+      "hits_at_3": 0.5078125,
+      "hits_at_10": 0.609375
+    },
+    {
+      "mrr": 0.49000663617932616,
+      "hits_at_1": 0.435546875,
+      "hits_at_3": 0.505859375,
+      "hits_at_10": 0.60546875
+    },
+    {
+      "mrr": 0.44730222350559584,
+      "hits_at_1": 0.369140625,
+      "hits_at_3": 0.48046875,
+      "hits_at_10": 0.59765625
+    }
+  ],
+  "info": {
+    "seconds": 41.11507140599997,
+    "peak_allocated": 897262592,
+    "batch_size": 8,
+    "queries": 256,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "seconds": 20.817024944000423,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.1,
+        "seconds": 5.096925012999691,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.25,
+        "seconds": 5.06842614199968,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.5,
+        "seconds": 5.071245206000185,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 1.0,
+        "seconds": 5.061092891000044,
+        "cached_relations": 22
+      }
+    ]
+  },
+  "topology": {
+    "topology_key": "3ae2387a0e25d82cc42985dbd3f706c336df6ef4d2bff17cea02261aae546b39",
+    "hyperedges": 14930,
+    "topology_seconds": 0.4048378919997049,
+    "cache_hit": false,
+    "residual_sha256": "8816257b7b6d2229988563f74b79e6af5b547ab593d4793b510e032967c8676b"
+  },
+  "model_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "protocol_sha256": "a6af53124b9c1810b3e2a12235ae9740f6e23e38c160971f0117bd1fa416e94f",
+  "ranks_sha256": "3f0fc8a74c9c4452b320e757c8796f3a141092bb4520fa4dedc29cdc7e7ddf3c"
+}

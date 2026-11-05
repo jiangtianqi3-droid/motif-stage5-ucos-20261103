@@ -1,0 +1,23 @@
+test_actual_nbfnet_direction_conversion (test_core.CoreTests) ... /mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/torch_version.py:28: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined, no-redef]
+ok
+test_confirmation_never_reselects (test_core.CoreTests) ... ok
+test_directions_and_consistent_counts (test_core.CoreTests) ... ok
+test_filtered_ranking_independent_bruteforce (test_core.CoreTests) ... ok
+test_joint_removal_and_dedup (test_core.CoreTests) ... ok
+test_lcb_fails_and_small_sample_fallback (test_core.CoreTests) ... ok
+test_no_repeat_penalty (test_core.CoreTests) ... ok
+test_observation_isolation_all_real_graphs (test_core.CoreTests) ... ok
+test_pair_unit (test_core.CoreTests) ... ok
+test_split_repeatability_and_cache_identity (test_core.CoreTests) ... ok
+test_unselected_confirmation_is_inaccessible (test_core.CoreTests) ... ok
+test_unsupported_is_finite (test_core.CoreTests) ... ok
+test_zero_is_identity (test_core.CoreTests) ... ok
+test_constant_difference (test_statistics.StatisticsTests) ... ok
+test_reproducible_paired_mean (test_statistics.StatisticsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 18.692s
+
+OK
+{"event": "numeric_tests_passed", "alpha0_error": 0.0, "internal": {"0.0": 0.0, "0.1": 207.256591796875, "0.25": 518.1415405273438, "0.5": 1036.2830810546875, "1.0": 2072.566162109375}, "b0_source_repeats": [{"batch": 4, "rank_changes": 0, "mrr": 0.6649454486896074, "delta_mrr": 0.0}, {"batch": 4, "rank_changes": 0, "mrr": 0.6649454486896074, "delta_mrr": 0.0}, {"batch": 1, "rank_changes": 0, "mrr": 0.6649454486896074, "delta_mrr": 0.0}, {"batch": 8, "rank_changes": 0, "mrr": 0.6649454486896074, "delta_mrr": 0.0}]}

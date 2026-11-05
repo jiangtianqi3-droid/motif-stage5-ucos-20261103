@@ -1,0 +1,164 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "key": "wn18rr_train",
+      "alpha0_plain_error": 0.0,
+      "alpha025_relation_change": 1.2852246761322021,
+      "batch_rows": [
+        {
+          "batch": 1,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 2,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 4,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        }
+      ],
+      "precision": [
+        {
+          "projection_accumulation": "torch.float64",
+          "propagation": "float32",
+          "max_score_difference": 6.9141387939453125e-06,
+          "rank_changes": 0
+        },
+        {
+          "projection_accumulation": "torch.bfloat16",
+          "propagation": "float32",
+          "max_score_difference": 0.11174392700195312,
+          "rank_changes": 13
+        }
+      ],
+      "autocast_modes": [
+        {
+          "mode": "torch.float16",
+          "status": "unsupported_on_probe",
+          "error": "RuntimeError('scatter(): Expected self.dtype to be equal to src.dtype')"
+        },
+        {
+          "mode": "torch.bfloat16",
+          "status": "unsupported_on_probe",
+          "error": "RuntimeError('scatter(): Expected self.dtype to be equal to src.dtype')"
+        }
+      ],
+      "no_weight_update": true,
+      "standard_stage5_paired_ranking_exact": true
+    },
+    {
+      "key": "codex_medium_train",
+      "alpha0_plain_error": 0.0,
+      "alpha025_relation_change": 0.5610231161117554,
+      "batch_rows": [
+        {
+          "batch": 1,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 2,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 4,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        }
+      ],
+      "precision": [
+        {
+          "projection_accumulation": "torch.float64",
+          "propagation": "float32",
+          "max_score_difference": 3.266334533691406e-05,
+          "rank_changes": 0
+        },
+        {
+          "projection_accumulation": "torch.bfloat16",
+          "propagation": "float32",
+          "max_score_difference": 0.06055641174316406,
+          "rank_changes": 16
+        }
+      ],
+      "autocast_modes": [],
+      "no_weight_update": true,
+      "standard_stage5_paired_ranking_exact": true
+    },
+    {
+      "key": "fb15k237_train",
+      "alpha0_plain_error": 0.0,
+      "alpha025_relation_change": 0.5007148385047913,
+      "batch_rows": [
+        {
+          "batch": 1,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 2,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 4,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        },
+        {
+          "batch": 8,
+          "max_score_error": 0.0,
+          "rank_changes": 0
+        }
+      ],
+      "precision": [
+        {
+          "projection_accumulation": "torch.float64",
+          "propagation": "float32",
+          "max_score_difference": 5.7220458984375e-06,
+          "rank_changes": 0
+        },
+        {
+          "projection_accumulation": "torch.bfloat16",
+          "propagation": "float32",
+          "max_score_difference": 0.06357574462890625,
+          "rank_changes": 7
+        }
+      ],
+      "autocast_modes": [],
+      "no_weight_update": true,
+      "standard_stage5_paired_ranking_exact": true
+    }
+  ],
+  "numeric_policy": "query-wise FP32 entity Linear; TF32 disabled; canonical global relation pairs; batch8 with OOM halving; no ties tolerance"
+}

@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 3.754208440000184,
+    "peak_allocated": 99555328,
+    "batch_size": 8,
+    "facts": 89,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.5166686100001243,
+        "cached_relations": 96
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.48789248100001714,
+        "cached_relations": 96
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.4976242330003515,
+        "cached_relations": 96
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 3.8759047069997905,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "f1e8e12b8a00d8bb7215e61913d5bce3288b0bc4403b13b7fba6817a9528e069",
+    "hyperedges": 89748,
+    "topology_seconds": 0.2212951929996052,
+    "cache_hit": true,
+    "residual_sha256": "0c590e452b6bf417d1ceafbb6a851cd2d6681236d2789d3382a0fa5ee341385a"
+  },
+  "query_sha256": "5b211baa221a92ae31c954190a081618958258fb12f0c996fea1a196db032c9f",
+  "residual_sha256": "0c590e452b6bf417d1ceafbb6a851cd2d6681236d2789d3382a0fa5ee341385a",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.5455674927019818,
+      "hits_at_1": 0.42134831460674155,
+      "hits_at_3": 0.6235955056179775,
+      "hits_at_10": 0.7865168539325843
+    },
+    {
+      "mrr": 0.5464608417916036,
+      "hits_at_1": 0.42696629213483145,
+      "hits_at_3": 0.6179775280898876,
+      "hits_at_10": 0.7865168539325843
+    },
+    {
+      "mrr": 0.530271003263386,
+      "hits_at_1": 0.4044943820224719,
+      "hits_at_3": 0.6123595505617978,
+      "hits_at_10": 0.7808988764044944
+    }
+  ],
+  "ranks_sha256": "7a38f3ba6a5b65c468b12ed6c162f1a17daaddd0cfe2538dca8ab7bbe58f9e31"
+}

@@ -1,0 +1,61 @@
+{
+  "sources": [
+    {
+      "path": "D:\\motif-phase4-work\\datasets\\audit\\pretraining\\codex_medium_train.txt",
+      "sha256": "d99c3437ab51690391a26d96976adf6e5494dba7ef6902e77000551bfa566556",
+      "facts": 185584
+    },
+    {
+      "path": "D:\\motif-phase4-work\\datasets\\audit\\pretraining\\fb15k237_train.txt",
+      "sha256": "6e4c2782169af21e9743f3b1d200886f5d595bf6bc504ec1351720949c5cdfae",
+      "facts": 272115
+    },
+    {
+      "path": "D:\\motif-phase4-work\\datasets\\audit\\pretraining\\wn18rr_train.txt",
+      "sha256": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df",
+      "facts": 86835
+    }
+  ],
+  "rows": [
+    {
+      "key": "HM_1k_new",
+      "family": "WordNet",
+      "observed_facts": 18417,
+      "syntactic_fact_overlap": 0,
+      "syntactic_entity_overlap": 0,
+      "syntactic_relation_overlap": 0,
+      "formal_queries_loaded": false,
+      "warning": "Only declared namespace syntax normalized; zero lexical overlap does not prove semantic independence."
+    },
+    {
+      "key": "WikiTopicsMT4_health_new",
+      "family": "Wikidata",
+      "observed_facts": 15337,
+      "syntactic_fact_overlap": 80,
+      "syntactic_entity_overlap": 446,
+      "syntactic_relation_overlap": 2,
+      "formal_queries_loaded": false,
+      "warning": "Only declared namespace syntax normalized; zero lexical overlap does not prove semantic independence."
+    },
+    {
+      "key": "AristoV4_external_new",
+      "family": "Aristo-science",
+      "observed_facts": 242567,
+      "syntactic_fact_overlap": 0,
+      "syntactic_entity_overlap": 0,
+      "syntactic_relation_overlap": 0,
+      "formal_queries_loaded": false,
+      "warning": "Only declared namespace syntax normalized; zero lexical overlap does not prove semantic independence."
+    },
+    {
+      "key": "UMLS_external_new",
+      "family": "UMLS-biomedical",
+      "observed_facts": 5216,
+      "syntactic_fact_overlap": 0,
+      "syntactic_entity_overlap": 0,
+      "syntactic_relation_overlap": 0,
+      "formal_queries_loaded": false,
+      "warning": "Only declared namespace syntax normalized; zero lexical overlap does not prove semantic independence."
+    }
+  ]
+}

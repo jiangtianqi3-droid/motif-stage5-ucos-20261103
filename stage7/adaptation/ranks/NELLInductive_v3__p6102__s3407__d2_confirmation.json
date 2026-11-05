@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 5.618722168000204,
+    "peak_allocated": 144376320,
+    "batch_size": 8,
+    "facts": 147,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.0051604210002552,
+        "cached_relations": 116
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.8667721930005428,
+        "cached_relations": 116
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.8828299840006366,
+        "cached_relations": 116
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 5.793091255000036,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "0a0ab456c66f8a3b9434fc55a483ca5a88ec9825197dca97886dc17dbf48ef61",
+    "hyperedges": 137504,
+    "topology_seconds": 0.37912109900025825,
+    "cache_hit": true,
+    "residual_sha256": "11fc0966f0256238f500f43ea962f42846eb618856a9ff7c828a6603cc12ef06"
+  },
+  "query_sha256": "54f2780f1db60478e1082bb5d27a302695ce1da277be90038033eba4a8d78f02",
+  "residual_sha256": "11fc0966f0256238f500f43ea962f42846eb618856a9ff7c828a6603cc12ef06",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.40667513979615727,
+      "hits_at_1": 0.29931972789115646,
+      "hits_at_3": 0.45918367346938777,
+      "hits_at_10": 0.5952380952380952
+    },
+    {
+      "mrr": 0.42128190033665397,
+      "hits_at_1": 0.30612244897959184,
+      "hits_at_3": 0.48639455782312924,
+      "hits_at_10": 0.6258503401360545
+    },
+    {
+      "mrr": 0.4233431448656091,
+      "hits_at_1": 0.3163265306122449,
+      "hits_at_3": 0.47959183673469385,
+      "hits_at_10": 0.6156462585034014
+    }
+  ],
+  "ranks_sha256": "93c316701f0b21facf5cedf1bde4e1d243eb840dc6ed3c47de5664112343adbb"
+}

@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 4.8909995980011445,
+    "peak_allocated": 271828992,
+    "batch_size": 8,
+    "facts": 208,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.4293005429990444,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 1.515468036999664,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 1.4055132150006102,
+        "cached_relations": 22
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 4.919693553998513,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "8c96b7d475081108f4692d1b43ee65f12c3a3e08a5825d65c4c56badf63c5db3",
+    "hyperedges": 12750,
+    "topology_seconds": 0.08643462100008037,
+    "cache_hit": true,
+    "residual_sha256": "056b57402fde162a4305cec44e10f5fe4aa8e3e7f45a498f852e061de5e2a7c7"
+  },
+  "query_sha256": "8c11233e4ba41ced4a4d69f51c017469181d4b7383dc55a8eb3dd2bf8eb82fcf",
+  "residual_sha256": "056b57402fde162a4305cec44e10f5fe4aa8e3e7f45a498f852e061de5e2a7c7",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.5695736295931992,
+      "hits_at_1": 0.4807692307692308,
+      "hits_at_3": 0.6081730769230769,
+      "hits_at_10": 0.7355769230769231
+    },
+    {
+      "mrr": 0.5669319566309403,
+      "hits_at_1": 0.47596153846153844,
+      "hits_at_3": 0.6081730769230769,
+      "hits_at_10": 0.7403846153846154
+    },
+    {
+      "mrr": 0.5632452525441445,
+      "hits_at_1": 0.4735576923076923,
+      "hits_at_3": 0.6009615384615384,
+      "hits_at_10": 0.7379807692307693
+    }
+  ],
+  "ranks_sha256": "f292b2f895882ad301c1b304d72033d88662abf8f39c25d42401dd5c47e86f73"
+}

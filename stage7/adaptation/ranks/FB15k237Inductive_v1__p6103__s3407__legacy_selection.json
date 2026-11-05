@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 11.700708905000283,
+    "peak_allocated": 85351936,
+    "batch_size": 8,
+    "facts": 153,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.9169114439991972,
+        "cached_relations": 168
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.9041185019996192,
+        "cached_relations": 168
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.8982799290006369,
+        "cached_relations": 168
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.8789714329996059,
+        "cached_relations": 168
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.8522859630011226,
+        "cached_relations": 168
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 11.771611655000015,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "a2d68eaadcd6f47bad29279d46baa96006820e8475f0ac5d8aef2667ac9aac5e",
+    "hyperedges": 69574,
+    "topology_seconds": 0.3174226210012421,
+    "cache_hit": true,
+    "residual_sha256": "975644093bd795d93cb1d42b1e821d57a015ef0a2e7e81298de10347d8c98697"
+  },
+  "query_sha256": "63cabec7f30c715669f64209553b35c94d793d461c1b6b7131976548b086d588",
+  "residual_sha256": "975644093bd795d93cb1d42b1e821d57a015ef0a2e7e81298de10347d8c98697",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.5197576189639332,
+      "hits_at_1": 0.42810457516339867,
+      "hits_at_3": 0.5816993464052288,
+      "hits_at_10": 0.6993464052287581
+    },
+    {
+      "mrr": 0.5285922562181837,
+      "hits_at_1": 0.4444444444444444,
+      "hits_at_3": 0.5816993464052288,
+      "hits_at_10": 0.6862745098039216
+    },
+    {
+      "mrr": 0.5280994717898548,
+      "hits_at_1": 0.4411764705882353,
+      "hits_at_3": 0.5915032679738562,
+      "hits_at_10": 0.6862745098039216
+    },
+    {
+      "mrr": 0.524808398948499,
+      "hits_at_1": 0.43137254901960786,
+      "hits_at_3": 0.5980392156862745,
+      "hits_at_10": 0.6993464052287581
+    },
+    {
+      "mrr": 0.5118646658057207,
+      "hits_at_1": 0.4084967320261438,
+      "hits_at_3": 0.5784313725490197,
+      "hits_at_10": 0.6895424836601307
+    }
+  ],
+  "ranks_sha256": "4ff1425bd7b36283a016b0de7e9e3a63e00796618f75cebae5f5023bc05e5397"
+}

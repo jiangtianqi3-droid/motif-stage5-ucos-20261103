@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "source": "wn18rr_train",
+  "alpha_zero_same_checkpoint_plain_max_error": 0.0,
+  "alpha_internal_message_change": {
+    "0.0": 0.0,
+    "0.1": 207.256591796875,
+    "0.25": 518.1415405273438,
+    "0.5": 1036.2830810546875,
+    "1.0": 2072.566162109375
+  },
+  "finite_alpha_grid": true,
+  "no_gradient_update": true,
+  "standard_stage5_proxy_ranking_exact": true,
+  "b0_source_repeats": [
+    {
+      "batch": 4,
+      "rank_changes": 0,
+      "mrr": 0.6649454486896074,
+      "delta_mrr": 0.0
+    },
+    {
+      "batch": 4,
+      "rank_changes": 0,
+      "mrr": 0.6649454486896074,
+      "delta_mrr": 0.0
+    },
+    {
+      "batch": 1,
+      "rank_changes": 0,
+      "mrr": 0.6649454486896074,
+      "delta_mrr": 0.0
+    },
+    {
+      "batch": 8,
+      "rank_changes": 0,
+      "mrr": 0.6649454486896074,
+      "delta_mrr": 0.0
+    }
+  ],
+  "info": {
+    "seconds": 1.7241181040000129,
+    "peak_allocated": 464539136,
+    "batch_size": 4,
+    "queries": 16,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "seconds": 1.2534794529999544,
+        "cached_relations": 12
+      },
+      {
+        "alpha": 0.25,
+        "seconds": 0.470491180999943,
+        "cached_relations": 12
+      }
+    ]
+  }
+}

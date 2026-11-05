@@ -1,0 +1,96 @@
+{
+  "key": "UMLS_external_new",
+  "group": "new_prospective",
+  "family": "T-4D",
+  "training_seed": 2026,
+  "frozen_sha256": "dbabe597342dac57fe4c216091f21e079653073bd543c292e3effbf2603c8306",
+  "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+  "observation_sha256": "f6b734e61b405b91da5760c05903379983cfdc5b571d793b53fca96df877a2ca",
+  "query_sha256": "aee080493c5f26b693a11f6713170f22619e5a715cb9e2148fa448c148f097bc",
+  "filtered_sha256": "cc8c617427aec48d7cb10961da811cc6121c0f66023b814c9cd5d6bb9a7e7e8b",
+  "info": {
+    "seconds": 23.04469406399994,
+    "peak_allocated": 108046848,
+    "batch_size": 8,
+    "facts": 661,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 3.7834070999997493,
+        "cached_relations": 80
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 3.8648516029998063,
+        "cached_relations": 80
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 3.7404219869999906,
+        "cached_relations": 80
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 3.9679531560000214,
+        "cached_relations": 80
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 3.8357279020001442,
+        "cached_relations": 80
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 23.583707302999755,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "db983ded0c19c0d11eb96b02b0ff60f84ea95d108369aa624af8fd9599ee68c8",
+    "hyperedges": 431080,
+    "topology_seconds": 0.4459329149995028,
+    "cache_hit": true,
+    "residual_sha256": "f6b734e61b405b91da5760c05903379983cfdc5b571d793b53fca96df877a2ca"
+  },
+  "metrics": [
+    {
+      "mrr": 0.6551496471973491,
+      "hits_at_1": 0.5559757942511346,
+      "hits_at_3": 0.6906202723146747,
+      "hits_at_10": 0.8933434190620272
+    },
+    {
+      "mrr": 0.6737222723624784,
+      "hits_at_1": 0.5711043872919819,
+      "hits_at_3": 0.7201210287443268,
+      "hits_at_10": 0.9122541603630863
+    },
+    {
+      "mrr": 0.7152362110843163,
+      "hits_at_1": 0.6187594553706506,
+      "hits_at_3": 0.764750378214826,
+      "hits_at_10": 0.9341906202723147
+    },
+    {
+      "mrr": 0.7253855014558342,
+      "hits_at_1": 0.6414523449319214,
+      "hits_at_3": 0.7738275340393344,
+      "hits_at_10": 0.9039334341906202
+    },
+    {
+      "mrr": 0.6972173751781795,
+      "hits_at_1": 0.6157337367624811,
+      "hits_at_3": 0.7360060514372163,
+      "hits_at_10": 0.8653555219364599
+    }
+  ],
+  "no_weight_update": true,
+  "numeric_policy": {
+    "path": "Query-wise FP32 entity Linear GEMMs, canonical relation pairs IDs(2k,2k+1)",
+    "tf32": false,
+    "batch_size": 8,
+    "oom_halving": true,
+    "ties": "Unchanged pessimistic >=; no score rounding or tie tolerance; no ensemble",
+    "all_methods_same": true
+  },
+  "ranks_sha256": "7ac5f741b8abf586ceafbdaf004318cd7b957552e6340a770f4953baaddf2b44"
+}

@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 4.771992842000145,
+    "peak_allocated": 121500672,
+    "batch_size": 8,
+    "facts": 135,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.7938287140004832,
+        "cached_relations": 108
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.7371220670002003,
+        "cached_relations": 108
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.7521765620003862,
+        "cached_relations": 108
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 4.938026935999915,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "5bae86f60b08037e7bf35542c3cceb2df73a80e0edf176cdbbd966dda35b0e31",
+    "hyperedges": 138092,
+    "topology_seconds": 0.2398710180004855,
+    "cache_hit": true,
+    "residual_sha256": "16a1a2dd220d38a9b45fda43d235e142b718b57e8f391284199df9fc67cb21e0"
+  },
+  "query_sha256": "7002f27d79bae3baf1e55369c08838d2348188e5a37142ae6999eff017fda9f4",
+  "residual_sha256": "16a1a2dd220d38a9b45fda43d235e142b718b57e8f391284199df9fc67cb21e0",
+  "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.38926793840392376,
+      "hits_at_1": 0.25555555555555554,
+      "hits_at_3": 0.44074074074074077,
+      "hits_at_10": 0.6777777777777778
+    },
+    {
+      "mrr": 0.38287924597600537,
+      "hits_at_1": 0.2518518518518518,
+      "hits_at_3": 0.43333333333333335,
+      "hits_at_10": 0.6518518518518519
+    },
+    {
+      "mrr": 0.3736593331190683,
+      "hits_at_1": 0.24074074074074073,
+      "hits_at_3": 0.43333333333333335,
+      "hits_at_10": 0.6370370370370371
+    }
+  ],
+  "ranks_sha256": "309eea0d0279aa82dd0baa225b12727d0f34a301c95240dd4968cebe2a0f58a2"
+}

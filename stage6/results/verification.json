@@ -1,0 +1,38 @@
+{
+  "stage5_original_files_unchanged": 1181,
+  "stage5_working_copy_unchanged": true,
+  "historical_assets_unchanged": 10,
+  "rank_artifacts_hash_verified": 308,
+  "status": "passed",
+  "core_tests": {
+    "run": 15,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "supplemental_run": {
+      "run": 16,
+      "failures": 0,
+      "errors": 0,
+      "command": "stage6/run.sh -m unittest discover -s stage6/tests -v",
+      "includes_zero_eligible_case": true
+    }
+  },
+  "frozen_sha256": "e6535ba979cedd249e727d9dd5c08533fc301ea25d7c99ff2cfbd0eb07d8390a",
+  "model_updates": 0,
+  "target_selection_records": 99,
+  "formal_graphs": 11,
+  "formal_model_runs": 110,
+  "no_ai_handoff": true,
+  "final_report_code_hashes": {
+    "analysis.py": "f779f79cc5d356e4c2f433e16c9af2dd0bd4d7dc178e817dc83cedf59b408303",
+    "plot.py": "0046f7643964d4f3a8f658e7d2bb88eccf78683df5ec40caab8b3da8a8269d9a",
+    "report_writer.py": "c2dd6e8210acd15599464cb1e3557fbf708ccb0828821d3316c773fdf8fb9943"
+  },
+  "report_authoring_files_changed_after_freeze": [
+    "analysis.py",
+    "report_writer.py"
+  ],
+  "report_authoring_note": "Only report aggregation/rendering may be repaired after freeze; selector, model, formal inference, statistics code and all frozen parameters remain hash-locked.",
+  "post_freeze_numerical_diagnostic_artifact_verified": true,
+  "entity_operator_trace_artifact_verified": true
+}

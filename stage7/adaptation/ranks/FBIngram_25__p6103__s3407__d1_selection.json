@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 21.953319509999346,
+    "peak_allocated": 233982976,
+    "batch_size": 8,
+    "facts": 312,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.7822353179999482,
+        "cached_relations": 308
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 1.777036138000767,
+        "cached_relations": 308
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 1.7653230289997737,
+        "cached_relations": 308
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.8514338219993078,
+        "cached_relations": 308
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 1.8274528309993912,
+        "cached_relations": 308
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 22.567177729999457,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "fa87f85964d8676907fb7719c78b7fa9532f04763e38f25c318dd3c9ab0258bc",
+    "hyperedges": 510640,
+    "topology_seconds": 0.8783868560003611,
+    "cache_hit": true,
+    "residual_sha256": "32996948f5b10b0c90166f33b3c288e638da5c0f005d2c80d6b0f9bc4ea476d6"
+  },
+  "query_sha256": "72b2c3cf6772bca854e34a5bfa1634467a8f436a9e43d1f02cb93a1c39bfec4f",
+  "residual_sha256": "32996948f5b10b0c90166f33b3c288e638da5c0f005d2c80d6b0f9bc4ea476d6",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "selection",
+  "metrics": [
+    {
+      "mrr": 0.36944100205006547,
+      "hits_at_1": 0.2483974358974359,
+      "hits_at_3": 0.421474358974359,
+      "hits_at_10": 0.6153846153846154
+    },
+    {
+      "mrr": 0.37041316914010425,
+      "hits_at_1": 0.2483974358974359,
+      "hits_at_3": 0.4230769230769231,
+      "hits_at_10": 0.6169871794871795
+    },
+    {
+      "mrr": 0.37097017919367364,
+      "hits_at_1": 0.2483974358974359,
+      "hits_at_3": 0.42788461538461536,
+      "hits_at_10": 0.6201923076923077
+    },
+    {
+      "mrr": 0.3763647400047348,
+      "hits_at_1": 0.25801282051282054,
+      "hits_at_3": 0.4375,
+      "hits_at_10": 0.6057692307692307
+    },
+    {
+      "mrr": 0.37362984254342696,
+      "hits_at_1": 0.25961538461538464,
+      "hits_at_3": 0.42628205128205127,
+      "hits_at_10": 0.6025641025641025
+    }
+  ],
+  "ranks_sha256": "794aac243cb0ab50ae730ee0795d1c0d9bab8c99dd0d4b63ffe320a7ec9dcd48"
+}

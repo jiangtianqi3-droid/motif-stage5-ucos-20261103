@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 16.771916662000876,
+    "peak_allocated": 233223680,
+    "batch_size": 8,
+    "facts": 153,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.8775616069997341,
+        "cached_relations": 288
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.9468379339996318,
+        "cached_relations": 288
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.868315960999098,
+        "cached_relations": 288
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.8649254859992652,
+        "cached_relations": 288
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.8804014750003262,
+        "cached_relations": 288
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 17.370372037999914,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "181c94b4be3b00396cb94a25ab0eed828bcb0d98b46aadc07f316a36b6398063",
+    "hyperedges": 531816,
+    "topology_seconds": 0.8348474189988337,
+    "cache_hit": true,
+    "residual_sha256": "8046e57392c9714d7f060021059dfabde2705725c1e005b516448aa92d620fb8"
+  },
+  "query_sha256": "b33a61b4ffed4d458d8bb75f45c7c203fef1126f160a9233a88ad9f36bd7a25e",
+  "residual_sha256": "8046e57392c9714d7f060021059dfabde2705725c1e005b516448aa92d620fb8",
+  "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.3604731236993074,
+      "hits_at_1": 0.24836601307189543,
+      "hits_at_3": 0.3954248366013072,
+      "hits_at_10": 0.6209150326797386
+    },
+    {
+      "mrr": 0.35701228821627223,
+      "hits_at_1": 0.24509803921568626,
+      "hits_at_3": 0.39215686274509803,
+      "hits_at_10": 0.6209150326797386
+    },
+    {
+      "mrr": 0.3543496773576557,
+      "hits_at_1": 0.24183006535947713,
+      "hits_at_3": 0.38562091503267976,
+      "hits_at_10": 0.6143790849673203
+    },
+    {
+      "mrr": 0.3616821175527177,
+      "hits_at_1": 0.2549019607843137,
+      "hits_at_3": 0.39215686274509803,
+      "hits_at_10": 0.6013071895424836
+    },
+    {
+      "mrr": 0.3513595973112693,
+      "hits_at_1": 0.24183006535947713,
+      "hits_at_3": 0.3888888888888889,
+      "hits_at_10": 0.5849673202614379
+    }
+  ],
+  "ranks_sha256": "8c03c8dd6d09e40ebe54dafab44b6646e4a1d4ebd212bcd5572a0ec339a54eca"
+}

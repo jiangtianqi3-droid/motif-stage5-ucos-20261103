@@ -1,0 +1,48 @@
+test_actual_nbfnet_direction_conversion (test_core.CoreTests) ... /mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/torch_version.py:28: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined, no-redef]
+ok
+test_confirmation_never_reselects (test_core.CoreTests) ... ok
+test_directions_and_consistent_counts (test_core.CoreTests) ... ok
+test_filtered_ranking_independent_bruteforce (test_core.CoreTests) ... FAIL
+test_joint_removal_and_dedup (test_core.CoreTests) ... ok
+test_lcb_fails_and_small_sample_fallback (test_core.CoreTests) ... ok
+test_no_repeat_penalty (test_core.CoreTests) ... ok
+test_observation_isolation_all_real_graphs (test_core.CoreTests) ... ok
+test_pair_unit (test_core.CoreTests) ... ok
+test_split_repeatability_and_cache_identity (test_core.CoreTests) ... ok
+test_unsupported_is_finite (test_core.CoreTests) ... ok
+test_zero_is_identity (test_core.CoreTests) ... ok
+
+======================================================================
+FAIL: test_filtered_ranking_independent_bruteforce (test_core.CoreTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/tests/test_core.py", line 106, in test_filtered_ranking_independent_bruteforce
+    self.assertEqual(mask[0].tolist(), expected_mask)
+AssertionError: Lists differ: [True, False, False, True] != [False, False, False, True]
+
+First differing element 0:
+True
+False
+
+- [True, False, False, True]
+?  ------
+
++ [False, False, False, True]
+?                +++++++
+
+
+----------------------------------------------------------------------
+Ran 12 tests in 18.816s
+
+FAILED (failures=1)
+Traceback (most recent call last):
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 65, in <module>
+    main()
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 28, in main
+    assert result.wasSuccessful()
+AssertionError

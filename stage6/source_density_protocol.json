@@ -1,0 +1,15 @@
+{
+  "type": "secondary source-only density diagnostic; does not select target rules",
+  "training_seed": 1024,
+  "proxy_seed": 6101,
+  "rates": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "query_cap": 256,
+  "queries": "fixed ordered subset of lowest-rate hidden facts shared across all rates",
+  "mask_cap": "floor(rate * unique observation facts), subject to same connectivity/coverage constraints",
+  "candidates": "five registered topology alpha values, gamma=0",
+  "limitation": "one training seed and one graph-mask seed; main protocol has three seeds"
+}

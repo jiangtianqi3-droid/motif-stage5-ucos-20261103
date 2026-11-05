@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 4.322805640999832,
+    "peak_allocated": 121369600,
+    "batch_size": 8,
+    "facts": 132,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.7971658639999077,
+        "cached_relations": 88
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.7265118430004804,
+        "cached_relations": 88
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.7264513169993734,
+        "cached_relations": 88
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 4.498568906999935,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "88efb82e0b968208c8e71945d4e2a4302f0e3dc9dde3d5ebd27ef535856864f1",
+    "hyperedges": 143310,
+    "topology_seconds": 0.23046876300031727,
+    "cache_hit": true,
+    "residual_sha256": "770330448edc6274acc4fe5b6bd4b8942c2aae5b2fc4bb6359639fa34a3d6e5b"
+  },
+  "query_sha256": "32c34a2710639ee06ca3595385668170897fcc27f6b8e5ea5da00dd605c90076",
+  "residual_sha256": "770330448edc6274acc4fe5b6bd4b8942c2aae5b2fc4bb6359639fa34a3d6e5b",
+  "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.41354053108932726,
+      "hits_at_1": 0.25,
+      "hits_at_3": 0.48863636363636365,
+      "hits_at_10": 0.75
+    },
+    {
+      "mrr": 0.39140999919232605,
+      "hits_at_1": 0.22727272727272727,
+      "hits_at_3": 0.4621212121212121,
+      "hits_at_10": 0.7386363636363636
+    },
+    {
+      "mrr": 0.39224962627091353,
+      "hits_at_1": 0.23863636363636365,
+      "hits_at_3": 0.4583333333333333,
+      "hits_at_10": 0.7386363636363636
+    }
+  ],
+  "ranks_sha256": "5c40d570a43b870cb6b7945852e726a91dbceac0cbede7305e8da101218220bd"
+}

@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 9.44429437999952,
+    "peak_allocated": 101128704,
+    "batch_size": 8,
+    "facts": 153,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.8446770179998566,
+        "cached_relations": 132
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.8441913209999257,
+        "cached_relations": 132
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.8442283819995282,
+        "cached_relations": 132
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.8329294710001705,
+        "cached_relations": 132
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.8349219069996252,
+        "cached_relations": 132
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 9.569692082999609,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "3c9110f02e11c9104ce8ccdeca8300808e545346846fcbbebe18101212f169db",
+    "hyperedges": 87286,
+    "topology_seconds": 0.20693029199992452,
+    "cache_hit": true,
+    "residual_sha256": "e0ab7a488ed51e321bba4fa0c9ca0f3409f87c569a0001d18f1b39a505fa0055"
+  },
+  "query_sha256": "64778575f3b50084f35198d9116db265864bb4e9b846de3cba3844c6843cd4bb",
+  "residual_sha256": "e0ab7a488ed51e321bba4fa0c9ca0f3409f87c569a0001d18f1b39a505fa0055",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.43154500149157154,
+      "hits_at_1": 0.3202614379084967,
+      "hits_at_3": 0.48366013071895425,
+      "hits_at_10": 0.6535947712418301
+    },
+    {
+      "mrr": 0.43288062038729647,
+      "hits_at_1": 0.3202614379084967,
+      "hits_at_3": 0.4803921568627451,
+      "hits_at_10": 0.6568627450980392
+    },
+    {
+      "mrr": 0.43340493927175233,
+      "hits_at_1": 0.3202614379084967,
+      "hits_at_3": 0.4869281045751634,
+      "hits_at_10": 0.6666666666666666
+    },
+    {
+      "mrr": 0.43259334515841497,
+      "hits_at_1": 0.3137254901960784,
+      "hits_at_3": 0.4869281045751634,
+      "hits_at_10": 0.6601307189542484
+    },
+    {
+      "mrr": 0.4237313324840138,
+      "hits_at_1": 0.30718954248366015,
+      "hits_at_3": 0.4934640522875817,
+      "hits_at_10": 0.673202614379085
+    }
+  ],
+  "ranks_sha256": "3eba7c5c0e453fb958531d2cb2845adfa51530183cf20e594b0781f0f4dfd3ff"
+}

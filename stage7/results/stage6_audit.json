@@ -1,0 +1,153 @@
+{
+  "inputs": {
+    "proxy_formal_correlation": {
+      "sha256": "9f63eb0210e9967eaec1efb31cf2eb6793af9ef0600fc67b58039ede3a151050",
+      "rows": 44,
+      "columns": [
+        "key",
+        "rate",
+        "alpha",
+        "proxy_gain",
+        "formal_gain"
+      ]
+    },
+    "selected_topology_prediction": {
+      "sha256": "e8859f13493b920b4b04364c3b67844cc30aa2620e5c91b02147c4f112f92002",
+      "rows": 180,
+      "columns": [
+        "key",
+        "source",
+        "rate",
+        "training_seed",
+        "proxy_seed",
+        "candidate_alpha",
+        "proxy_selection_gain",
+        "proxy_confirmation_gain",
+        "fallback",
+        "formal_candidate_gain",
+        "formal_final_gain"
+      ]
+    },
+    "source_density_metrics": {
+      "sha256": "2fd7d9b52b2b95a48cc831039fba7012fa442c4bc0674b1bd3548f81d8daec77",
+      "rows": 45,
+      "columns": [
+        "key",
+        "nominal_rate",
+        "actual_rate",
+        "queries",
+        "alpha",
+        "query_sha256",
+        "mrr",
+        "hits_at_1",
+        "hits_at_3",
+        "hits_at_10"
+      ]
+    },
+    "source_density_sensitivity": {
+      "sha256": "44faebddc7aee7361aa9bce8649aa20ca59827cde419e602f154ac6f2108dab8",
+      "rows": 6,
+      "columns": [
+        "key",
+        "contrast",
+        "delta",
+        "lo",
+        "hi",
+        "facts"
+      ]
+    },
+    "selection_stability": {
+      "sha256": "12a03573010c8a718fc4e9a14912adb9f75bd6b5e5e2abf19f4b03f22a7df58d",
+      "rows": 60,
+      "columns": [
+        "key",
+        "source",
+        "rate",
+        "training_seed",
+        "distinct_final",
+        "modal_final_fraction",
+        "distinct_candidate",
+        "selected"
+      ]
+    },
+    "ablation": {
+      "sha256": "96612a2a967440e0cd34c6eceb25ab60fa4b7e759f0c3d7165457afa3296aef2",
+      "rows": 990,
+      "columns": [
+        "key",
+        "group",
+        "method",
+        "training_seed",
+        "proxy_seed",
+        "alpha",
+        "gamma",
+        "mode",
+        "mrr",
+        "hits_at_1",
+        "hits_at_3",
+        "hits_at_10"
+      ]
+    },
+    "factorial_interaction": {
+      "sha256": "5ad9a67f9ab3fbb180d98235f742d383ec6c808d178e7f2393b1f8d68745236b",
+      "rows": 14,
+      "columns": [
+        "key",
+        "group",
+        "contrast",
+        "delta",
+        "lo",
+        "hi",
+        "facts"
+      ]
+    },
+    "verification": {
+      "stage5_original_files_unchanged": 1181,
+      "stage5_working_copy_unchanged": true,
+      "historical_assets_unchanged": 10,
+      "rank_artifacts_hash_verified": 308,
+      "status": "passed",
+      "core_tests": {
+        "run": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "supplemental_run": {
+          "run": 16,
+          "failures": 0,
+          "errors": 0,
+          "command": "stage6/run.sh -m unittest discover -s stage6/tests -v",
+          "includes_zero_eligible_case": true
+        }
+      },
+      "frozen_sha256": "e6535ba979cedd249e727d9dd5c08533fc301ea25d7c99ff2cfbd0eb07d8390a",
+      "model_updates": 0,
+      "target_selection_records": 99,
+      "formal_graphs": 11,
+      "formal_model_runs": 110,
+      "no_ai_handoff": true,
+      "final_report_code_hashes": {
+        "analysis.py": "f779f79cc5d356e4c2f433e16c9af2dd0bd4d7dc178e817dc83cedf59b408303",
+        "plot.py": "0046f7643964d4f3a8f658e7d2bb88eccf78683df5ec40caab8b3da8a8269d9a",
+        "report_writer.py": "c2dd6e8210acd15599464cb1e3557fbf708ccb0828821d3316c773fdf8fb9943"
+      },
+      "report_authoring_files_changed_after_freeze": [
+        "analysis.py",
+        "report_writer.py"
+      ],
+      "report_authoring_note": "Only report aggregation/rendering may be repaired after freeze; selector, model, formal inference, statistics code and all frozen parameters remain hash-locked.",
+      "post_freeze_numerical_diagnostic_artifact_verified": true,
+      "entity_operator_trace_artifact_verified": true
+    }
+  },
+  "stage6_frozen_sha256": "e6535ba979cedd249e727d9dd5c08533fc301ea25d7c99ff2cfbd0eb07d8390a",
+  "preserved_files": 1987,
+  "mechanisms": {
+    "fixed_cap": "min(256,floor(.15*E)) gives ConceptNet 256/99997=.256%; NELLv1 124/833=14.886%",
+    "constraints": "Random spanning forest, relation coverage and sequential endpoint residual >=2 shrink sparse graphs further.",
+    "distribution": "Round-robin 2x2 bins imposes equal bucket mass rather than natural relation/degree distribution. Forest protection and deletion constraints favor cyclic/high-degree relations.",
+    "query": "Formal query process and relation vocabulary differ independently of sampler; structural audit exposure must be tracked.",
+    "topology": "Source real-density gains change sign; recalculated signatures after masking are a distinct intervention.",
+    "numeric": "Entity first linear differs with identical inputs under changed batch shapes; ranks near ties amplify FP32 errors."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "key": "fb15k237_train",
+  "training_seed": 1024,
+  "info": {
+    "seconds": 141.68287618999966,
+    "peak_allocated": 961152512,
+    "batch_size": 8,
+    "facts": 512,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 7.514436397999816,
+        "cached_relations": 340
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 7.462907904000531,
+        "cached_relations": 340
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 7.518278071000168,
+        "cached_relations": 340
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 7.476410952000151,
+        "cached_relations": 340
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 7.5776766239996505,
+        "cached_relations": 340
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 148.63509469200017,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "a7459dfbe44ef71346b1fceb5b9456144882f337fe4f524b0b857a2c19796758",
+    "hyperedges": 4288092,
+    "topology_seconds": 6.9495308470000055,
+    "cache_hit": true,
+    "residual_sha256": "270ac9da6ef02d8b032048891777b71f8d2730cd70f2be0dcf357a2db17f0abd"
+  },
+  "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+  "metrics": [
+    {
+      "mrr": 0.3533250657599339,
+      "hits_at_1": 0.26171875,
+      "hits_at_3": 0.380859375,
+      "hits_at_10": 0.5400390625
+    },
+    {
+      "mrr": 0.35565188347805843,
+      "hits_at_1": 0.2626953125,
+      "hits_at_3": 0.3828125,
+      "hits_at_10": 0.5439453125
+    },
+    {
+      "mrr": 0.35804321928419613,
+      "hits_at_1": 0.2626953125,
+      "hits_at_3": 0.390625,
+      "hits_at_10": 0.54296875
+    },
+    {
+      "mrr": 0.35791083722870665,
+      "hits_at_1": 0.2646484375,
+      "hits_at_3": 0.3916015625,
+      "hits_at_10": 0.5390625
+    },
+    {
+      "mrr": 0.3405078149722822,
+      "hits_at_1": 0.2490234375,
+      "hits_at_3": 0.3798828125,
+      "hits_at_10": 0.5185546875
+    }
+  ],
+  "ranks_sha256": "f2eb05415a4067a09ffbdb12fda7e2f71931e8c47bd362976c7d31df28b85760"
+}

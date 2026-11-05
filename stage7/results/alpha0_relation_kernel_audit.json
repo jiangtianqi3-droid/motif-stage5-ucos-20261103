@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "key": "NELLInductive_v1",
+  "facts": 201,
+  "frozen_sha256": "dbabe597342dac57fe4c216091f21e079653073bd543c292e3effbf2603c8306",
+  "weights": {
+    "common_tensors": 93,
+    "different_common_tensors": [],
+    "extra_t4_tensors": [
+      "relation_model.layers.0.topology_gate.w1",
+      "relation_model.layers.0.topology_gate.bias",
+      "relation_model.layers.0.topology_gate.Wq.weight",
+      "relation_model.layers.0.topology_gate.Ws.weight",
+      "relation_model.layers.1.topology_gate.w1",
+      "relation_model.layers.1.topology_gate.bias",
+      "relation_model.layers.1.topology_gate.Wq.weight",
+      "relation_model.layers.1.topology_gate.Ws.weight",
+      "relation_model.layers.2.topology_gate.w1",
+      "relation_model.layers.2.topology_gate.bias",
+      "relation_model.layers.2.topology_gate.Wq.weight",
+      "relation_model.layers.2.topology_gate.Ws.weight",
+      "relation_model.layers.3.topology_gate.w1",
+      "relation_model.layers.3.topology_gate.bias",
+      "relation_model.layers.3.topology_gate.Wq.weight",
+      "relation_model.layers.3.topology_gate.Ws.weight",
+      "relation_model.layers.4.topology_gate.w1",
+      "relation_model.layers.4.topology_gate.bias",
+      "relation_model.layers.4.topology_gate.Wq.weight",
+      "relation_model.layers.4.topology_gate.Ws.weight",
+      "relation_model.layers.5.topology_gate.w1",
+      "relation_model.layers.5.topology_gate.bias",
+      "relation_model.layers.5.topology_gate.Wq.weight",
+      "relation_model.layers.5.topology_gate.Ws.weight"
+    ],
+    "non_gate_weights_identical": true
+  },
+  "rows": [
+    {
+      "path": "B0",
+      "mrr": 0.6718937992714411,
+      "rank_changes_to_B0": 0,
+      "score_max_error_to_B0": 0.0,
+      "rank_changes_to_frozen_family_alpha0": 0
+    },
+    {
+      "path": "T4_CSR_alpha0",
+      "mrr": 0.6694596317253333,
+      "rank_changes_to_B0": 13,
+      "score_max_error_to_B0": 1.71661376953125e-05,
+      "rank_changes_to_frozen_family_alpha0": 0
+    },
+    {
+      "path": "T4_official_relation_forward",
+      "mrr": 0.6718937992714411,
+      "rank_changes_to_B0": 0,
+      "score_max_error_to_B0": 0.0,
+      "rank_changes_to_frozen_family_alpha0": 13
+    }
+  ],
+  "relation_representation_max_error": 3.933906555175781e-06,
+  "first_relation_layer_linear_max_error": 0.0020751953125,
+  "relation_linear_max_errors_by_layer": [
+    0.0020751953125,
+    8.8988037109375,
+    18.75885009765625,
+    25.103208541870117,
+    29.302051544189453,
+    52.32598876953125
+  ],
+  "no_weight_update": true,
+  "no_frozen_outputs_changed": true,
+  "scope": "Post-freeze diagnosis only. CSR alpha0 is compared with official relation forward on the same T4 weights. No inference-path retuning."
+}

@@ -1,0 +1,51 @@
+{
+  "info": {
+    "seconds": 3.458993606000149,
+    "peak_allocated": 272216064,
+    "batch_size": 8,
+    "facts": 222,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.5556375689993729,
+        "cached_relations": 22
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.5295581859991216,
+        "cached_relations": 22
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 3.4891722680004023,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "98202d2f880bdcaaa001d713ccfd01aa2acf60d17f63e6bf7e7b0a2b316ddd38",
+    "hyperedges": 15574,
+    "topology_seconds": 0.08956429999943794,
+    "cache_hit": true,
+    "residual_sha256": "e029d78ebf2068d767dc7496547a7e82df16e5966fdbdb6d1efc6044808358d3"
+  },
+  "query_sha256": "6dc03206e25d986310e01b33485b9ea5f0408a0b80036454f05d2acb9c00353d",
+  "residual_sha256": "e029d78ebf2068d767dc7496547a7e82df16e5966fdbdb6d1efc6044808358d3",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.501450285714048,
+      "hits_at_1": 0.40315315315315314,
+      "hits_at_3": 0.5518018018018018,
+      "hits_at_10": 0.6734234234234234
+    },
+    {
+      "mrr": 0.4833912956583473,
+      "hits_at_1": 0.38963963963963966,
+      "hits_at_3": 0.5337837837837838,
+      "hits_at_10": 0.6486486486486487
+    }
+  ],
+  "ranks_sha256": "bc7b9337ae107f4d6dc4c3dc8c8400fecc6bd163a5e74a2aefaf551f16126949"
+}

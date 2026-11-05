@@ -1,0 +1,23 @@
+/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/torch_version.py:28: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging  # type: ignore[attr-defined, no-redef]
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 1024, "proxy_seed": 6102, "rate": 0.05, "facts": 256}
+{"event": "proxy_complete", "key": "wn18rr_train", "seed": 1024, "proxy_seed": 6102, "rate": 0.05, "theta": [0.0, 0.0, "conditional"], "fallback": true, "seconds": 40.589010452000025}
+{"event": "proxy_begin", "key": "wn18rr_train", "seed": 2026, "proxy_seed": 6102, "rate": 0.05, "facts": 256}
+Traceback (most recent call last):
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 65, in <module>
+    main()
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/run.py", line 39, in main
+    run_one(a, key, rate, split_seed, source=True)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/adapt.py", line 89, in run_one
+    ranks, info, evidence = safe_evaluate(m, data, filtered, rem, cfgs, args.batch_size)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/evaluator.py", line 89, in safe_evaluate
+    return evaluate(model, data, truth, graph, configs, batch_size, collect)
+  File "/mnt/d/ultra-phase1-env/env/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/mnt/d/motif-phase4-work/tsdc-stage6-20261103/stage6/evaluator.py", line 53, in evaluate
+    assert torch.isfinite(t).all() and torch.isfinite(h).all()
+KeyboardInterrupt

@@ -1,0 +1,105 @@
+{
+  "key": "codex_medium_train",
+  "training_seed": 3407,
+  "configs": [
+    [
+      0.0,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.1,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.25,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.5,
+      0.0,
+      "conditional"
+    ],
+    [
+      1.0,
+      0.0,
+      "conditional"
+    ]
+  ],
+  "metrics": [
+    {
+      "mrr": 0.3796178986009399,
+      "hits_at_1": 0.30078125,
+      "hits_at_3": 0.41015625,
+      "hits_at_10": 0.53125
+    },
+    {
+      "mrr": 0.381096877136449,
+      "hits_at_1": 0.302734375,
+      "hits_at_3": 0.4140625,
+      "hits_at_10": 0.5322265625
+    },
+    {
+      "mrr": 0.38036637883400504,
+      "hits_at_1": 0.302734375,
+      "hits_at_3": 0.4091796875,
+      "hits_at_10": 0.533203125
+    },
+    {
+      "mrr": 0.383081637383812,
+      "hits_at_1": 0.306640625,
+      "hits_at_3": 0.4111328125,
+      "hits_at_10": 0.5361328125
+    },
+    {
+      "mrr": 0.3702771743091351,
+      "hits_at_1": 0.296875,
+      "hits_at_3": 0.4013671875,
+      "hits_at_10": 0.5146484375
+    }
+  ],
+  "info": {
+    "seconds": 33.414883015000214,
+    "peak_allocated": 438494208,
+    "batch_size": 8,
+    "queries": 512,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "seconds": 6.700771948999773,
+        "cached_relations": 68
+      },
+      {
+        "alpha": 0.1,
+        "seconds": 6.680626432000281,
+        "cached_relations": 68
+      },
+      {
+        "alpha": 0.25,
+        "seconds": 6.671685646000242,
+        "cached_relations": 68
+      },
+      {
+        "alpha": 0.5,
+        "seconds": 6.678414068000166,
+        "cached_relations": 68
+      },
+      {
+        "alpha": 1.0,
+        "seconds": 6.682744301000184,
+        "cached_relations": 68
+      }
+    ]
+  },
+  "topology": {
+    "topology_key": "30e482ab3e36aa391b805ae28d27b88f0d9f892daed0eb78acd0e83ee69cbf74",
+    "hyperedges": 238876,
+    "topology_seconds": 1.1170857289999958,
+    "cache_hit": true,
+    "residual_sha256": "535a2fe0f3598891e5d236b33aeb76ba279e13227bf3bcb3b8ba5ed6dd797787"
+  },
+  "protocol_sha256": "3848dd53ee1554115bef0fb1751fbbbc1128b26aa2d8deeff7220bd4cdeea879",
+  "ranks_sha256": "31c874ae41889a1240d64a48fbc7472700c885a3287b6e4328144908b5e87493"
+}

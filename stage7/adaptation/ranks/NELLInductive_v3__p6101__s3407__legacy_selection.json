@@ -1,0 +1,84 @@
+{
+  "info": {
+    "seconds": 11.131180387999848,
+    "peak_allocated": 149328896,
+    "batch_size": 8,
+    "facts": 153,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 0.8987867510004435,
+        "cached_relations": 176
+      },
+      {
+        "alpha": 0.1,
+        "entity_seconds": 0.8402682070000083,
+        "cached_relations": 176
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 0.8408737009995093,
+        "cached_relations": 176
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 0.8378248959998018,
+        "cached_relations": 176
+      },
+      {
+        "alpha": 1.0,
+        "entity_seconds": 0.8379127529997277,
+        "cached_relations": 176
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 11.303270256999895,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "d131507a3a87235eaa8f92928d6ca84236083ce247ff96a34e3700f182fe39d4",
+    "hyperedges": 141884,
+    "topology_seconds": 0.37453330700009246,
+    "cache_hit": true,
+    "residual_sha256": "c43e41074797b1a7b95c52fa05d716ab9b51f455135405b1940d2fbeb534de63"
+  },
+  "query_sha256": "e9a6ddc6df2983c88329565753144fe9bb3cfc0e26d91219a7694dea3f673890",
+  "residual_sha256": "c43e41074797b1a7b95c52fa05d716ab9b51f455135405b1940d2fbeb534de63",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "legacy_selection",
+  "metrics": [
+    {
+      "mrr": 0.4034308358942189,
+      "hits_at_1": 0.2875816993464052,
+      "hits_at_3": 0.46078431372549017,
+      "hits_at_10": 0.6339869281045751
+    },
+    {
+      "mrr": 0.4061713701624899,
+      "hits_at_1": 0.28431372549019607,
+      "hits_at_3": 0.46405228758169936,
+      "hits_at_10": 0.630718954248366
+    },
+    {
+      "mrr": 0.40078950563881327,
+      "hits_at_1": 0.2777777777777778,
+      "hits_at_3": 0.4738562091503268,
+      "hits_at_10": 0.6241830065359477
+    },
+    {
+      "mrr": 0.4131494865013727,
+      "hits_at_1": 0.2875816993464052,
+      "hits_at_3": 0.477124183006536,
+      "hits_at_10": 0.6274509803921569
+    },
+    {
+      "mrr": 0.4085800019536425,
+      "hits_at_1": 0.2973856209150327,
+      "hits_at_3": 0.45751633986928103,
+      "hits_at_10": 0.5947712418300654
+    }
+  ],
+  "ranks_sha256": "7c23935872322d3c2dbd8aea4af5ea79eb52db7709843e1e305a094b86d534a5"
+}

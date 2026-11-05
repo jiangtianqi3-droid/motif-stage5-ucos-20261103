@@ -1,0 +1,105 @@
+{
+  "key": "fb15k237_train",
+  "training_seed": 2026,
+  "configs": [
+    [
+      0.0,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.1,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.25,
+      0.0,
+      "conditional"
+    ],
+    [
+      0.5,
+      0.0,
+      "conditional"
+    ],
+    [
+      1.0,
+      0.0,
+      "conditional"
+    ]
+  ],
+  "metrics": [
+    {
+      "mrr": 0.3533250657599339,
+      "hits_at_1": 0.26171875,
+      "hits_at_3": 0.380859375,
+      "hits_at_10": 0.5400390625
+    },
+    {
+      "mrr": 0.35577535504938756,
+      "hits_at_1": 0.263671875,
+      "hits_at_3": 0.3857421875,
+      "hits_at_10": 0.5390625
+    },
+    {
+      "mrr": 0.35829441539905094,
+      "hits_at_1": 0.265625,
+      "hits_at_3": 0.390625,
+      "hits_at_10": 0.5400390625
+    },
+    {
+      "mrr": 0.3593258699935767,
+      "hits_at_1": 0.2666015625,
+      "hits_at_3": 0.396484375,
+      "hits_at_10": 0.541015625
+    },
+    {
+      "mrr": 0.3520895739238179,
+      "hits_at_1": 0.2578125,
+      "hits_at_3": 0.390625,
+      "hits_at_10": 0.5400390625
+    }
+  ],
+  "info": {
+    "seconds": 103.07607591500027,
+    "peak_allocated": 931481088,
+    "batch_size": 8,
+    "queries": 512,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "seconds": 20.618583776999913,
+        "cached_relations": 238
+      },
+      {
+        "alpha": 0.1,
+        "seconds": 20.603519819999747,
+        "cached_relations": 238
+      },
+      {
+        "alpha": 0.25,
+        "seconds": 20.65033634700012,
+        "cached_relations": 238
+      },
+      {
+        "alpha": 0.5,
+        "seconds": 20.59161020700003,
+        "cached_relations": 238
+      },
+      {
+        "alpha": 1.0,
+        "seconds": 20.61030138699971,
+        "cached_relations": 238
+      }
+    ]
+  },
+  "topology": {
+    "topology_key": "a7459dfbe44ef71346b1fceb5b9456144882f337fe4f524b0b857a2c19796758",
+    "hyperedges": 4288092,
+    "topology_seconds": 7.173104942000009,
+    "cache_hit": true,
+    "residual_sha256": "270ac9da6ef02d8b032048891777b71f8d2730cd70f2be0dcf357a2db17f0abd"
+  },
+  "protocol_sha256": "3848dd53ee1554115bef0fb1751fbbbc1128b26aa2d8deeff7220bd4cdeea879",
+  "ranks_sha256": "b48e303efec0846fa0e3dd35575b01bd4618bb43fdea5d366a0e953c0b46b474"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "key": "HM_1k_new",
+      "duplicate_forward_rows": 221,
+      "residuals_rebuilt": true,
+      "rebuilt_this_validation": false,
+      "status": "compatible_topology"
+    },
+    {
+      "key": "WikiTopicsMT4_health_new",
+      "duplicate_forward_rows": 0,
+      "residuals_rebuilt": false,
+      "rebuilt_this_validation": false,
+      "status": "compatible_topology"
+    },
+    {
+      "key": "AristoV4_external_new",
+      "duplicate_forward_rows": 0,
+      "residuals_rebuilt": false,
+      "rebuilt_this_validation": false,
+      "status": "resource_failure"
+    },
+    {
+      "key": "UMLS_external_new",
+      "duplicate_forward_rows": 0,
+      "residuals_rebuilt": false,
+      "rebuilt_this_validation": false,
+      "status": "compatible_topology"
+    }
+  ],
+  "masking_code_sha256": "079333825816f3c0ef3bc278cf4ed1ff8da6404c3d23664cb4db4d8119e7e028",
+  "source_pilot_graphs_byte_identical": true,
+  "stage6_legacy_baseline_unchanged": true,
+  "formal_queries_loaded": false
+}

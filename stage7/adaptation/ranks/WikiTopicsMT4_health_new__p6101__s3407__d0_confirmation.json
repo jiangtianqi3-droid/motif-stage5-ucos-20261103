@@ -1,0 +1,62 @@
+{
+  "info": {
+    "seconds": 5.142002372000206,
+    "peak_allocated": 275342848,
+    "batch_size": 8,
+    "facts": 209,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 1.473306063999189,
+        "cached_relations": 32
+      },
+      {
+        "alpha": 0.25,
+        "entity_seconds": 1.4553042339994136,
+        "cached_relations": 32
+      },
+      {
+        "alpha": 0.5,
+        "entity_seconds": 1.4624488820008992,
+        "cached_relations": 32
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 5.164288292999117,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "4f0b7191462114b6b23d1a6f469d492920486793be9441997e2946bea3f0dfb5",
+    "hyperedges": 7414,
+    "topology_seconds": 0.09278897900003358,
+    "cache_hit": true,
+    "residual_sha256": "92612473725a50551bd72b486d92d855da6ed7de27e4c188dd66f0693bb1efc8"
+  },
+  "query_sha256": "0f4a4d2401bc09830268cd9f359b966489f5517a04c4fcf004a826d2eb30b0f1",
+  "residual_sha256": "92612473725a50551bd72b486d92d855da6ed7de27e4c188dd66f0693bb1efc8",
+  "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+  "numeric_code_sha256": "9e791391e337cf2f7d9200727384ebabd6b3af2263fc70416f4dbfc779b13459",
+  "evaluator_sha256": "800941956e395625b3dbab385ac8d8636a46dc09187e1eabbffc10198d4de541",
+  "phase": "confirmation_candidate_union",
+  "metrics": [
+    {
+      "mrr": 0.4552681825999753,
+      "hits_at_1": 0.2727272727272727,
+      "hits_at_3": 0.569377990430622,
+      "hits_at_10": 0.8157894736842105
+    },
+    {
+      "mrr": 0.46332278060882115,
+      "hits_at_1": 0.2799043062200957,
+      "hits_at_3": 0.5861244019138756,
+      "hits_at_10": 0.8205741626794258
+    },
+    {
+      "mrr": 0.4700310118395942,
+      "hits_at_1": 0.2942583732057416,
+      "hits_at_3": 0.5909090909090909,
+      "hits_at_10": 0.8181818181818182
+    }
+  ],
+  "ranks_sha256": "ffa92dbd0da033fa11e972097dbca08d8d01890ef4cf86661cdf733c1b5f4c65"
+}

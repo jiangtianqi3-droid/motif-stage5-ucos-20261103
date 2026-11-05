@@ -1,0 +1,52 @@
+{
+  "key": "WikiTopicsMT4_health_new",
+  "group": "new_prospective",
+  "family": "B1",
+  "training_seed": 2026,
+  "frozen_sha256": "dbabe597342dac57fe4c216091f21e079653073bd543c292e3effbf2603c8306",
+  "checkpoint_sha256": "7a0e3d8addf4ac9a6f29e6db9f3f2b410a3d167d5ffe42127bb898bf3ecef42c",
+  "observation_sha256": "96fb2cd5ede8adb2f8c077941fbabb71c65579ccbb5120db78f2cbde85f34ea3",
+  "query_sha256": "664159c9ecf2756bb43106f24f3d9cf7887a088fb514f730cd430025a15628b8",
+  "filtered_sha256": "fc2beb3009e4d3baa732e4fcecae8ebed7704058fcf86ff68975160187bb4063",
+  "info": {
+    "seconds": 12.54640489600024,
+    "peak_allocated": 278282752,
+    "batch_size": 8,
+    "facts": 1703,
+    "alpha_records": [
+      {
+        "alpha": 0.0,
+        "entity_seconds": 12.425698232999821,
+        "cached_relations": 40
+      }
+    ],
+    "wall_seconds_including_graph_and_retries": 12.568479601000035,
+    "requested_batch_size": 8,
+    "recovered_oom_retries": 0
+  },
+  "topology": {
+    "topology_key": "835afa2901390cb6c49f5c132a7b73ef9d1c82ebc109ce5e5925e76c07cbb833",
+    "hyperedges": 7640,
+    "topology_seconds": 0.09769323999989865,
+    "cache_hit": true,
+    "residual_sha256": "96fb2cd5ede8adb2f8c077941fbabb71c65579ccbb5120db78f2cbde85f34ea3"
+  },
+  "metrics": [
+    {
+      "mrr": 0.6366369835435078,
+      "hits_at_1": 0.5669406928948914,
+      "hits_at_3": 0.6782149148561363,
+      "hits_at_10": 0.766001174398121
+    }
+  ],
+  "no_weight_update": true,
+  "numeric_policy": {
+    "path": "Query-wise FP32 entity Linear GEMMs, canonical relation pairs IDs(2k,2k+1)",
+    "tf32": false,
+    "batch_size": 8,
+    "oom_halving": true,
+    "ties": "Unchanged pessimistic >=; no score rounding or tie tolerance; no ensemble",
+    "all_methods_same": true
+  },
+  "ranks_sha256": "3379f8e18d12dbe54a2dcea00624572115c870200b05d406b391ff5f55965c0a"
+}

@@ -1,0 +1,205 @@
+{
+  "stage5": "Unmodified parent checkout of motif-stage5-ucos-20261103, upstream173017b7c3a4d88edf73d2ce46b083a5fcb69354",
+  "stage6": "Unmodified sibling package stage6/; observed/model/graph adapters and observation bundles reused read-only",
+  "stage6_artifact_manifest_sha256": "b3a63e885e04edbe9b5504b5e9705117dcfefd2dd99e8544aa32ab15cbb0fdbd",
+  "stage6_frozen_sha256": "e6535ba979cedd249e727d9dd5c08533fc301ea25d7c99ff2cfbd0eb07d8390a",
+  "model_manifest": {
+    "official_sha256": "0f2e4f7d21e01dc7c54d10b0db1a5de55c467a76f4ea2708f3ce6556a7654f8c",
+    "T4": {
+      "1024": {
+        "seed": 1024,
+        "config": {
+          "alpha": 0.25,
+          "freedom": "gate_only",
+          "method": "topology",
+          "semantic": false,
+          "shuffle": false
+        },
+        "checkpoint": "checkpoints/T_gate_only_0p25_s1024_step500.pth",
+        "checkpoint_sha256": "2fe53d57f6c0800e819c8554738158822feffc3a4dc7a434d4db7ef75c233fc6",
+        "best_step": 500
+      },
+      "2026": {
+        "seed": 2026,
+        "config": {
+          "alpha": 0.25,
+          "freedom": "gate_only",
+          "method": "topology",
+          "semantic": false,
+          "shuffle": false
+        },
+        "checkpoint": "checkpoints/T_gate_only_0p25_s2026_step500.pth",
+        "checkpoint_sha256": "f4ab6e6302503a2f4d03436ed2226df9c3e12772598af71f11fd8f4022195383",
+        "best_step": 500
+      },
+      "3407": {
+        "seed": 3407,
+        "config": {
+          "alpha": 0.25,
+          "freedom": "gate_only",
+          "method": "topology",
+          "semantic": false,
+          "shuffle": false
+        },
+        "checkpoint": "checkpoints/T_gate_only_0p25_s3407_step100.pth",
+        "checkpoint_sha256": "7bc63b049f593dac7b6fff97bb214bfd273f4d333f333f10eafb513b2e355c50",
+        "best_step": 100
+      }
+    },
+    "historical": {
+      "B1_s1024": {
+        "seed": 1024,
+        "config": {
+          "id": "B1",
+          "method": "plain",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B1_s1024_step1500.pth",
+        "checkpoint_sha256": "74a5bd5d731c31af27f4dd5185d2ad4f611dc9ad153bd9e8f16d36a092130cc7",
+        "best_step": 1500
+      },
+      "B1_s2026": {
+        "seed": 2026,
+        "config": {
+          "id": "B1",
+          "method": "plain",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B1_s2026_step2000.pth",
+        "checkpoint_sha256": "7a0e3d8addf4ac9a6f29e6db9f3f2b410a3d167d5ffe42127bb898bf3ecef42c",
+        "best_step": 2000
+      },
+      "B1_s3407": {
+        "seed": 3407,
+        "config": {
+          "id": "B1",
+          "method": "plain",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B1_s3407_step1500.pth",
+        "checkpoint_sha256": "8f533fe72b6b70cd5f342d324fbbd9fdf3f788dbc6d76964815bf99403ed16e6",
+        "best_step": 1500
+      },
+      "B2_s1024": {
+        "seed": 1024,
+        "config": {
+          "id": "B2",
+          "method": "topology",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B2_s1024_step1000.pth",
+        "checkpoint_sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790",
+        "best_step": 1000
+      },
+      "B2_s2026": {
+        "seed": 2026,
+        "config": {
+          "id": "B2",
+          "method": "topology",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B2_s2026_step1500.pth",
+        "checkpoint_sha256": "a1ccc15d33ecf5c188d087514b533ede27e4f2ccdf4b92c2bd32b3b8964fff7c",
+        "best_step": 1500
+      },
+      "B2_s3407": {
+        "seed": 3407,
+        "config": {
+          "id": "B2",
+          "method": "topology",
+          "variant": "name",
+          "dim": 16,
+          "control": "real",
+          "mapping_seed": 7103,
+          "alpha": 1.0,
+          "optimization": "joint",
+          "reg": 0.0,
+          "topology": "pmi"
+        },
+        "checkpoint": "checkpoints/B2_s3407_step1000.pth",
+        "checkpoint_sha256": "8a0c972817a7ee4bf0ba43d0e0e39d527c72cbe8020b52ce0d237d86999e5bd1",
+        "best_step": 1000
+      }
+    }
+  },
+  "environment": {
+    "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "torch": "2.1.0+cu118",
+    "cuda": "11.8",
+    "pyg": "2.4.0",
+    "triton": "2.1.0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory": 6441926656,
+    "matmul_precision": "highest",
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": false,
+    "warning": "Fixed GEMM geometry validated; native sparse kernels are not certified deterministic on every device."
+  },
+  "analysis_environment": {
+    "python": "3.9.10 (tags/v3.9.10:f2f3f53, Jan 17 2022, 15:14:21) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "bootstrap_generator": "NumPy default_rng/PCG64",
+    "bootstrap_resamples": 5000,
+    "bootstrap_seed": 7197
+  },
+  "figure_environment": {
+    "matplotlib": "3.9.4",
+    "backend": "Agg",
+    "font": "C:\\Windows\\Fonts\\msyh.ttc",
+    "font_sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+    "default_font_size_pt": 9.5,
+    "minimum_annotation_font_size_pt": 8.5,
+    "png_dpi": 180,
+    "pdf_fonttype": 42,
+    "svg_text": true,
+    "vector_formats": [
+      "pdf",
+      "svg"
+    ]
+  },
+  "source_validation": "Existing topology-stage2 source validation truth and Stage4 frozen512 query subsets",
+  "metadata": "Paths can be overridden in stage7.run; download bytes and hashes retained inside the bundle."
+}
