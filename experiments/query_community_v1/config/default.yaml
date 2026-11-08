@@ -1,0 +1,16 @@
+# Fixed before target diagnostics; no parameter selection on these exposed graphs.
+seed: 1024
+datasets: [FB15k237Inductive_v1, WN18RRInductive_v1, NELLInductive_v1, FBIngram_25]
+query_limit: null  # all test facts, both directions; --limit permits reproducible pilot
+candidate_k: [10, 30]
+path_budgets: [5, 10]  # top-M per candidate, shared query-wide node/edge budget
+max_nodes: 50
+max_edges: 100
+hops: 3
+alpha: 0.2
+eta_out: 0.5
+eta_rel: 0.5
+eta_in: 0.0
+eta_topology: 0.5
+support: log_count
+methods: [naive_khop, global_community, ppr_uniform, ppr_degree, ppr_topology_signature, ppr_topology_gated]

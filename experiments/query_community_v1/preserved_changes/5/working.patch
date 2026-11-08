@@ -1,0 +1,17 @@
+diff --git a/analysis/final_diagnostics.py b/analysis/final_diagnostics.py
+index eee1061..8a7830c 100644
+--- a/analysis/final_diagnostics.py
++++ b/analysis/final_diagnostics.py
+@@ -63,8 +63,12 @@ def main():
+         outputs+=['selected_method_batch_sensitivity.csv','selected_method_batch_sensitivity.json']
+     if (ROOT/'results/entity_endpoint_stratified_metrics.csv').exists():
+         outputs+=['entity_endpoint_stratified_metrics.csv','entity_endpoint_macro_bootstrap.csv','entity_endpoint_group_audit.json']
++    for name in ['source_selection_audit.json','reverification.json']:
++        if (ROOT/'results'/name).exists():outputs.append(name)
+     manifest=dict(primary_completion_sha256=hashlib.sha256((ROOT/'results/completion.json').read_bytes()).hexdigest(),
+         analysis_plan_sha256=hashlib.sha256((ROOT/'analysis/additional_analyses_plan.json').read_bytes()).hexdigest(),
++        statistical_unit_tests_sha256=hashlib.sha256((ROOT/'analysis/statistical_unit_tests.json').read_bytes()).hexdigest(),
++        query_sampling_audit_sha256=hashlib.sha256((ROOT/'analysis/query_sampling_audit.json').read_bytes()).hexdigest(),
+         primary_evaluation_unchanged=True,outputs={n:hashlib.sha256((ROOT/'results'/n).read_bytes()).hexdigest() for n in outputs})
+     (ROOT/'results/additional_diagnostics_verification.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+     print(json.dumps(dict(additional_diagnostics='passed',rows=len(rows),execution_rows=len(numeric))))
