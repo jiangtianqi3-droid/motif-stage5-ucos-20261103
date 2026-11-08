@@ -54,3 +54,16 @@ PPR 是2或3次稀疏截断迭代，alpha=.2为**重启概率**；孤立质量�
 Bootstrapping 按原始事实聚类、共同重采两个方向。目标图已有历史暴露，不称首次盲测。不可将冒烟样本、描述性可视化或相关性当作方法已有效的结论。
 
 `freeze_manifest.json` 是历史资产的外部依赖清单，Git标签固定已存在的干净归档提交；`preserved_changes/` 单独保留原来两个脏仓库的修改。保留原始位置和清单，不修改其属性、不移动文件，也不把未经核实的临时变更混入基线。
+
+## 当前实验的本地看护
+
+本次全量运行 `d48ae432a2533cdaaec0` 配有独立本地看护进程，每1小时检查一次进程身份、状态时间戳、进度、剩余磁盘和完成记录。健康检查只落盘；退出、长时间静默或完成时向当前用户发送Windows通知，通知记录保存在 `results/monitor/<run>/`，不调用任何外部模型。
+
+仅针对意外进程退出或明确的临时CUDA/IO错误自动断点续跑，最多2次；续跑前逐文件检查原运行程序、配置与冻结清单哈希，确保继续使用原查询缓存。代码断言、隐藏边检查失败、空间不足、未知错误或源码发生变化时保留现场并通知，不盲目重启，不终止任何活跃实验。运行完成后本次看护自动结束。看护代码位于 `scripts/monitor/`，不会改变已在运行的实验指纹。
+
+```powershell
+# 仅当看护未运行时启动；已有看护会拒绝重复启动。
+wsl -d Ubuntu-24.04 -- bash /mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/scripts/monitor/launch_watch.sh --run d48ae432a2533cdaaec0 --pid 33 --interval 3600
+```
+
+查看 `results/monitor/d48ae432a2533cdaaec0/status.json` 和 `checks.jsonl` 可核对实际检查时间、下一次检查及任何恢复动作。停止看护可在该目录创建 `STOP` 文件；它只停止看护，不停止实验。电脑休眠期间本地进程暂停，恢复唤醒后继续检查。
