@@ -1,0 +1,7 @@
+{
+  "state": "failed",
+  "stage": "exception",
+  "run": "/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/results/runs/3de3726cde2cdc6e154e",
+  "error": "libtiff-13a02c81.so.6.1.0: cannot open shared object file: No such file or directory",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/scripts/run_community_experiments.py\", line 176, in main\n    import matplotlib,pytest\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/cache/dependencies/matplotlib/__init__.py\", line 159, in <module>\n    from . import _api, _version, cbook, _docstring, rcsetup\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/cache/dependencies/matplotlib/rcsetup.py\", line 28, in <module>\n    from matplotlib.colors import Colormap, is_color_like\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/cache/dependencies/matplotlib/colors.py\", line 52, in <module>\n    from PIL import Image\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/cache/dependencies/PIL/Image.py\", line 90, in <module>\n    from . import _imaging as core\nImportError: libtiff-13a02c81.so.6.1.0: cannot open shared object file: No such file or directory\n"
+}

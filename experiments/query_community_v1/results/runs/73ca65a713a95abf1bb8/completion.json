@@ -1,0 +1,57 @@
+{
+  "state": "smoke_complete",
+  "stage": "finished",
+  "run": "/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/results/runs/73ca65a713a95abf1bb8",
+  "seconds": 118.21338390599999,
+  "datasets": [
+    {
+      "dataset": "FB15k237Inductive_v1",
+      "state": "complete",
+      "finished_at": "2026-11-08T13:29:40.003911+08:00",
+      "query_facts": 1,
+      "retrieval_seconds": 8.38495478699997,
+      "preprocessing_seconds": 15.453483080000069,
+      "cold_retrieval_mean_seconds": 0.048650881250011935,
+      "peak_rss_bytes": 775651328,
+      "peak_cuda_bytes": 12608000,
+      "groups": 24
+    },
+    {
+      "dataset": "WN18RRInductive_v1",
+      "state": "complete",
+      "finished_at": "2026-11-08T13:29:56.208598+08:00",
+      "query_facts": 1,
+      "retrieval_seconds": 5.686261080999884,
+      "preprocessing_seconds": 10.481521195000141,
+      "cold_retrieval_mean_seconds": 0.04202277874998117,
+      "peak_rss_bytes": 830509056,
+      "peak_cuda_bytes": 10976256,
+      "groups": 24
+    },
+    {
+      "dataset": "NELLInductive_v1",
+      "state": "complete",
+      "finished_at": "2026-11-08T13:30:11.786949+08:00",
+      "query_facts": 1,
+      "retrieval_seconds": 6.21000211899991,
+      "preprocessing_seconds": 9.332967365000059,
+      "cold_retrieval_mean_seconds": 0.10628372233334933,
+      "peak_rss_bytes": 830509056,
+      "peak_cuda_bytes": 11252736,
+      "groups": 24
+    },
+    {
+      "dataset": "FBIngram_25",
+      "state": "complete",
+      "finished_at": "2026-11-08T13:30:34.119524+08:00",
+      "query_facts": 1,
+      "retrieval_seconds": 9.580960734999962,
+      "preprocessing_seconds": 12.699888971999826,
+      "cold_retrieval_mean_seconds": 0.18353451133333465,
+      "peak_rss_bytes": 1144020992,
+      "peak_cuda_bytes": 110027776,
+      "groups": 24
+    }
+  ],
+  "report": "/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/report.md"
+}

@@ -1,0 +1,904 @@
+{
+  "query_id": "WN18RRInductive_v1:5:0",
+  "target": 467,
+  "selection": "After retrieval: prefer cross-community connected candidate; strongest gated path. This is a descriptive case, not a performance estimator.",
+  "methods": [
+    {
+      "method": "naive_khop",
+      "candidate": 467,
+      "status": "no_evidence",
+      "is_cross_community": true,
+      "paths": [],
+      "subgraph": {
+        "nodes": [
+          39,
+          87,
+          88,
+          646,
+          880
+        ],
+        "edge_ids": [
+          49,
+          584,
+          675,
+          1463,
+          1667,
+          2202,
+          2293,
+          3081
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 49,
+            "head": 87,
+            "relation": 1,
+            "tail": 88
+          },
+          {
+            "edge_id": 584,
+            "head": 87,
+            "relation": 1,
+            "tail": 646
+          },
+          {
+            "edge_id": 675,
+            "head": 39,
+            "relation": 0,
+            "tail": 87
+          },
+          {
+            "edge_id": 1463,
+            "head": 87,
+            "relation": 1,
+            "tail": 880
+          },
+          {
+            "edge_id": 1667,
+            "head": 88,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2202,
+            "head": 646,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2293,
+            "head": 87,
+            "relation": 9,
+            "tail": 39
+          },
+          {
+            "edge_id": 3081,
+            "head": 880,
+            "relation": 10,
+            "tail": 87
+          }
+        ]
+      }
+    },
+    {
+      "method": "global_community",
+      "candidate": 467,
+      "status": "no_evidence",
+      "is_cross_community": true,
+      "paths": [],
+      "subgraph": {
+        "nodes": [
+          87,
+          88,
+          372,
+          580,
+          646,
+          880
+        ],
+        "edge_ids": [
+          49,
+          584,
+          900,
+          1463,
+          1667,
+          2106,
+          2202,
+          3081
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 49,
+            "head": 87,
+            "relation": 1,
+            "tail": 88
+          },
+          {
+            "edge_id": 584,
+            "head": 87,
+            "relation": 1,
+            "tail": 646
+          },
+          {
+            "edge_id": 900,
+            "head": 88,
+            "relation": 0,
+            "tail": 372
+          },
+          {
+            "edge_id": 1463,
+            "head": 87,
+            "relation": 1,
+            "tail": 880
+          },
+          {
+            "edge_id": 1667,
+            "head": 88,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2106,
+            "head": 88,
+            "relation": 9,
+            "tail": 580
+          },
+          {
+            "edge_id": 2202,
+            "head": 646,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 3081,
+            "head": 880,
+            "relation": 10,
+            "tail": 87
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_uniform",
+      "candidate": 467,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              880,
+              10,
+              87
+            ],
+            [
+              87,
+              1,
+              646
+            ],
+            [
+              646,
+              1,
+              467
+            ]
+          ],
+          "edge_ids": [
+            3081,
+            584,
+            884
+          ],
+          "relation_types": [
+            10,
+            1,
+            1
+          ],
+          "edges": [
+            {
+              "edge_id": 3081,
+              "head": 880,
+              "relation": 10,
+              "tail": 87,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 1.0,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 584,
+              "head": 87,
+              "relation": 1,
+              "tail": 646,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.25,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 884,
+              "head": 646,
+              "relation": 1,
+              "tail": 467,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.5,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 1.0,
+          "transition_path_probability": 0.125,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            467,
+            646
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          38,
+          39,
+          87,
+          88,
+          113,
+          287,
+          372,
+          467,
+          580,
+          646,
+          683,
+          709,
+          825,
+          880
+        ],
+        "edge_ids": [
+          49,
+          584,
+          619,
+          675,
+          694,
+          739,
+          884,
+          900,
+          928,
+          1167,
+          1168,
+          1463,
+          1638,
+          1667,
+          1797,
+          2106,
+          2202,
+          2293,
+          2885,
+          3081,
+          3185
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 49,
+            "head": 87,
+            "relation": 1,
+            "tail": 88
+          },
+          {
+            "edge_id": 584,
+            "head": 87,
+            "relation": 1,
+            "tail": 646
+          },
+          {
+            "edge_id": 619,
+            "head": 39,
+            "relation": 1,
+            "tail": 113
+          },
+          {
+            "edge_id": 675,
+            "head": 39,
+            "relation": 0,
+            "tail": 87
+          },
+          {
+            "edge_id": 694,
+            "head": 39,
+            "relation": 1,
+            "tail": 38
+          },
+          {
+            "edge_id": 739,
+            "head": 39,
+            "relation": 1,
+            "tail": 709
+          },
+          {
+            "edge_id": 884,
+            "head": 646,
+            "relation": 1,
+            "tail": 467
+          },
+          {
+            "edge_id": 900,
+            "head": 88,
+            "relation": 0,
+            "tail": 372
+          },
+          {
+            "edge_id": 928,
+            "head": 39,
+            "relation": 1,
+            "tail": 683
+          },
+          {
+            "edge_id": 1167,
+            "head": 39,
+            "relation": 2,
+            "tail": 825
+          },
+          {
+            "edge_id": 1168,
+            "head": 39,
+            "relation": 1,
+            "tail": 287
+          },
+          {
+            "edge_id": 1463,
+            "head": 87,
+            "relation": 1,
+            "tail": 880
+          },
+          {
+            "edge_id": 1638,
+            "head": 39,
+            "relation": 10,
+            "tail": 38
+          },
+          {
+            "edge_id": 1667,
+            "head": 88,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 1797,
+            "head": 39,
+            "relation": 10,
+            "tail": 287
+          },
+          {
+            "edge_id": 2106,
+            "head": 88,
+            "relation": 9,
+            "tail": 580
+          },
+          {
+            "edge_id": 2202,
+            "head": 646,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2293,
+            "head": 87,
+            "relation": 9,
+            "tail": 39
+          },
+          {
+            "edge_id": 2885,
+            "head": 39,
+            "relation": 10,
+            "tail": 113
+          },
+          {
+            "edge_id": 3081,
+            "head": 880,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 3185,
+            "head": 39,
+            "relation": 10,
+            "tail": 683
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_topology_signature",
+      "candidate": 467,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              880,
+              10,
+              87
+            ],
+            [
+              87,
+              1,
+              646
+            ],
+            [
+              646,
+              1,
+              467
+            ]
+          ],
+          "edge_ids": [
+            3081,
+            584,
+            884
+          ],
+          "relation_types": [
+            10,
+            1,
+            1
+          ],
+          "edges": [
+            {
+              "edge_id": 3081,
+              "head": 880,
+              "relation": 10,
+              "tail": 87,
+              "rho": 0.6481338608878038,
+              "degree_weight": 0.7071067811865476,
+              "weight": 1.414213562373095,
+              "transition_probability": 1.0,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 584,
+              "head": 87,
+              "relation": 1,
+              "tail": 646,
+              "rho": 0.5553453961268242,
+              "degree_weight": 0.4472135954999579,
+              "weight": 0.7727811787229273,
+              "transition_probability": 0.2439283719863507,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 884,
+              "head": 646,
+              "relation": 1,
+              "tail": 467,
+              "rho": 0.5553453961268242,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9976562118188116,
+              "transition_probability": 0.4635180537459721,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 1.090316150038725,
+          "transition_path_probability": 0.11306520423653678,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            467,
+            646
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          38,
+          39,
+          87,
+          88,
+          113,
+          287,
+          372,
+          467,
+          580,
+          646,
+          683,
+          709,
+          825,
+          880
+        ],
+        "edge_ids": [
+          49,
+          584,
+          619,
+          675,
+          694,
+          739,
+          884,
+          900,
+          928,
+          1167,
+          1168,
+          1463,
+          1638,
+          1667,
+          1797,
+          2106,
+          2202,
+          2293,
+          2885,
+          3081,
+          3185
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 49,
+            "head": 87,
+            "relation": 1,
+            "tail": 88
+          },
+          {
+            "edge_id": 584,
+            "head": 87,
+            "relation": 1,
+            "tail": 646
+          },
+          {
+            "edge_id": 619,
+            "head": 39,
+            "relation": 1,
+            "tail": 113
+          },
+          {
+            "edge_id": 675,
+            "head": 39,
+            "relation": 0,
+            "tail": 87
+          },
+          {
+            "edge_id": 694,
+            "head": 39,
+            "relation": 1,
+            "tail": 38
+          },
+          {
+            "edge_id": 739,
+            "head": 39,
+            "relation": 1,
+            "tail": 709
+          },
+          {
+            "edge_id": 884,
+            "head": 646,
+            "relation": 1,
+            "tail": 467
+          },
+          {
+            "edge_id": 900,
+            "head": 88,
+            "relation": 0,
+            "tail": 372
+          },
+          {
+            "edge_id": 928,
+            "head": 39,
+            "relation": 1,
+            "tail": 683
+          },
+          {
+            "edge_id": 1167,
+            "head": 39,
+            "relation": 2,
+            "tail": 825
+          },
+          {
+            "edge_id": 1168,
+            "head": 39,
+            "relation": 1,
+            "tail": 287
+          },
+          {
+            "edge_id": 1463,
+            "head": 87,
+            "relation": 1,
+            "tail": 880
+          },
+          {
+            "edge_id": 1638,
+            "head": 39,
+            "relation": 10,
+            "tail": 38
+          },
+          {
+            "edge_id": 1667,
+            "head": 88,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 1797,
+            "head": 39,
+            "relation": 10,
+            "tail": 287
+          },
+          {
+            "edge_id": 2106,
+            "head": 88,
+            "relation": 9,
+            "tail": 580
+          },
+          {
+            "edge_id": 2202,
+            "head": 646,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2293,
+            "head": 87,
+            "relation": 9,
+            "tail": 39
+          },
+          {
+            "edge_id": 2885,
+            "head": 39,
+            "relation": 10,
+            "tail": 113
+          },
+          {
+            "edge_id": 3081,
+            "head": 880,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 3185,
+            "head": 39,
+            "relation": 10,
+            "tail": 683
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_topology_gated",
+      "candidate": 467,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              880,
+              10,
+              87
+            ],
+            [
+              87,
+              1,
+              646
+            ],
+            [
+              646,
+              1,
+              467
+            ]
+          ],
+          "edge_ids": [
+            3081,
+            584,
+            884
+          ],
+          "relation_types": [
+            10,
+            1,
+            1
+          ],
+          "edges": [
+            {
+              "edge_id": 3081,
+              "head": 880,
+              "relation": 10,
+              "tail": 87,
+              "rho": 3.6235846915061947,
+              "degree_weight": 0.7071067811865476,
+              "weight": 1.4142135623730951,
+              "transition_probability": 1.0,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 584,
+              "head": 87,
+              "relation": 1,
+              "tail": 646,
+              "rho": 3.6228305017704625,
+              "degree_weight": 0.4472135954999579,
+              "weight": 0.8942503386641686,
+              "transition_probability": 0.2563741053467879,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 884,
+              "head": 646,
+              "relation": 1,
+              "tail": 467,
+              "rho": 3.6228305017704625,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1544722229955557,
+              "transition_probability": 0.49995056338193605,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 1.4600159464738451,
+          "transition_path_probability": 0.12817437840466644,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            467,
+            646
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          38,
+          39,
+          87,
+          88,
+          113,
+          287,
+          372,
+          467,
+          580,
+          646,
+          683,
+          709,
+          825,
+          880
+        ],
+        "edge_ids": [
+          49,
+          584,
+          619,
+          675,
+          694,
+          739,
+          884,
+          900,
+          928,
+          1167,
+          1168,
+          1463,
+          1638,
+          1667,
+          1797,
+          2106,
+          2202,
+          2293,
+          2885,
+          3081,
+          3185
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 49,
+            "head": 87,
+            "relation": 1,
+            "tail": 88
+          },
+          {
+            "edge_id": 584,
+            "head": 87,
+            "relation": 1,
+            "tail": 646
+          },
+          {
+            "edge_id": 619,
+            "head": 39,
+            "relation": 1,
+            "tail": 113
+          },
+          {
+            "edge_id": 675,
+            "head": 39,
+            "relation": 0,
+            "tail": 87
+          },
+          {
+            "edge_id": 694,
+            "head": 39,
+            "relation": 1,
+            "tail": 38
+          },
+          {
+            "edge_id": 739,
+            "head": 39,
+            "relation": 1,
+            "tail": 709
+          },
+          {
+            "edge_id": 884,
+            "head": 646,
+            "relation": 1,
+            "tail": 467
+          },
+          {
+            "edge_id": 900,
+            "head": 88,
+            "relation": 0,
+            "tail": 372
+          },
+          {
+            "edge_id": 928,
+            "head": 39,
+            "relation": 1,
+            "tail": 683
+          },
+          {
+            "edge_id": 1167,
+            "head": 39,
+            "relation": 2,
+            "tail": 825
+          },
+          {
+            "edge_id": 1168,
+            "head": 39,
+            "relation": 1,
+            "tail": 287
+          },
+          {
+            "edge_id": 1463,
+            "head": 87,
+            "relation": 1,
+            "tail": 880
+          },
+          {
+            "edge_id": 1638,
+            "head": 39,
+            "relation": 10,
+            "tail": 38
+          },
+          {
+            "edge_id": 1667,
+            "head": 88,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 1797,
+            "head": 39,
+            "relation": 10,
+            "tail": 287
+          },
+          {
+            "edge_id": 2106,
+            "head": 88,
+            "relation": 9,
+            "tail": 580
+          },
+          {
+            "edge_id": 2202,
+            "head": 646,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 2293,
+            "head": 87,
+            "relation": 9,
+            "tail": 39
+          },
+          {
+            "edge_id": 2885,
+            "head": 39,
+            "relation": 10,
+            "tail": 113
+          },
+          {
+            "edge_id": 3081,
+            "head": 880,
+            "relation": 10,
+            "tail": 87
+          },
+          {
+            "edge_id": 3185,
+            "head": 39,
+            "relation": 10,
+            "tail": 683
+          }
+        ]
+      }
+    }
+  ]
+}

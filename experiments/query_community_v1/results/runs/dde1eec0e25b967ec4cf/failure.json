@@ -1,0 +1,7 @@
+{
+  "state": "failed",
+  "stage": "exception",
+  "run": "/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/results/runs/dde1eec0e25b967ec4cf",
+  "error": "No module named 'matplotlib'",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/scripts/run_community_experiments.py\", line 180, in main\n    summaries.append(process_dataset(key,cfg,run,limit,args.smoke))\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/scripts/run_community_experiments.py\", line 140, in process_dataset\n    make_figures(work,graph,labels,indices,cfg)\n  File \"/mnt/d/motif-phase4-work/query-community-v1-20261108/experiments/query_community_v1/src/report_writer.py\", line 19, in make_figures\n    import matplotlib\nModuleNotFoundError: No module named 'matplotlib'\n"
+}

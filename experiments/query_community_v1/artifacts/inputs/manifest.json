@@ -1,0 +1,223 @@
+{
+  "run": "d48ae432a2533cdaaec0",
+  "observed_and_offline_labels_separate": true,
+  "original_files_modified": false,
+  "datasets": [
+    {
+      "dataset": "FB15k237Inductive_v1",
+      "graph_key": "ca6cdc29612aeaacf81e4abaea99a67df7199dd788cff9852e4e2eff58180af4",
+      "canonical_key": "5d89fa2581037a2eb84ec5f70734c27c2d70ce34a5bae760d80c2054441a7cc0",
+      "queries": 411,
+      "protocol": "grail",
+      "files": [
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/observed.npz",
+          "bytes": 18487,
+          "sha256": "72eb49a64fe4492b135d3a219ca7379fb7da693ec8c39e560c17b9da90f8aba5",
+          "original_path": "D:\\motif-phase4-work\\tsdc-stage6-20261103\\stage6\\observations\\FB15k237Inductive_v1.npz"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/canonical_topology.npz",
+          "bytes": 3512372,
+          "sha256": "5215dea1662c3b92f850f151e1985be8acc45c8c0314cfff7c537692a31d056e",
+          "original_path": "D:\\motif-phase4-work\\topology-semantic-stage4-20261102\\cache\\downstream\\5d89fa2581037a2eb84ec5f70734c27c2d70ce34a5bae760d80c2054441a7cc0.npz"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/raw/train_ind.txt",
+          "bytes": 147145,
+          "sha256": "049829f7047ecf0e0bff0769efca31bc7f811f760c4ffcb20a5680f789b00c61",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndFB15k237\\v1\\raw\\train_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/raw/valid_ind.txt",
+          "bytes": 15165,
+          "sha256": "ac817123c4177ef46b08a3802380a355282b99d4283c43474c9dd91c082107dd",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndFB15k237\\v1\\raw\\valid_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/raw/test_ind.txt",
+          "bytes": 14846,
+          "sha256": "c79d39372be30a3864cfe5094b3022f38b57d88c351dbbfa2d9e7f3368ac23aa",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndFB15k237\\v1\\raw\\test_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/relation_vocabulary.json",
+          "bytes": 188405,
+          "sha256": "faf43f702a24a926217d295e27c317b6e80006dc1aacdd4f5b57a1438b8e360c",
+          "original_source": "published frozen relation vocabulary"
+        },
+        {
+          "file": "artifacts/inputs/FB15k237Inductive_v1/offline_targets_ONLY.npz",
+          "bytes": 2553,
+          "sha256": "954f3c337615ceebfa7e06e12ae5793047163cd6d8e0424ff91c317b5402cf78",
+          "original_path": "D:\\motif-phase4-work\\motif-stage6-entity-degree-p0p1-v2\\data\\FB15k237Inductive_v1.npz",
+          "original_sha256": "edf4c0ca21fee5ef98777a3713788fd04af5a698e0515256105340fb9f67cb9f",
+          "source_member": "queries",
+          "role": "offline evaluation only; never a retrieval seed"
+        }
+      ]
+    },
+    {
+      "dataset": "WN18RRInductive_v1",
+      "graph_key": "f308767bda781d9ffa775f38d057a20d04592a842bfff15127c6c2552fd1d019",
+      "canonical_key": "8f4f7dedf478f260b1431c53410738e3cc2f73206d190fc8f1ad8e74fe0abdd5",
+      "queries": 373,
+      "protocol": "grail",
+      "files": [
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/observed.npz",
+          "bytes": 12053,
+          "sha256": "7e58852ff615a7168e78621b1c4863795b7f08bb17ed3b1d8a41f2aa0e8c8578",
+          "original_path": "D:\\motif-phase4-work\\tsdc-stage6-20261103\\stage6\\observations\\WN18RRInductive_v1.npz"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/canonical_topology.npz",
+          "bytes": 76374,
+          "sha256": "8581dc63d7dbe3362ec8c023d8d8003baca16ba2565b0877b9405113f2127f4a",
+          "original_path": "D:\\motif-phase4-work\\topology-semantic-stage4-20261102\\cache\\downstream\\8f4f7dedf478f260b1431c53410738e3cc2f73206d190fc8f1ad8e74fe0abdd5.npz"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/raw/train_ind.txt",
+          "bytes": 67372,
+          "sha256": "7d1b73c5994e9aa816b34e33ee10707656803ba6b8a0f6066cae7ddc04f87553",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndWN18RR\\v1\\raw\\train_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/raw/valid_ind.txt",
+          "bytes": 7974,
+          "sha256": "cfa28b9d75dbab17ea82a9443a5bf8acb738e60267cc63f8a221b38967e1d238",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndWN18RR\\v1\\raw\\valid_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/raw/test_ind.txt",
+          "bytes": 8101,
+          "sha256": "6df8c00a2e0cf1a4b484ac638c081198926fcbc411ce2e12ccc79d432eead269",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndWN18RR\\v1\\raw\\test_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/relation_vocabulary.json",
+          "bytes": 6758,
+          "sha256": "cad6ecd767f6297125edfe7084f2f486dc5792b24c929d32ce5eef2fdc334020",
+          "original_source": "published frozen relation vocabulary"
+        },
+        {
+          "file": "artifacts/inputs/WN18RRInductive_v1/offline_targets_ONLY.npz",
+          "bytes": 2129,
+          "sha256": "10baefcd0626dbd211d967d9668f1b5d6a78e9451a9721addcdee1695f1f435d",
+          "original_path": "D:\\motif-phase4-work\\motif-stage6-entity-degree-p0p1-v2\\data\\WN18RRInductive_v1.npz",
+          "original_sha256": "cbb7dedb8ed6240b398c727b054665bce6228414f51f46a800a6b09d0f932002",
+          "source_member": "queries",
+          "role": "offline evaluation only; never a retrieval seed"
+        }
+      ]
+    },
+    {
+      "dataset": "NELLInductive_v1",
+      "graph_key": "e8273ace1331589661d2813a45311d0a176efca521cfb91fc166042a89499539",
+      "canonical_key": "5ff012abe4396d0a8f27da6773fb1498c0de17825f020f04264173b78e19d8be",
+      "queries": 201,
+      "protocol": "grail",
+      "files": [
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/observed.npz",
+          "bytes": 4360,
+          "sha256": "fb46abea07d0457f8954c9fea863be973f59ac70a2a66d3699afa449069f6056",
+          "original_path": "D:\\motif-phase4-work\\tsdc-stage6-20261103\\stage6\\observations\\NELLInductive_v1.npz"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/canonical_topology.npz",
+          "bytes": 75254,
+          "sha256": "6e64b3cbe54dd65019bcc90f69de861d049d72cb9e03c6a9663cc35e0f151f67",
+          "original_path": "D:\\motif-phase4-work\\topology-semantic-stage4-20261102\\cache\\downstream\\5ff012abe4396d0a8f27da6773fb1498c0de17825f020f04264173b78e19d8be.npz"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/raw/train_ind.txt",
+          "bytes": 70042,
+          "sha256": "b0bfb66f65d70586a26703eb022926a75c1f234d1bcdeafe2e8d387be41291ee",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndNELL\\v1\\raw\\train_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/raw/valid_ind.txt",
+          "bytes": 8520,
+          "sha256": "297c1c82c944bd76255f6ad4cc22f5ecbb23c9daac366e8991b5770ca0dfb8fc",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndNELL\\v1\\raw\\valid_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/raw/test_ind.txt",
+          "bytes": 8302,
+          "sha256": "66a497671114e73f450cf9e5eb79be5e5790121816228eb43e3ba3481e2bfa28",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\grail\\IndNELL\\v1\\raw\\test_ind.txt"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/relation_vocabulary.json",
+          "bytes": 11253,
+          "sha256": "fbf57136d3cb4419627a4c058741ab154bb2a71dcc047fd8dd666c2c5fe4d3db",
+          "original_source": "published frozen relation vocabulary"
+        },
+        {
+          "file": "artifacts/inputs/NELLInductive_v1/offline_targets_ONLY.npz",
+          "bytes": 910,
+          "sha256": "26b90cb435f04cbab7d782d278850e2ac4c6e3151b424413c40850a520b3aba4",
+          "original_path": "D:\\motif-phase4-work\\motif-stage6-entity-degree-p0p1-v2\\data\\NELLInductive_v1.npz",
+          "original_sha256": "c6e03393010ed6f6d81ea5072a2c326cb9610451ff4145666c52e2587bacdeba",
+          "source_member": "queries",
+          "role": "offline evaluation only; never a retrieval seed"
+        }
+      ]
+    },
+    {
+      "dataset": "FBIngram_25",
+      "graph_key": "0192b0a7b446532965ae62aac99906248593aa0aa7de9cb75a1548b9b83ad872",
+      "canonical_key": "23c54fae85ea9ecf469be0e7c7f2bae417f059bcf8fcdd5195be9460a979a49e",
+      "queries": 5716,
+      "protocol": "ingram",
+      "files": [
+        {
+          "file": "artifacts/inputs/FBIngram_25/observed.npz",
+          "bytes": 183300,
+          "sha256": "d2e9990da1548d85f8e77833ab48ad6ef0969922609a903d9025b794c7e298c5",
+          "original_path": "D:\\motif-phase4-work\\tsdc-stage6-20261103\\stage6\\observations\\FBIngram_25.npz"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/canonical_topology.npz",
+          "bytes": 25918425,
+          "sha256": "84e7ee11fbcef58a581d889b95b4994e5f9297ce19719779c2a560cf583e43d5",
+          "original_path": "D:\\motif-phase4-work\\topology-semantic-stage4-20261102\\cache\\downstream\\23c54fae85ea9ecf469be0e7c7f2bae417f059bcf8fcdd5195be9460a979a49e.npz"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/raw/inference_graph.txt",
+          "bytes": 1397359,
+          "sha256": "cffeb071476b93815586fe4b5ad47d0794ac5b0a8a4b1a58aa755d6d6ae0b065",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\ingram\\fb\\25\\raw\\inference_graph.txt"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/raw/inf_valid.txt",
+          "bytes": 477215,
+          "sha256": "ac22cc5fb62b4b91b6537669955918506b14eddbbdb8bf3dff4d171a62d15c64",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\ingram\\fb\\25\\raw\\inf_valid.txt"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/raw/inf_test.txt",
+          "bytes": 476134,
+          "sha256": "4ccf923453b0faa4eec6ccf9ea0bf25ce3acceba3ec42f50b9ff53e430e204fa",
+          "original_path": "D:\\motif-phase4-work\\topology-stage1-20261101\\data\\ingram\\fb\\25\\raw\\inf_test.txt"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/relation_vocabulary.json",
+          "bytes": 229185,
+          "sha256": "0b81e38949c68f681c0c92d69058d61c6babbd5b02fdbacb98e0906fa0404732",
+          "original_source": "published frozen relation vocabulary"
+        },
+        {
+          "file": "artifacts/inputs/FBIngram_25/offline_targets_ONLY.npz",
+          "bytes": 32739,
+          "sha256": "8793c680fd8a9edec8697a0263608e9e32c98034267396d9e35420b08a54cf45",
+          "original_path": "D:\\motif-phase4-work\\motif-stage6-entity-degree-p0p1-v2\\data\\FBIngram_25.npz",
+          "original_sha256": "bf59a75267d31a6c40e5a26395b9f858ec1773d86c1931ed4b2bc180529d8415",
+          "source_member": "queries",
+          "role": "offline evaluation only; never a retrieval seed"
+        }
+      ]
+    }
+  ]
+}

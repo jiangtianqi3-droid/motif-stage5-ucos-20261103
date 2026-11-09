@@ -1,0 +1,58 @@
+{
+  "config": {
+    "seed": 1024,
+    "datasets": [
+      "FB15k237Inductive_v1",
+      "WN18RRInductive_v1",
+      "NELLInductive_v1",
+      "FBIngram_25"
+    ],
+    "query_limit": null,
+    "candidate_k": [
+      10,
+      30
+    ],
+    "path_budgets": [
+      5,
+      10
+    ],
+    "max_nodes": 50,
+    "max_edges": 100,
+    "hops": 3,
+    "alpha": 0.2,
+    "eta_out": 0.5,
+    "eta_rel": 0.5,
+    "eta_in": 0.0,
+    "eta_topology": 0.5,
+    "support": "log_count",
+    "methods": [
+      "naive_khop",
+      "global_community",
+      "ppr_uniform",
+      "ppr_degree",
+      "ppr_topology_signature",
+      "ppr_topology_gated"
+    ]
+  },
+  "limit": 1,
+  "smoke": true,
+  "code": {
+    "src/__init__.py": "31fb8358edfbb40a43d77dd9eeea19b21dec909a8131694e43329e6a585cb20e",
+    "src/community_detection.py": "1d8477ef5352a1aa53ef24c0d27428556aed76a7ef8ef809498e85646b0552b8",
+    "src/diagnostics.py": "697c8e3d49461cbcb751a5c4bf1ccd1192f9892cfaa2a914a8807365facd93a7",
+    "src/edge_weighter.py": "0110ca96a69ab61de7d71b9afa553a8b3d556d4f182f0f009534cadb5ae92ba8",
+    "src/evidence_exporter.py": "9b1ae9c3683169fb0a09310331906b95ff1fc361a897c81b186a843f351a61b7",
+    "src/graph_adapter.py": "9e1e830086e2137e8cabf0355e6b41294f7ed782de8a765e7b301bb82f08f566",
+    "src/local_ppr.py": "4068ed530a544adcccd5230460e8a6b1d167dc1cc281c387a8220cea00bf295d",
+    "src/path_extractor.py": "e82a12aa931814ec1707cfab2bcee366e115494dcd9c15862e867dafbf90ba6d",
+    "src/report_writer.py": "0bdc320e10b0959e402acab21f84365356ce21bdccc985ec97c3f82d9e16ed5f",
+    "scripts/freeze.py": "c9217b92d951cac9acd366ae5ca38895475ae20321f63aaf021ef3bd5a4c26c8",
+    "scripts/run_community_experiments.py": "536452bb352655c7576aa78b333255b42d29ec147bdeea6d4511e3d9fc8d2634",
+    "scripts/status.py": "453438c8616dfb1ad23b72328612ec5d3d862ae8325fb3198d8352754f4d0f8e",
+    "scripts/verify_isolation.py": "0c33c27523e6ad82a3e02b824dadf40afbd9092669e5531b5e6a04df1a3d8a27",
+    "config/default.yaml": "da226cb82ac8cdd9aff5162f41e71470c1fd4813f4440e0ef6dc12fe809be7e8",
+    "config/requirements-phase.txt": "678ee33e91a5f18e87c2c118faccaa5287d5e66f5bb831b564b4287a80129bc5",
+    "run.sh": "19e5145f8ec444c9e6046a0c5df0c5f0ba70895b0402c87dd0393d3fe9918488"
+  },
+  "freeze_manifest_sha256": "9c4ec72abd5da36fc456cb3c3ae80a8ceb1834159c8a3ea75cf6b3de19e43368"
+}

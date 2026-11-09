@@ -1,0 +1,3457 @@
+{
+  "query_id": "WN18RRInductive_v1:208:1",
+  "target": 698,
+  "selection": "After retrieval: prefer cross-community connected candidate; strongest gated path. This is a descriptive case, not a performance estimator.",
+  "methods": [
+    {
+      "method": "naive_khop",
+      "candidate": 698,
+      "status": "no_evidence",
+      "is_cross_community": true,
+      "paths": [],
+      "subgraph": {
+        "nodes": [
+          66,
+          67,
+          76,
+          77,
+          80,
+          81,
+          110,
+          115,
+          144,
+          208,
+          209,
+          332,
+          387,
+          401,
+          439,
+          440,
+          473,
+          868
+        ],
+        "edge_ids": [
+          36,
+          41,
+          44,
+          64,
+          84,
+          90,
+          126,
+          218,
+          262,
+          276,
+          303,
+          317,
+          323,
+          334,
+          354,
+          397,
+          556,
+          561,
+          605,
+          784,
+          829,
+          878,
+          883,
+          891,
+          915,
+          976,
+          1158,
+          1192,
+          1287,
+          1294,
+          1314,
+          1462,
+          1516,
+          1552,
+          1557,
+          1654,
+          1659,
+          1662,
+          1682,
+          1702,
+          1708,
+          1744,
+          1836,
+          1880,
+          1894,
+          1921,
+          1935,
+          1941,
+          1952,
+          1972,
+          2015,
+          2174,
+          2179,
+          2223,
+          2402,
+          2447,
+          2496,
+          2501,
+          2509,
+          2533,
+          2594,
+          2776,
+          2810,
+          2905,
+          2912,
+          2932,
+          3080,
+          3134,
+          3170,
+          3175
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 36,
+            "head": 66,
+            "relation": 1,
+            "tail": 67
+          },
+          {
+            "edge_id": 41,
+            "head": 76,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 44,
+            "head": 80,
+            "relation": 0,
+            "tail": 81
+          },
+          {
+            "edge_id": 64,
+            "head": 115,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 84,
+            "head": 77,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 90,
+            "head": 77,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 126,
+            "head": 208,
+            "relation": 1,
+            "tail": 209
+          },
+          {
+            "edge_id": 218,
+            "head": 208,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 262,
+            "head": 387,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 276,
+            "head": 401,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 303,
+            "head": 66,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 317,
+            "head": 439,
+            "relation": 1,
+            "tail": 440
+          },
+          {
+            "edge_id": 323,
+            "head": 209,
+            "relation": 0,
+            "tail": 67
+          },
+          {
+            "edge_id": 334,
+            "head": 208,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 354,
+            "head": 144,
+            "relation": 1,
+            "tail": 473
+          },
+          {
+            "edge_id": 397,
+            "head": 80,
+            "relation": 1,
+            "tail": 77
+          },
+          {
+            "edge_id": 556,
+            "head": 332,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 561,
+            "head": 144,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 605,
+            "head": 77,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 784,
+            "head": 439,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 829,
+            "head": 144,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 878,
+            "head": 440,
+            "relation": 1,
+            "tail": 439
+          },
+          {
+            "edge_id": 883,
+            "head": 440,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 891,
+            "head": 208,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 915,
+            "head": 80,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 976,
+            "head": 144,
+            "relation": 1,
+            "tail": 401
+          },
+          {
+            "edge_id": 1158,
+            "head": 144,
+            "relation": 1,
+            "tail": 81
+          },
+          {
+            "edge_id": 1192,
+            "head": 77,
+            "relation": 4,
+            "tail": 439
+          },
+          {
+            "edge_id": 1287,
+            "head": 332,
+            "relation": 1,
+            "tail": 110
+          },
+          {
+            "edge_id": 1294,
+            "head": 144,
+            "relation": 0,
+            "tail": 208
+          },
+          {
+            "edge_id": 1314,
+            "head": 110,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 1462,
+            "head": 110,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 1516,
+            "head": 144,
+            "relation": 1,
+            "tail": 387
+          },
+          {
+            "edge_id": 1552,
+            "head": 868,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 1557,
+            "head": 473,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 1654,
+            "head": 67,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1659,
+            "head": 77,
+            "relation": 9,
+            "tail": 76
+          },
+          {
+            "edge_id": 1662,
+            "head": 81,
+            "relation": 9,
+            "tail": 80
+          },
+          {
+            "edge_id": 1682,
+            "head": 80,
+            "relation": 10,
+            "tail": 115
+          },
+          {
+            "edge_id": 1702,
+            "head": 144,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1708,
+            "head": 80,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1744,
+            "head": 209,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1836,
+            "head": 332,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1880,
+            "head": 144,
+            "relation": 10,
+            "tail": 387
+          },
+          {
+            "edge_id": 1894,
+            "head": 144,
+            "relation": 10,
+            "tail": 401
+          },
+          {
+            "edge_id": 1921,
+            "head": 80,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1935,
+            "head": 440,
+            "relation": 10,
+            "tail": 439
+          },
+          {
+            "edge_id": 1941,
+            "head": 67,
+            "relation": 9,
+            "tail": 209
+          },
+          {
+            "edge_id": 1952,
+            "head": 77,
+            "relation": 12,
+            "tail": 208
+          },
+          {
+            "edge_id": 1972,
+            "head": 473,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2015,
+            "head": 77,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2174,
+            "head": 77,
+            "relation": 12,
+            "tail": 332
+          },
+          {
+            "edge_id": 2179,
+            "head": 77,
+            "relation": 12,
+            "tail": 144
+          },
+          {
+            "edge_id": 2223,
+            "head": 332,
+            "relation": 9,
+            "tail": 77
+          },
+          {
+            "edge_id": 2402,
+            "head": 332,
+            "relation": 9,
+            "tail": 439
+          },
+          {
+            "edge_id": 2447,
+            "head": 80,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2496,
+            "head": 439,
+            "relation": 10,
+            "tail": 440
+          },
+          {
+            "edge_id": 2501,
+            "head": 77,
+            "relation": 12,
+            "tail": 440
+          },
+          {
+            "edge_id": 2509,
+            "head": 80,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 2533,
+            "head": 144,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2594,
+            "head": 401,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2776,
+            "head": 81,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2810,
+            "head": 439,
+            "relation": 13,
+            "tail": 77
+          },
+          {
+            "edge_id": 2905,
+            "head": 110,
+            "relation": 10,
+            "tail": 332
+          },
+          {
+            "edge_id": 2912,
+            "head": 208,
+            "relation": 9,
+            "tail": 144
+          },
+          {
+            "edge_id": 2932,
+            "head": 332,
+            "relation": 10,
+            "tail": 110
+          },
+          {
+            "edge_id": 3080,
+            "head": 77,
+            "relation": 12,
+            "tail": 110
+          },
+          {
+            "edge_id": 3134,
+            "head": 387,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 3170,
+            "head": 77,
+            "relation": 9,
+            "tail": 868
+          },
+          {
+            "edge_id": 3175,
+            "head": 144,
+            "relation": 10,
+            "tail": 473
+          }
+        ]
+      }
+    },
+    {
+      "method": "global_community",
+      "candidate": 698,
+      "status": "no_evidence",
+      "is_cross_community": true,
+      "paths": [],
+      "subgraph": {
+        "nodes": [
+          66,
+          67,
+          77,
+          80,
+          81,
+          109,
+          110,
+          115,
+          144,
+          208,
+          209,
+          332,
+          387,
+          401,
+          439,
+          440,
+          473,
+          545,
+          560,
+          569,
+          633,
+          773,
+          810
+        ],
+        "edge_ids": [
+          36,
+          44,
+          64,
+          84,
+          90,
+          126,
+          218,
+          262,
+          276,
+          303,
+          317,
+          323,
+          334,
+          354,
+          397,
+          438,
+          556,
+          561,
+          564,
+          605,
+          663,
+          784,
+          829,
+          878,
+          883,
+          891,
+          915,
+          958,
+          963,
+          976,
+          1081,
+          1158,
+          1192,
+          1277,
+          1287,
+          1294,
+          1314,
+          1362,
+          1462,
+          1516,
+          1557,
+          1654,
+          1662,
+          1679,
+          1682,
+          1702,
+          1708,
+          1744,
+          1836,
+          1880,
+          1894,
+          1921,
+          1935,
+          1941,
+          1952,
+          1972,
+          2015,
+          2092,
+          2174,
+          2179,
+          2223,
+          2402,
+          2447,
+          2496,
+          2501,
+          2509,
+          2533,
+          2594,
+          2754,
+          2776,
+          2810,
+          2852,
+          2905,
+          2912,
+          2932,
+          3080,
+          3134,
+          3175
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 36,
+            "head": 66,
+            "relation": 1,
+            "tail": 67
+          },
+          {
+            "edge_id": 44,
+            "head": 80,
+            "relation": 0,
+            "tail": 81
+          },
+          {
+            "edge_id": 64,
+            "head": 115,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 84,
+            "head": 77,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 90,
+            "head": 77,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 126,
+            "head": 208,
+            "relation": 1,
+            "tail": 209
+          },
+          {
+            "edge_id": 218,
+            "head": 208,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 262,
+            "head": 387,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 276,
+            "head": 401,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 303,
+            "head": 66,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 317,
+            "head": 439,
+            "relation": 1,
+            "tail": 440
+          },
+          {
+            "edge_id": 323,
+            "head": 209,
+            "relation": 0,
+            "tail": 67
+          },
+          {
+            "edge_id": 334,
+            "head": 208,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 354,
+            "head": 144,
+            "relation": 1,
+            "tail": 473
+          },
+          {
+            "edge_id": 397,
+            "head": 80,
+            "relation": 1,
+            "tail": 77
+          },
+          {
+            "edge_id": 438,
+            "head": 81,
+            "relation": 1,
+            "tail": 545
+          },
+          {
+            "edge_id": 556,
+            "head": 332,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 561,
+            "head": 144,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 564,
+            "head": 66,
+            "relation": 0,
+            "tail": 633
+          },
+          {
+            "edge_id": 605,
+            "head": 77,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 663,
+            "head": 440,
+            "relation": 1,
+            "tail": 569
+          },
+          {
+            "edge_id": 784,
+            "head": 439,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 829,
+            "head": 144,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 878,
+            "head": 440,
+            "relation": 1,
+            "tail": 439
+          },
+          {
+            "edge_id": 883,
+            "head": 440,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 891,
+            "head": 208,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 915,
+            "head": 80,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 958,
+            "head": 440,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 963,
+            "head": 110,
+            "relation": 0,
+            "tail": 773
+          },
+          {
+            "edge_id": 976,
+            "head": 144,
+            "relation": 1,
+            "tail": 401
+          },
+          {
+            "edge_id": 1081,
+            "head": 473,
+            "relation": 0,
+            "tail": 810
+          },
+          {
+            "edge_id": 1158,
+            "head": 144,
+            "relation": 1,
+            "tail": 81
+          },
+          {
+            "edge_id": 1192,
+            "head": 77,
+            "relation": 4,
+            "tail": 439
+          },
+          {
+            "edge_id": 1277,
+            "head": 110,
+            "relation": 1,
+            "tail": 560
+          },
+          {
+            "edge_id": 1287,
+            "head": 332,
+            "relation": 1,
+            "tail": 110
+          },
+          {
+            "edge_id": 1294,
+            "head": 144,
+            "relation": 0,
+            "tail": 208
+          },
+          {
+            "edge_id": 1314,
+            "head": 110,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 1362,
+            "head": 110,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 1462,
+            "head": 110,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 1516,
+            "head": 144,
+            "relation": 1,
+            "tail": 387
+          },
+          {
+            "edge_id": 1557,
+            "head": 473,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 1654,
+            "head": 67,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1662,
+            "head": 81,
+            "relation": 9,
+            "tail": 80
+          },
+          {
+            "edge_id": 1679,
+            "head": 110,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 1682,
+            "head": 80,
+            "relation": 10,
+            "tail": 115
+          },
+          {
+            "edge_id": 1702,
+            "head": 144,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1708,
+            "head": 80,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1744,
+            "head": 209,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1836,
+            "head": 332,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1880,
+            "head": 144,
+            "relation": 10,
+            "tail": 387
+          },
+          {
+            "edge_id": 1894,
+            "head": 144,
+            "relation": 10,
+            "tail": 401
+          },
+          {
+            "edge_id": 1921,
+            "head": 80,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1935,
+            "head": 440,
+            "relation": 10,
+            "tail": 439
+          },
+          {
+            "edge_id": 1941,
+            "head": 67,
+            "relation": 9,
+            "tail": 209
+          },
+          {
+            "edge_id": 1952,
+            "head": 77,
+            "relation": 12,
+            "tail": 208
+          },
+          {
+            "edge_id": 1972,
+            "head": 473,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2015,
+            "head": 77,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2092,
+            "head": 440,
+            "relation": 10,
+            "tail": 569
+          },
+          {
+            "edge_id": 2174,
+            "head": 77,
+            "relation": 12,
+            "tail": 332
+          },
+          {
+            "edge_id": 2179,
+            "head": 77,
+            "relation": 12,
+            "tail": 144
+          },
+          {
+            "edge_id": 2223,
+            "head": 332,
+            "relation": 9,
+            "tail": 77
+          },
+          {
+            "edge_id": 2402,
+            "head": 332,
+            "relation": 9,
+            "tail": 439
+          },
+          {
+            "edge_id": 2447,
+            "head": 80,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2496,
+            "head": 439,
+            "relation": 10,
+            "tail": 440
+          },
+          {
+            "edge_id": 2501,
+            "head": 77,
+            "relation": 12,
+            "tail": 440
+          },
+          {
+            "edge_id": 2509,
+            "head": 80,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 2533,
+            "head": 144,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2594,
+            "head": 401,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2754,
+            "head": 440,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 2776,
+            "head": 81,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2810,
+            "head": 439,
+            "relation": 13,
+            "tail": 77
+          },
+          {
+            "edge_id": 2852,
+            "head": 473,
+            "relation": 10,
+            "tail": 545
+          },
+          {
+            "edge_id": 2905,
+            "head": 110,
+            "relation": 10,
+            "tail": 332
+          },
+          {
+            "edge_id": 2912,
+            "head": 208,
+            "relation": 9,
+            "tail": 144
+          },
+          {
+            "edge_id": 2932,
+            "head": 332,
+            "relation": 10,
+            "tail": 110
+          },
+          {
+            "edge_id": 3080,
+            "head": 77,
+            "relation": 12,
+            "tail": 110
+          },
+          {
+            "edge_id": 3134,
+            "head": 387,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 3175,
+            "head": 144,
+            "relation": 10,
+            "tail": 473
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_uniform",
+      "candidate": 698,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              1,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1516,
+            1473
+          ],
+          "relation_types": [
+            9,
+            1,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.2,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1516,
+              "head": 144,
+              "relation": 1,
+              "tail": 387,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.08333333333333333,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.3333333333333333,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 1.0,
+          "transition_path_probability": 0.005555555555555555,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        },
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              10,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1880,
+            1473
+          ],
+          "relation_types": [
+            9,
+            10,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.2,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1880,
+              "head": 144,
+              "relation": 10,
+              "tail": 387,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.08333333333333333,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 1.0,
+              "degree_weight": 1.0,
+              "weight": 1.0,
+              "transition_probability": 0.3333333333333333,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 1.0,
+          "transition_path_probability": 0.005555555555555555,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          62,
+          66,
+          67,
+          76,
+          77,
+          80,
+          81,
+          109,
+          110,
+          115,
+          144,
+          208,
+          209,
+          332,
+          387,
+          401,
+          439,
+          440,
+          473,
+          510,
+          545,
+          560,
+          569,
+          633,
+          698,
+          773,
+          810,
+          868
+        ],
+        "edge_ids": [
+          36,
+          41,
+          44,
+          64,
+          84,
+          90,
+          126,
+          218,
+          262,
+          276,
+          303,
+          317,
+          323,
+          334,
+          354,
+          392,
+          397,
+          438,
+          556,
+          561,
+          564,
+          605,
+          663,
+          784,
+          829,
+          878,
+          883,
+          891,
+          915,
+          958,
+          963,
+          976,
+          1081,
+          1158,
+          1192,
+          1277,
+          1287,
+          1294,
+          1314,
+          1362,
+          1462,
+          1473,
+          1516,
+          1552,
+          1557,
+          1654,
+          1659,
+          1661,
+          1662,
+          1679,
+          1682,
+          1702,
+          1708,
+          1744,
+          1836,
+          1880,
+          1894,
+          1921,
+          1935,
+          1941,
+          1952,
+          1972,
+          2015,
+          2092,
+          2174,
+          2179,
+          2223,
+          2402,
+          2447,
+          2496,
+          2501,
+          2509,
+          2533,
+          2594,
+          2754,
+          2776,
+          2810,
+          2852,
+          2905,
+          2912,
+          2932,
+          3080,
+          3134,
+          3170,
+          3175
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 36,
+            "head": 66,
+            "relation": 1,
+            "tail": 67
+          },
+          {
+            "edge_id": 41,
+            "head": 76,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 44,
+            "head": 80,
+            "relation": 0,
+            "tail": 81
+          },
+          {
+            "edge_id": 64,
+            "head": 115,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 84,
+            "head": 77,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 90,
+            "head": 77,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 126,
+            "head": 208,
+            "relation": 1,
+            "tail": 209
+          },
+          {
+            "edge_id": 218,
+            "head": 208,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 262,
+            "head": 387,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 276,
+            "head": 401,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 303,
+            "head": 66,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 317,
+            "head": 439,
+            "relation": 1,
+            "tail": 440
+          },
+          {
+            "edge_id": 323,
+            "head": 209,
+            "relation": 0,
+            "tail": 67
+          },
+          {
+            "edge_id": 334,
+            "head": 208,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 354,
+            "head": 144,
+            "relation": 1,
+            "tail": 473
+          },
+          {
+            "edge_id": 392,
+            "head": 401,
+            "relation": 0,
+            "tail": 510
+          },
+          {
+            "edge_id": 397,
+            "head": 80,
+            "relation": 1,
+            "tail": 77
+          },
+          {
+            "edge_id": 438,
+            "head": 81,
+            "relation": 1,
+            "tail": 545
+          },
+          {
+            "edge_id": 556,
+            "head": 332,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 561,
+            "head": 144,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 564,
+            "head": 66,
+            "relation": 0,
+            "tail": 633
+          },
+          {
+            "edge_id": 605,
+            "head": 77,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 663,
+            "head": 440,
+            "relation": 1,
+            "tail": 569
+          },
+          {
+            "edge_id": 784,
+            "head": 439,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 829,
+            "head": 144,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 878,
+            "head": 440,
+            "relation": 1,
+            "tail": 439
+          },
+          {
+            "edge_id": 883,
+            "head": 440,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 891,
+            "head": 208,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 915,
+            "head": 80,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 958,
+            "head": 440,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 963,
+            "head": 110,
+            "relation": 0,
+            "tail": 773
+          },
+          {
+            "edge_id": 976,
+            "head": 144,
+            "relation": 1,
+            "tail": 401
+          },
+          {
+            "edge_id": 1081,
+            "head": 473,
+            "relation": 0,
+            "tail": 810
+          },
+          {
+            "edge_id": 1158,
+            "head": 144,
+            "relation": 1,
+            "tail": 81
+          },
+          {
+            "edge_id": 1192,
+            "head": 77,
+            "relation": 4,
+            "tail": 439
+          },
+          {
+            "edge_id": 1277,
+            "head": 110,
+            "relation": 1,
+            "tail": 560
+          },
+          {
+            "edge_id": 1287,
+            "head": 332,
+            "relation": 1,
+            "tail": 110
+          },
+          {
+            "edge_id": 1294,
+            "head": 144,
+            "relation": 0,
+            "tail": 208
+          },
+          {
+            "edge_id": 1314,
+            "head": 110,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 1362,
+            "head": 110,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 1462,
+            "head": 110,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 1473,
+            "head": 387,
+            "relation": 0,
+            "tail": 698
+          },
+          {
+            "edge_id": 1516,
+            "head": 144,
+            "relation": 1,
+            "tail": 387
+          },
+          {
+            "edge_id": 1552,
+            "head": 868,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 1557,
+            "head": 473,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 1654,
+            "head": 67,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1659,
+            "head": 77,
+            "relation": 9,
+            "tail": 76
+          },
+          {
+            "edge_id": 1661,
+            "head": 76,
+            "relation": 10,
+            "tail": 62
+          },
+          {
+            "edge_id": 1662,
+            "head": 81,
+            "relation": 9,
+            "tail": 80
+          },
+          {
+            "edge_id": 1679,
+            "head": 110,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 1682,
+            "head": 80,
+            "relation": 10,
+            "tail": 115
+          },
+          {
+            "edge_id": 1702,
+            "head": 144,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1708,
+            "head": 80,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1744,
+            "head": 209,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1836,
+            "head": 332,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1880,
+            "head": 144,
+            "relation": 10,
+            "tail": 387
+          },
+          {
+            "edge_id": 1894,
+            "head": 144,
+            "relation": 10,
+            "tail": 401
+          },
+          {
+            "edge_id": 1921,
+            "head": 80,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1935,
+            "head": 440,
+            "relation": 10,
+            "tail": 439
+          },
+          {
+            "edge_id": 1941,
+            "head": 67,
+            "relation": 9,
+            "tail": 209
+          },
+          {
+            "edge_id": 1952,
+            "head": 77,
+            "relation": 12,
+            "tail": 208
+          },
+          {
+            "edge_id": 1972,
+            "head": 473,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2015,
+            "head": 77,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2092,
+            "head": 440,
+            "relation": 10,
+            "tail": 569
+          },
+          {
+            "edge_id": 2174,
+            "head": 77,
+            "relation": 12,
+            "tail": 332
+          },
+          {
+            "edge_id": 2179,
+            "head": 77,
+            "relation": 12,
+            "tail": 144
+          },
+          {
+            "edge_id": 2223,
+            "head": 332,
+            "relation": 9,
+            "tail": 77
+          },
+          {
+            "edge_id": 2402,
+            "head": 332,
+            "relation": 9,
+            "tail": 439
+          },
+          {
+            "edge_id": 2447,
+            "head": 80,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2496,
+            "head": 439,
+            "relation": 10,
+            "tail": 440
+          },
+          {
+            "edge_id": 2501,
+            "head": 77,
+            "relation": 12,
+            "tail": 440
+          },
+          {
+            "edge_id": 2509,
+            "head": 80,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 2533,
+            "head": 144,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2594,
+            "head": 401,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2754,
+            "head": 440,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 2776,
+            "head": 81,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2810,
+            "head": 439,
+            "relation": 13,
+            "tail": 77
+          },
+          {
+            "edge_id": 2852,
+            "head": 473,
+            "relation": 10,
+            "tail": 545
+          },
+          {
+            "edge_id": 2905,
+            "head": 110,
+            "relation": 10,
+            "tail": 332
+          },
+          {
+            "edge_id": 2912,
+            "head": 208,
+            "relation": 9,
+            "tail": 144
+          },
+          {
+            "edge_id": 2932,
+            "head": 332,
+            "relation": 10,
+            "tail": 110
+          },
+          {
+            "edge_id": 3080,
+            "head": 77,
+            "relation": 12,
+            "tail": 110
+          },
+          {
+            "edge_id": 3134,
+            "head": 387,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 3170,
+            "head": 77,
+            "relation": 9,
+            "tail": 868
+          },
+          {
+            "edge_id": 3175,
+            "head": 144,
+            "relation": 10,
+            "tail": 473
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_topology_signature",
+      "candidate": 698,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              1,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1516,
+            1473
+          ],
+          "relation_types": [
+            9,
+            1,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 0.6146005183600862,
+              "degree_weight": 0.408248290463863,
+              "weight": 0.7763646450506491,
+              "transition_probability": 0.20611719912610194,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1516,
+              "head": 144,
+              "relation": 1,
+              "tail": 387,
+              "rho": 0.6481338608878038,
+              "degree_weight": 0.2773500981126146,
+              "weight": 0.554700196225229,
+              "transition_probability": 0.09140780901618048,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 0.6182193665966356,
+              "degree_weight": 0.5,
+              "weight": 0.9561529318377501,
+              "transition_probability": 0.3390060424472019,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.4117668976679992,
+          "transition_path_probability": 0.006387118457200061,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        },
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              10,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1880,
+            1473
+          ],
+          "relation_types": [
+            9,
+            10,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 0.6146005183600862,
+              "degree_weight": 0.408248290463863,
+              "weight": 0.7763646450506491,
+              "transition_probability": 0.20611719912610194,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1880,
+              "head": 144,
+              "relation": 10,
+              "tail": 387,
+              "rho": 0.5555577760145861,
+              "degree_weight": 0.2773500981126146,
+              "weight": 0.47943121744379913,
+              "transition_probability": 0.0790044017628283,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 0.6182193665966356,
+              "degree_weight": 0.5,
+              "weight": 0.9561529318377501,
+              "transition_probability": 0.3390060424472019,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.35589297857732805,
+          "transition_path_probability": 0.005520430673599084,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          62,
+          66,
+          67,
+          76,
+          77,
+          80,
+          81,
+          109,
+          110,
+          115,
+          144,
+          208,
+          209,
+          332,
+          387,
+          401,
+          439,
+          440,
+          473,
+          510,
+          545,
+          560,
+          569,
+          633,
+          698,
+          773,
+          810,
+          868
+        ],
+        "edge_ids": [
+          36,
+          41,
+          44,
+          64,
+          84,
+          90,
+          126,
+          218,
+          262,
+          276,
+          303,
+          317,
+          323,
+          334,
+          354,
+          392,
+          397,
+          438,
+          556,
+          561,
+          564,
+          605,
+          663,
+          784,
+          829,
+          878,
+          883,
+          891,
+          915,
+          958,
+          963,
+          976,
+          1081,
+          1158,
+          1192,
+          1277,
+          1287,
+          1294,
+          1314,
+          1362,
+          1462,
+          1473,
+          1516,
+          1552,
+          1557,
+          1654,
+          1659,
+          1661,
+          1662,
+          1679,
+          1682,
+          1702,
+          1708,
+          1744,
+          1836,
+          1880,
+          1894,
+          1921,
+          1935,
+          1941,
+          1952,
+          1972,
+          2015,
+          2092,
+          2174,
+          2179,
+          2223,
+          2402,
+          2447,
+          2496,
+          2501,
+          2509,
+          2533,
+          2594,
+          2754,
+          2776,
+          2810,
+          2852,
+          2905,
+          2912,
+          2932,
+          3080,
+          3134,
+          3170,
+          3175
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 36,
+            "head": 66,
+            "relation": 1,
+            "tail": 67
+          },
+          {
+            "edge_id": 41,
+            "head": 76,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 44,
+            "head": 80,
+            "relation": 0,
+            "tail": 81
+          },
+          {
+            "edge_id": 64,
+            "head": 115,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 84,
+            "head": 77,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 90,
+            "head": 77,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 126,
+            "head": 208,
+            "relation": 1,
+            "tail": 209
+          },
+          {
+            "edge_id": 218,
+            "head": 208,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 262,
+            "head": 387,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 276,
+            "head": 401,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 303,
+            "head": 66,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 317,
+            "head": 439,
+            "relation": 1,
+            "tail": 440
+          },
+          {
+            "edge_id": 323,
+            "head": 209,
+            "relation": 0,
+            "tail": 67
+          },
+          {
+            "edge_id": 334,
+            "head": 208,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 354,
+            "head": 144,
+            "relation": 1,
+            "tail": 473
+          },
+          {
+            "edge_id": 392,
+            "head": 401,
+            "relation": 0,
+            "tail": 510
+          },
+          {
+            "edge_id": 397,
+            "head": 80,
+            "relation": 1,
+            "tail": 77
+          },
+          {
+            "edge_id": 438,
+            "head": 81,
+            "relation": 1,
+            "tail": 545
+          },
+          {
+            "edge_id": 556,
+            "head": 332,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 561,
+            "head": 144,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 564,
+            "head": 66,
+            "relation": 0,
+            "tail": 633
+          },
+          {
+            "edge_id": 605,
+            "head": 77,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 663,
+            "head": 440,
+            "relation": 1,
+            "tail": 569
+          },
+          {
+            "edge_id": 784,
+            "head": 439,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 829,
+            "head": 144,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 878,
+            "head": 440,
+            "relation": 1,
+            "tail": 439
+          },
+          {
+            "edge_id": 883,
+            "head": 440,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 891,
+            "head": 208,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 915,
+            "head": 80,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 958,
+            "head": 440,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 963,
+            "head": 110,
+            "relation": 0,
+            "tail": 773
+          },
+          {
+            "edge_id": 976,
+            "head": 144,
+            "relation": 1,
+            "tail": 401
+          },
+          {
+            "edge_id": 1081,
+            "head": 473,
+            "relation": 0,
+            "tail": 810
+          },
+          {
+            "edge_id": 1158,
+            "head": 144,
+            "relation": 1,
+            "tail": 81
+          },
+          {
+            "edge_id": 1192,
+            "head": 77,
+            "relation": 4,
+            "tail": 439
+          },
+          {
+            "edge_id": 1277,
+            "head": 110,
+            "relation": 1,
+            "tail": 560
+          },
+          {
+            "edge_id": 1287,
+            "head": 332,
+            "relation": 1,
+            "tail": 110
+          },
+          {
+            "edge_id": 1294,
+            "head": 144,
+            "relation": 0,
+            "tail": 208
+          },
+          {
+            "edge_id": 1314,
+            "head": 110,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 1362,
+            "head": 110,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 1462,
+            "head": 110,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 1473,
+            "head": 387,
+            "relation": 0,
+            "tail": 698
+          },
+          {
+            "edge_id": 1516,
+            "head": 144,
+            "relation": 1,
+            "tail": 387
+          },
+          {
+            "edge_id": 1552,
+            "head": 868,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 1557,
+            "head": 473,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 1654,
+            "head": 67,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1659,
+            "head": 77,
+            "relation": 9,
+            "tail": 76
+          },
+          {
+            "edge_id": 1661,
+            "head": 76,
+            "relation": 10,
+            "tail": 62
+          },
+          {
+            "edge_id": 1662,
+            "head": 81,
+            "relation": 9,
+            "tail": 80
+          },
+          {
+            "edge_id": 1679,
+            "head": 110,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 1682,
+            "head": 80,
+            "relation": 10,
+            "tail": 115
+          },
+          {
+            "edge_id": 1702,
+            "head": 144,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1708,
+            "head": 80,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1744,
+            "head": 209,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1836,
+            "head": 332,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1880,
+            "head": 144,
+            "relation": 10,
+            "tail": 387
+          },
+          {
+            "edge_id": 1894,
+            "head": 144,
+            "relation": 10,
+            "tail": 401
+          },
+          {
+            "edge_id": 1921,
+            "head": 80,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1935,
+            "head": 440,
+            "relation": 10,
+            "tail": 439
+          },
+          {
+            "edge_id": 1941,
+            "head": 67,
+            "relation": 9,
+            "tail": 209
+          },
+          {
+            "edge_id": 1952,
+            "head": 77,
+            "relation": 12,
+            "tail": 208
+          },
+          {
+            "edge_id": 1972,
+            "head": 473,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2015,
+            "head": 77,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2092,
+            "head": 440,
+            "relation": 10,
+            "tail": 569
+          },
+          {
+            "edge_id": 2174,
+            "head": 77,
+            "relation": 12,
+            "tail": 332
+          },
+          {
+            "edge_id": 2179,
+            "head": 77,
+            "relation": 12,
+            "tail": 144
+          },
+          {
+            "edge_id": 2223,
+            "head": 332,
+            "relation": 9,
+            "tail": 77
+          },
+          {
+            "edge_id": 2402,
+            "head": 332,
+            "relation": 9,
+            "tail": 439
+          },
+          {
+            "edge_id": 2447,
+            "head": 80,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2496,
+            "head": 439,
+            "relation": 10,
+            "tail": 440
+          },
+          {
+            "edge_id": 2501,
+            "head": 77,
+            "relation": 12,
+            "tail": 440
+          },
+          {
+            "edge_id": 2509,
+            "head": 80,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 2533,
+            "head": 144,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2594,
+            "head": 401,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2754,
+            "head": 440,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 2776,
+            "head": 81,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2810,
+            "head": 439,
+            "relation": 13,
+            "tail": 77
+          },
+          {
+            "edge_id": 2852,
+            "head": 473,
+            "relation": 10,
+            "tail": 545
+          },
+          {
+            "edge_id": 2905,
+            "head": 110,
+            "relation": 10,
+            "tail": 332
+          },
+          {
+            "edge_id": 2912,
+            "head": 208,
+            "relation": 9,
+            "tail": 144
+          },
+          {
+            "edge_id": 2932,
+            "head": 332,
+            "relation": 10,
+            "tail": 110
+          },
+          {
+            "edge_id": 3080,
+            "head": 77,
+            "relation": 12,
+            "tail": 110
+          },
+          {
+            "edge_id": 3134,
+            "head": 387,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 3170,
+            "head": 77,
+            "relation": 9,
+            "tail": 868
+          },
+          {
+            "edge_id": 3175,
+            "head": 144,
+            "relation": 10,
+            "tail": 473
+          }
+        ]
+      }
+    },
+    {
+      "method": "ppr_topology_gated",
+      "candidate": 698,
+      "status": "ok",
+      "is_cross_community": true,
+      "paths": [
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              10,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1880,
+            1473
+          ],
+          "relation_types": [
+            9,
+            10,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 3.243727866449119,
+              "degree_weight": 0.408248290463863,
+              "weight": 0.7351224675845207,
+              "transition_probability": 0.19891476342578926,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1880,
+              "head": 144,
+              "relation": 10,
+              "tail": 387,
+              "rho": 3.623904125747236,
+              "degree_weight": 0.2773500981126146,
+              "weight": 0.5547001962252291,
+              "transition_probability": 0.08675052892895661,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 3.2492795088450452,
+              "degree_weight": 0.5,
+              "weight": 0.9017928251665053,
+              "transition_probability": 0.31079211137980145,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.3677263842551273,
+          "transition_path_probability": 0.005363016534108467,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        },
+        {
+          "triples": [
+            [
+              208,
+              9,
+              144
+            ],
+            [
+              144,
+              1,
+              387
+            ],
+            [
+              387,
+              0,
+              698
+            ]
+          ],
+          "edge_ids": [
+            2912,
+            1516,
+            1473
+          ],
+          "relation_types": [
+            9,
+            1,
+            0
+          ],
+          "edges": [
+            {
+              "edge_id": 2912,
+              "head": 208,
+              "relation": 9,
+              "tail": 144,
+              "rho": 3.243727866449119,
+              "degree_weight": 0.408248290463863,
+              "weight": 0.7351224675845207,
+              "transition_probability": 0.19891476342578926,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1516,
+              "head": 144,
+              "relation": 1,
+              "tail": 387,
+              "rho": 3.6231493566477577,
+              "degree_weight": 0.2773500981126146,
+              "weight": 0.5545904424830205,
+              "transition_probability": 0.08673336435022863,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1473,
+              "head": 387,
+              "relation": 0,
+              "tail": 698,
+              "rho": 3.2492795088450452,
+              "degree_weight": 0.5,
+              "weight": 0.9017928251665053,
+              "transition_probability": 0.31079211137980145,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.367653625407996,
+          "transition_path_probability": 0.005361955400295731,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            387,
+            698
+          ]
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          62,
+          66,
+          67,
+          76,
+          77,
+          80,
+          81,
+          109,
+          110,
+          115,
+          144,
+          208,
+          209,
+          332,
+          387,
+          401,
+          439,
+          440,
+          473,
+          510,
+          545,
+          560,
+          569,
+          633,
+          698,
+          773,
+          810,
+          868
+        ],
+        "edge_ids": [
+          36,
+          41,
+          44,
+          64,
+          84,
+          90,
+          126,
+          218,
+          262,
+          276,
+          303,
+          317,
+          323,
+          334,
+          354,
+          392,
+          397,
+          438,
+          556,
+          561,
+          564,
+          605,
+          663,
+          784,
+          829,
+          878,
+          883,
+          891,
+          915,
+          958,
+          963,
+          976,
+          1081,
+          1158,
+          1192,
+          1277,
+          1287,
+          1294,
+          1314,
+          1362,
+          1462,
+          1473,
+          1516,
+          1552,
+          1557,
+          1654,
+          1659,
+          1661,
+          1662,
+          1679,
+          1682,
+          1702,
+          1708,
+          1744,
+          1836,
+          1880,
+          1894,
+          1921,
+          1935,
+          1941,
+          1952,
+          1972,
+          2015,
+          2092,
+          2174,
+          2179,
+          2223,
+          2402,
+          2447,
+          2496,
+          2501,
+          2509,
+          2533,
+          2594,
+          2754,
+          2776,
+          2810,
+          2852,
+          2905,
+          2912,
+          2932,
+          3080,
+          3134,
+          3170,
+          3175
+        ],
+        "directed_edges": [
+          {
+            "edge_id": 36,
+            "head": 66,
+            "relation": 1,
+            "tail": 67
+          },
+          {
+            "edge_id": 41,
+            "head": 76,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 44,
+            "head": 80,
+            "relation": 0,
+            "tail": 81
+          },
+          {
+            "edge_id": 64,
+            "head": 115,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 84,
+            "head": 77,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 90,
+            "head": 77,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 126,
+            "head": 208,
+            "relation": 1,
+            "tail": 209
+          },
+          {
+            "edge_id": 218,
+            "head": 208,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 262,
+            "head": 387,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 276,
+            "head": 401,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 303,
+            "head": 66,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 317,
+            "head": 439,
+            "relation": 1,
+            "tail": 440
+          },
+          {
+            "edge_id": 323,
+            "head": 209,
+            "relation": 0,
+            "tail": 67
+          },
+          {
+            "edge_id": 334,
+            "head": 208,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 354,
+            "head": 144,
+            "relation": 1,
+            "tail": 473
+          },
+          {
+            "edge_id": 392,
+            "head": 401,
+            "relation": 0,
+            "tail": 510
+          },
+          {
+            "edge_id": 397,
+            "head": 80,
+            "relation": 1,
+            "tail": 77
+          },
+          {
+            "edge_id": 438,
+            "head": 81,
+            "relation": 1,
+            "tail": 545
+          },
+          {
+            "edge_id": 556,
+            "head": 332,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 561,
+            "head": 144,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 564,
+            "head": 66,
+            "relation": 0,
+            "tail": 633
+          },
+          {
+            "edge_id": 605,
+            "head": 77,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 663,
+            "head": 440,
+            "relation": 1,
+            "tail": 569
+          },
+          {
+            "edge_id": 784,
+            "head": 439,
+            "relation": 0,
+            "tail": 332
+          },
+          {
+            "edge_id": 829,
+            "head": 144,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 878,
+            "head": 440,
+            "relation": 1,
+            "tail": 439
+          },
+          {
+            "edge_id": 883,
+            "head": 440,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 891,
+            "head": 208,
+            "relation": 1,
+            "tail": 80
+          },
+          {
+            "edge_id": 915,
+            "head": 80,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 958,
+            "head": 440,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 963,
+            "head": 110,
+            "relation": 0,
+            "tail": 773
+          },
+          {
+            "edge_id": 976,
+            "head": 144,
+            "relation": 1,
+            "tail": 401
+          },
+          {
+            "edge_id": 1081,
+            "head": 473,
+            "relation": 0,
+            "tail": 810
+          },
+          {
+            "edge_id": 1158,
+            "head": 144,
+            "relation": 1,
+            "tail": 81
+          },
+          {
+            "edge_id": 1192,
+            "head": 77,
+            "relation": 4,
+            "tail": 439
+          },
+          {
+            "edge_id": 1277,
+            "head": 110,
+            "relation": 1,
+            "tail": 560
+          },
+          {
+            "edge_id": 1287,
+            "head": 332,
+            "relation": 1,
+            "tail": 110
+          },
+          {
+            "edge_id": 1294,
+            "head": 144,
+            "relation": 0,
+            "tail": 208
+          },
+          {
+            "edge_id": 1314,
+            "head": 110,
+            "relation": 1,
+            "tail": 332
+          },
+          {
+            "edge_id": 1362,
+            "head": 110,
+            "relation": 1,
+            "tail": 109
+          },
+          {
+            "edge_id": 1462,
+            "head": 110,
+            "relation": 3,
+            "tail": 77
+          },
+          {
+            "edge_id": 1473,
+            "head": 387,
+            "relation": 0,
+            "tail": 698
+          },
+          {
+            "edge_id": 1516,
+            "head": 144,
+            "relation": 1,
+            "tail": 387
+          },
+          {
+            "edge_id": 1552,
+            "head": 868,
+            "relation": 0,
+            "tail": 77
+          },
+          {
+            "edge_id": 1557,
+            "head": 473,
+            "relation": 1,
+            "tail": 144
+          },
+          {
+            "edge_id": 1654,
+            "head": 67,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1659,
+            "head": 77,
+            "relation": 9,
+            "tail": 76
+          },
+          {
+            "edge_id": 1661,
+            "head": 76,
+            "relation": 10,
+            "tail": 62
+          },
+          {
+            "edge_id": 1662,
+            "head": 81,
+            "relation": 9,
+            "tail": 80
+          },
+          {
+            "edge_id": 1679,
+            "head": 110,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 1682,
+            "head": 80,
+            "relation": 10,
+            "tail": 115
+          },
+          {
+            "edge_id": 1702,
+            "head": 144,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1708,
+            "head": 80,
+            "relation": 10,
+            "tail": 77
+          },
+          {
+            "edge_id": 1744,
+            "head": 209,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1836,
+            "head": 332,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 1880,
+            "head": 144,
+            "relation": 10,
+            "tail": 387
+          },
+          {
+            "edge_id": 1894,
+            "head": 144,
+            "relation": 10,
+            "tail": 401
+          },
+          {
+            "edge_id": 1921,
+            "head": 80,
+            "relation": 10,
+            "tail": 66
+          },
+          {
+            "edge_id": 1935,
+            "head": 440,
+            "relation": 10,
+            "tail": 439
+          },
+          {
+            "edge_id": 1941,
+            "head": 67,
+            "relation": 9,
+            "tail": 209
+          },
+          {
+            "edge_id": 1952,
+            "head": 77,
+            "relation": 12,
+            "tail": 208
+          },
+          {
+            "edge_id": 1972,
+            "head": 473,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2015,
+            "head": 77,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2092,
+            "head": 440,
+            "relation": 10,
+            "tail": 569
+          },
+          {
+            "edge_id": 2174,
+            "head": 77,
+            "relation": 12,
+            "tail": 332
+          },
+          {
+            "edge_id": 2179,
+            "head": 77,
+            "relation": 12,
+            "tail": 144
+          },
+          {
+            "edge_id": 2223,
+            "head": 332,
+            "relation": 9,
+            "tail": 77
+          },
+          {
+            "edge_id": 2402,
+            "head": 332,
+            "relation": 9,
+            "tail": 439
+          },
+          {
+            "edge_id": 2447,
+            "head": 80,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2496,
+            "head": 439,
+            "relation": 10,
+            "tail": 440
+          },
+          {
+            "edge_id": 2501,
+            "head": 77,
+            "relation": 12,
+            "tail": 440
+          },
+          {
+            "edge_id": 2509,
+            "head": 80,
+            "relation": 10,
+            "tail": 208
+          },
+          {
+            "edge_id": 2533,
+            "head": 144,
+            "relation": 10,
+            "tail": 80
+          },
+          {
+            "edge_id": 2594,
+            "head": 401,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2754,
+            "head": 440,
+            "relation": 10,
+            "tail": 109
+          },
+          {
+            "edge_id": 2776,
+            "head": 81,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 2810,
+            "head": 439,
+            "relation": 13,
+            "tail": 77
+          },
+          {
+            "edge_id": 2852,
+            "head": 473,
+            "relation": 10,
+            "tail": 545
+          },
+          {
+            "edge_id": 2905,
+            "head": 110,
+            "relation": 10,
+            "tail": 332
+          },
+          {
+            "edge_id": 2912,
+            "head": 208,
+            "relation": 9,
+            "tail": 144
+          },
+          {
+            "edge_id": 2932,
+            "head": 332,
+            "relation": 10,
+            "tail": 110
+          },
+          {
+            "edge_id": 3080,
+            "head": 77,
+            "relation": 12,
+            "tail": 110
+          },
+          {
+            "edge_id": 3134,
+            "head": 387,
+            "relation": 10,
+            "tail": 144
+          },
+          {
+            "edge_id": 3170,
+            "head": 77,
+            "relation": 9,
+            "tail": 868
+          },
+          {
+            "edge_id": 3175,
+            "head": 144,
+            "relation": 10,
+            "tail": 473
+          }
+        ]
+      }
+    }
+  ]
+}
