@@ -1,0 +1,7009 @@
+{
+  "schema_version": "query-community-1.0",
+  "graph_key": "e8273ace1331589661d2813a45311d0a176efca521cfb91fc166042a89499539",
+  "method": "ppr_topology_gated",
+  "query_info": {
+    "head": 218,
+    "relation": 2,
+    "pi_h": [
+      0.0,
+      0.0,
+      0.003007192682939865,
+      0.1869650211627611,
+      0.0005606177273256512,
+      0.0032748669696343997,
+      0.0,
+      0.0289699868065519,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.03315696804026685,
+      0.0,
+      0.0,
+      0.0,
+      0.163539312713721,
+      0.003387822653440584,
+      0.030010525790729582,
+      0.181891972392551,
+      0.0,
+      0.18696852869630023,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.17826718436377784,
+      0.0
+    ],
+    "anchor_presence_7": [
+      0.2672413793103448,
+      0.2672413793103448,
+      0.2672413793103448,
+      0.2304,
+      0.2304,
+      0.2304,
+      0.2304
+    ],
+    "anchor_presence_definition": "fraction of relation motifs whose distinct relation types all occur in head-only local 2hop edges",
+    "query_id": "NELLInductive_v1:60:0",
+    "fact_index": 60,
+    "direction": 0
+  },
+  "candidate_evidence": [
+    {
+      "entity": 1,
+      "base_score": 0.016393441706895828,
+      "base_rank": 1,
+      "raw_tie_rank": 1,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.7674914987721089,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.35994531763533494
+        },
+        {
+          "entity": 4,
+          "score": 0.09518909531176625
+        },
+        {
+          "entity": 218,
+          "score": 0.02144507726048938
+        },
+        {
+          "entity": 5,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 10,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 11,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 26,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 30,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 32,
+          "score": 0.001698831295107898
+        },
+        {
+          "entity": 35,
+          "score": 0.001698831295107898
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ]
+          ],
+          "edge_ids": [
+            652
+          ],
+          "relation_types": [
+            7
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.9910961251701268,
+          "transition_path_probability": 0.46207441899094864,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              122
+            ],
+            [
+              122,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            991,
+            1409
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 991,
+              "head": 4,
+              "relation": 26,
+              "tail": 122,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1409,
+              "head": 122,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            122
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              154
+            ],
+            [
+              154,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1049,
+            1553
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1049,
+              "head": 4,
+              "relation": 26,
+              "tail": 154,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1553,
+              "head": 154,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            154
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              167
+            ],
+            [
+              167,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1083,
+            1275
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1083,
+              "head": 4,
+              "relation": 26,
+              "tail": 167,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1275,
+              "head": 167,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            167
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              190
+            ],
+            [
+              190,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1386,
+            1178
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1386,
+              "head": 4,
+              "relation": 26,
+              "tail": 190,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1178,
+              "head": 190,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            190
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              221
+            ],
+            [
+              221,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1515,
+            1657
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1515,
+              "head": 4,
+              "relation": 26,
+              "tail": 221,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1657,
+              "head": 221,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            221
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              205
+            ],
+            [
+              205,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1524,
+            1344
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1524,
+              "head": 4,
+              "relation": 26,
+              "tail": 205,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1344,
+              "head": 205,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.017447507343603,
+              "transition_probability": 0.4686029977489192,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.1811396051180849,
+          "transition_path_probability": 0.0015178051918580387,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            205
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              204
+            ],
+            [
+              204,
+              5,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1477,
+            508
+          ],
+          "relation_types": [
+            12,
+            26,
+            5
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1477,
+              "head": 4,
+              "relation": 26,
+              "tail": 204,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 508,
+              "head": 204,
+              "relation": 5,
+              "tail": 1,
+              "rho": 4.02394404382193,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9835241026423042,
+              "transition_probability": 0.460168668094361,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.17510010717101387,
+          "transition_path_probability": 0.0014904863966283294,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            204
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              18,
+              127
+            ],
+            [
+              127,
+              7,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1576,
+            165
+          ],
+          "relation_types": [
+            12,
+            18,
+            7
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1576,
+              "head": 4,
+              "relation": 18,
+              "tail": 127,
+              "rho": 4.47442147753867,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.15214699207705856,
+              "transition_probability": 0.005937133165579033,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 165,
+              "head": 127,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46556646033318644,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.17398235246224156,
+          "transition_path_probability": 0.0014868962751940229,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            127
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              29
+            ],
+            [
+              29,
+              17,
+              1
+            ]
+          ],
+          "edge_ids": [
+            727,
+            913,
+            860
+          ],
+          "relation_types": [
+            12,
+            26,
+            17
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 913,
+              "head": 4,
+              "relation": 26,
+              "tail": 29,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 860,
+              "head": 29,
+              "relation": 17,
+              "tail": 1,
+              "rho": 4.12251057384756,
+              "degree_weight": 0.5,
+              "weight": 0.8811353883767143,
+              "transition_probability": 0.32173965233992785,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.15687149966374325,
+          "transition_path_probability": 0.0010421147903321734,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            29
+          ]
+        }
+      ],
+      "max_path_weight": 0.9910961251701268,
+      "status": "ok"
+    },
+    {
+      "entity": 223,
+      "base_score": 0.016129031777381897,
+      "base_rank": 2,
+      "raw_tie_rank": 2,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8058656444613884,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4777076615099562
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 223,
+          "score": 0.004762650634281572
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              2,
+              223
+            ]
+          ],
+          "edge_ids": [
+            652,
+            828
+          ],
+          "relation_types": [
+            7,
+            2
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 828,
+              "head": 1,
+              "relation": 2,
+              "tail": 223,
+              "rho": 3.790368142835513,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06079729164597741,
+              "transition_probability": 0.0014300769210702656,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06025596017116633,
+          "transition_path_probability": 0.0006608019624159077,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              14,
+              223
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1663
+          ],
+          "relation_types": [
+            7,
+            14
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1663,
+              "head": 1,
+              "relation": 14,
+              "tail": 223,
+              "rho": 2.0555902832612216,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.02060475012336164,
+              "transition_probability": 0.00048466595827034346,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.020421288007362412,
+          "transition_path_probability": 0.00022395174107246033,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06025596017116633,
+      "status": "ok"
+    },
+    {
+      "entity": 218,
+      "base_score": 0.01587301678955555,
+      "base_rank": 3,
+      "raw_tie_rank": 3,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.9900567351053703,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.3943436956252753
+        },
+        {
+          "entity": 4,
+          "score": 0.2669349024275413
+        },
+        {
+          "entity": 218,
+          "score": 0.2006375482094455
+        },
+        {
+          "entity": 7,
+          "score": 0.0012119775258239227
+        },
+        {
+          "entity": 11,
+          "score": 0.0007390799349364495
+        },
+        {
+          "entity": 35,
+          "score": 0.0007390799349364495
+        },
+        {
+          "entity": 42,
+          "score": 0.0007390799349364495
+        },
+        {
+          "entity": 43,
+          "score": 0.0007390799349364495
+        },
+        {
+          "entity": 48,
+          "score": 0.0007390799349364495
+        },
+        {
+          "entity": 65,
+          "score": 0.0007390799349364495
+        }
+      ],
+      "evidence_paths": [],
+      "max_path_weight": 0.0,
+      "status": "no_evidence"
+    },
+    {
+      "entity": 61,
+      "base_score": 0.015384615398943424,
+      "base_rank": 4,
+      "raw_tie_rank": 5,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.7899472796987318,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.3523470077233847
+        },
+        {
+          "entity": 4,
+          "score": 0.29387455795850725
+        },
+        {
+          "entity": 218,
+          "score": 0.01407795558006229
+        },
+        {
+          "entity": 61,
+          "score": 0.009133471567421862
+        },
+        {
+          "entity": 7,
+          "score": 0.0012200217818409196
+        },
+        {
+          "entity": 5,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 10,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 11,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 26,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 30,
+          "score": 0.000736685603846757
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              61
+            ]
+          ],
+          "edge_ids": [
+            727,
+            901
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 901,
+              "head": 4,
+              "relation": 26,
+              "tail": 61,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 95,
+      "base_score": 0.015384615398943424,
+      "base_rank": 5,
+      "raw_tie_rank": 5,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.7899472796987318,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.3523470077233847
+        },
+        {
+          "entity": 4,
+          "score": 0.29387455795850725
+        },
+        {
+          "entity": 218,
+          "score": 0.01407795558006229
+        },
+        {
+          "entity": 95,
+          "score": 0.009133471567421862
+        },
+        {
+          "entity": 7,
+          "score": 0.0012200217818409196
+        },
+        {
+          "entity": 5,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 10,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 11,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 26,
+          "score": 0.000736685603846757
+        },
+        {
+          "entity": 30,
+          "score": 0.000736685603846757
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              95
+            ]
+          ],
+          "edge_ids": [
+            727,
+            954
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 954,
+              "head": 4,
+              "relation": 26,
+              "tail": 95,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 4,
+      "base_score": 0.01515151560306549,
+      "base_rank": 6,
+      "raw_tie_rank": 6,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.7328884875047638,
+      "meeting_nodes": [
+        {
+          "entity": 4,
+          "score": 0.2376822015783387
+        },
+        {
+          "entity": 1,
+          "score": 0.17620810873491102
+        },
+        {
+          "entity": 218,
+          "score": 0.026894050467495188
+        },
+        {
+          "entity": 11,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 35,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 42,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 43,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 48,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 65,
+          "score": 0.0016927972277693802
+        },
+        {
+          "entity": 71,
+          "score": 0.0016927972277693802
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            727
+          ],
+          "relation_types": [
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 1.1537880848980808,
+          "transition_path_probability": 0.5379255810090514,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              190
+            ],
+            [
+              190,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            345,
+            553
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 345,
+              "head": 1,
+              "relation": 3,
+              "tail": 190,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 553,
+              "head": 190,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            190,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              167
+            ],
+            [
+              167,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            442,
+            250
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 442,
+              "head": 1,
+              "relation": 3,
+              "tail": 167,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 250,
+              "head": 167,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            167,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              205
+            ],
+            [
+              205,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            511,
+            691
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 511,
+              "head": 1,
+              "relation": 3,
+              "tail": 205,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 691,
+              "head": 205,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            205,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              122
+            ],
+            [
+              122,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            576,
+            158
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 576,
+              "head": 1,
+              "relation": 3,
+              "tail": 122,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 158,
+              "head": 122,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            122,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              154
+            ],
+            [
+              154,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            720,
+            216
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 720,
+              "head": 1,
+              "relation": 3,
+              "tail": 154,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 216,
+              "head": 154,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            154,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              221
+            ],
+            [
+              221,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            824,
+            682
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 824,
+              "head": 1,
+              "relation": 3,
+              "tail": 221,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 682,
+              "head": 221,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5313970022510809,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07772983936756696,
+          "transition_path_probability": 0.00039260166167503043,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218,
+            221
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              19,
+              204
+            ],
+            [
+              204,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1341,
+            644
+          ],
+          "relation_types": [
+            7,
+            19,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1341,
+              "head": 1,
+              "relation": 19,
+              "tail": 204,
+              "rho": 4.020540697343786,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06613008967736944,
+              "transition_probability": 0.0015555152618738446,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 644,
+              "head": 204,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5398313319056389,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.0756207428982921,
+          "transition_path_probability": 0.0003880112253431576,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            204,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              127
+            ],
+            [
+              127,
+              4,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            998,
+            743
+          ],
+          "relation_types": [
+            7,
+            21,
+            4
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 998,
+              "head": 1,
+              "relation": 21,
+              "tail": 127,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 743,
+              "head": 127,
+              "relation": 4,
+              "tail": 4,
+              "rho": 4.47191185830388,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1377001039672574,
+              "transition_probability": 0.5344335396668136,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.07505062033665477,
+          "transition_path_probability": 0.00038662640106986145,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            127,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              29
+            ],
+            [
+              29,
+              12,
+              4
+            ]
+          ],
+          "edge_ids": [
+            652,
+            27,
+            80
+          ],
+          "relation_types": [
+            7,
+            3,
+            12
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 27,
+              "head": 1,
+              "relation": 3,
+              "tail": 29,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 80,
+              "head": 29,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5,
+              "weight": 0.9992097921055346,
+              "transition_probability": 0.3648535915904455,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06731601552439673,
+          "transition_path_probability": 0.00026955764846191407,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            29,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 1.1537880848980808,
+      "status": "ok"
+    },
+    {
+      "entity": 217,
+      "base_score": 0.014925372786819935,
+      "base_rank": 7,
+      "raw_tie_rank": 7,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 2,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.2799585481541767,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.14221225560974654
+        },
+        {
+          "entity": 4,
+          "score": 0.07687629079330562
+        },
+        {
+          "entity": 7,
+          "score": 0.02072695897900228
+        },
+        {
+          "entity": 166,
+          "score": 0.0032742125141372656
+        },
+        {
+          "entity": 217,
+          "score": 0.002534913042522227
+        },
+        {
+          "entity": 218,
+          "score": 0.0016399300799894519
+        },
+        {
+          "entity": 6,
+          "score": 0.0014447901490840336
+        },
+        {
+          "entity": 137,
+          "score": 0.0014447901490840336
+        },
+        {
+          "entity": 185,
+          "score": 0.0014447901490840336
+        },
+        {
+          "entity": 11,
+          "score": 0.000170127711507411
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              11,
+              7
+            ],
+            [
+              7,
+              25,
+              217
+            ]
+          ],
+          "edge_ids": [
+            652,
+            448,
+            1469
+          ],
+          "relation_types": [
+            7,
+            11,
+            25
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 448,
+              "head": 1,
+              "relation": 11,
+              "tail": 7,
+              "rho": 2.464181751567078,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.030071281797739616,
+              "transition_probability": 0.0007073381876344343,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1469,
+              "head": 7,
+              "relation": 25,
+              "tail": 217,
+              "rho": 2.4750873607530077,
+              "degree_weight": 0.37796447300922725,
+              "weight": 0.29489387645153486,
+              "transition_probability": 0.16666666666666666,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.008788878749795845,
+          "transition_path_probability": 5.4473813680215306e-05,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            7,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.008788878749795845,
+      "status": "ok"
+    },
+    {
+      "entity": 201,
+      "base_score": 0.014705882407724857,
+      "base_rank": 8,
+      "raw_tie_rank": 8,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8041013437805176,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995614
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 201,
+          "score": 0.002893641515494924
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              11,
+              201
+            ]
+          ],
+          "edge_ids": [
+            652,
+            421
+          ],
+          "relation_types": [
+            7,
+            11
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 421,
+              "head": 1,
+              "relation": 11,
+              "tail": 201,
+              "rho": 2.464181751567078,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.030071281797739616,
+              "transition_probability": 0.0007073381876344343,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.029803530868638697,
+          "transition_path_probability": 0.00032684288208129184,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.029803530868638697,
+      "status": "ok"
+    },
+    {
+      "entity": 141,
+      "base_score": 0.014492753893136978,
+      "base_rank": 9,
+      "raw_tie_rank": 9,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8046969746317604,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4777076615099562
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 141,
+          "score": 0.0035111927822162373
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              8,
+              141
+            ]
+          ],
+          "edge_ids": [
+            652,
+            187
+          ],
+          "relation_types": [
+            7,
+            8
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 187,
+              "head": 1,
+              "relation": 8,
+              "tail": 141,
+              "rho": 2.1216944716631785,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.022136297994174593,
+              "transition_probability": 0.0005206911035402615,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.021939199167637688,
+          "transition_path_probability": 0.00024059803914212223,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              6,
+              141
+            ]
+          ],
+          "edge_ids": [
+            652,
+            831
+          ],
+          "relation_types": [
+            7,
+            6
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 831,
+              "head": 1,
+              "relation": 6,
+              "tail": 141,
+              "rho": 2.1216944716631776,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.022136297994174572,
+              "transition_probability": 0.000520691103540261,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.021939199167637667,
+          "transition_path_probability": 0.000240598039142122,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.021939199167637688,
+      "status": "ok"
+    },
+    {
+      "entity": 161,
+      "base_score": 0.013888888992369175,
+      "base_rank": 10,
+      "raw_tie_rank": 12,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.816350316925986,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.413764622054761
+        },
+        {
+          "entity": 4,
+          "score": 0.25237479180848843
+        },
+        {
+          "entity": 218,
+          "score": 0.011483281121506934
+        },
+        {
+          "entity": 161,
+          "score": 0.010820598535482825
+        },
+        {
+          "entity": 7,
+          "score": 0.0012079314498294714
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402753337532707
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402753337532707
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402753337532707
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402753337532707
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402753337532707
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              18,
+              161
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1218
+          ],
+          "relation_types": [
+            12,
+            18
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1218,
+              "head": 4,
+              "relation": 18,
+              "tail": 161,
+              "rho": 4.47442147753867,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.15214699207705856,
+              "transition_probability": 0.005937133165579033,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17554538661159289,
+          "transition_path_probability": 0.00319373580762221,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              19,
+              161
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1433
+          ],
+          "relation_types": [
+            7,
+            19
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1433,
+              "head": 1,
+              "relation": 19,
+              "tail": 161,
+              "rho": 4.020540697343786,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06613008967736944,
+              "transition_probability": 0.0015555152618738446,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06554127563639385,
+          "transition_path_probability": 0.00071876381086191,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            161,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              161
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1074
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1074,
+              "head": 1,
+              "relation": 16,
+              "tail": 161,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            161,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17554538661159289,
+      "status": "ok"
+    },
+    {
+      "entity": 184,
+      "base_score": 0.013888888992369175,
+      "base_rank": 11,
+      "raw_tie_rank": 12,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163728948870639,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41387097152836105
+        },
+        {
+          "entity": 4,
+          "score": 0.25229076411854157
+        },
+        {
+          "entity": 218,
+          "score": 0.01147787780459151
+        },
+        {
+          "entity": 184,
+          "score": 0.010826148660465587
+        },
+        {
+          "entity": 7,
+          "score": 0.001207908719807677
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402820325230056
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402820325230055
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402820325230055
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402820325230055
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402820325230055
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              18,
+              184
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1626
+          ],
+          "relation_types": [
+            12,
+            18
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1626,
+              "head": 4,
+              "relation": 18,
+              "tail": 184,
+              "rho": 4.47442147753867,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.15214699207705856,
+              "transition_probability": 0.005937133165579033,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17554538661159289,
+          "transition_path_probability": 0.00319373580762221,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              184
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1148
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1148,
+              "head": 1,
+              "relation": 21,
+              "tail": 184,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            184,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              184
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1225
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1225,
+              "head": 1,
+              "relation": 16,
+              "tail": 184,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            184,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17554538661159289,
+      "status": "ok"
+    },
+    {
+      "entity": 210,
+      "base_score": 0.013888888992369175,
+      "base_rank": 12,
+      "raw_tie_rank": 12,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8164462847033616,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4142188034548309
+        },
+        {
+          "entity": 4,
+          "score": 0.25201559226670045
+        },
+        {
+          "entity": 218,
+          "score": 0.011460177937668164
+        },
+        {
+          "entity": 210,
+          "score": 0.010844416472477258
+        },
+        {
+          "entity": 7,
+          "score": 0.0012078343340705918
+        },
+        {
+          "entity": 48,
+          "score": 0.0007403039534549793
+        },
+        {
+          "entity": 11,
+          "score": 0.0007403039534549792
+        },
+        {
+          "entity": 35,
+          "score": 0.0007403039534549792
+        },
+        {
+          "entity": 42,
+          "score": 0.0007403039534549792
+        },
+        {
+          "entity": 43,
+          "score": 0.0007403039534549792
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              18,
+              210
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1643
+          ],
+          "relation_types": [
+            12,
+            18
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1643,
+              "head": 4,
+              "relation": 18,
+              "tail": 210,
+              "rho": 4.47442147753867,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.15214699207705856,
+              "transition_probability": 0.005937133165579033,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17554538661159289,
+          "transition_path_probability": 0.00319373580762221,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              210
+            ]
+          ],
+          "edge_ids": [
+            652,
+            610
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 610,
+              "head": 1,
+              "relation": 3,
+              "tail": 210,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            210,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              210
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1416
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1416,
+              "head": 1,
+              "relation": 16,
+              "tail": 210,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            210,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17554538661159289,
+      "status": "ok"
+    },
+    {
+      "entity": 94,
+      "base_score": 0.012658228166401386,
+      "base_rank": 13,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163470829326819,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4134326452102232
+        },
+        {
+          "entity": 4,
+          "score": 0.252636771210199
+        },
+        {
+          "entity": 218,
+          "score": 0.011500122679959451
+        },
+        {
+          "entity": 94,
+          "score": 0.010879926037275217
+        },
+        {
+          "entity": 7,
+          "score": 0.001208002362754163
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402544337899282
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              94
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1354
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1354,
+              "head": 4,
+              "relation": 26,
+              "tail": 94,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              94
+            ]
+          ],
+          "edge_ids": [
+            652,
+            952
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 952,
+              "head": 1,
+              "relation": 21,
+              "tail": 94,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            94,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              94
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1365
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1365,
+              "head": 1,
+              "relation": 16,
+              "tail": 94,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            94,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 101,
+      "base_score": 0.012658228166401386,
+      "base_rank": 14,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163470829326819,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41343264521022316
+        },
+        {
+          "entity": 4,
+          "score": 0.252636771210199
+        },
+        {
+          "entity": 218,
+          "score": 0.011500122679959451
+        },
+        {
+          "entity": 101,
+          "score": 0.010879926037275217
+        },
+        {
+          "entity": 7,
+          "score": 0.001208002362754163
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402544337899282
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              101
+            ]
+          ],
+          "edge_ids": [
+            727,
+            961
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 961,
+              "head": 4,
+              "relation": 26,
+              "tail": 101,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              101
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1434
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1434,
+              "head": 1,
+              "relation": 21,
+              "tail": 101,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            101,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              101
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1470
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1470,
+              "head": 1,
+              "relation": 16,
+              "tail": 101,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            101,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 126,
+      "base_score": 0.012658228166401386,
+      "base_rank": 15,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8164213107867129,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41378038225895447
+        },
+        {
+          "entity": 4,
+          "score": 0.25236234265596064
+        },
+        {
+          "entity": 218,
+          "score": 0.011482480638076427
+        },
+        {
+          "entity": 126,
+          "score": 0.010898103425246506
+        },
+        {
+          "entity": 7,
+          "score": 0.0012079280818043019
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402763263564917
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              126
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1067
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1067,
+              "head": 4,
+              "relation": 26,
+              "tail": 126,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              126
+            ]
+          ],
+          "edge_ids": [
+            652,
+            163
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 163,
+              "head": 1,
+              "relation": 3,
+              "tail": 126,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            126,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              126
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1322
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1322,
+              "head": 1,
+              "relation": 16,
+              "tail": 126,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            126,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 144,
+      "base_score": 0.012658228166401386,
+      "base_rank": 16,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8164213107867129,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41378038225895447
+        },
+        {
+          "entity": 4,
+          "score": 0.25236234265596064
+        },
+        {
+          "entity": 218,
+          "score": 0.011482480638076427
+        },
+        {
+          "entity": 144,
+          "score": 0.010898103425246506
+        },
+        {
+          "entity": 7,
+          "score": 0.0012079280818043019
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402763263564917
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              144
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1531
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1531,
+              "head": 4,
+              "relation": 26,
+              "tail": 144,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              144
+            ]
+          ],
+          "edge_ids": [
+            652,
+            742
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 742,
+              "head": 1,
+              "relation": 3,
+              "tail": 144,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            144,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              144
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1023
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1023,
+              "head": 1,
+              "relation": 16,
+              "tail": 144,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            144,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 168,
+      "base_score": 0.012658228166401386,
+      "base_rank": 17,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8164213107867128,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41378038225895447
+        },
+        {
+          "entity": 4,
+          "score": 0.2523623426559606
+        },
+        {
+          "entity": 218,
+          "score": 0.011482480638076427
+        },
+        {
+          "entity": 168,
+          "score": 0.010898103425246506
+        },
+        {
+          "entity": 7,
+          "score": 0.0012079280818043019
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402763263564917
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402763263564917
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              168
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1084
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1084,
+              "head": 4,
+              "relation": 26,
+              "tail": 168,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              168
+            ]
+          ],
+          "edge_ids": [
+            652,
+            273
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 273,
+              "head": 1,
+              "relation": 3,
+              "tail": 168,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            168,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              168
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1436
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1436,
+              "head": 1,
+              "relation": 16,
+              "tail": 168,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            168,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 199,
+      "base_score": 0.012658228166401386,
+      "base_rank": 18,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163470829326821,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4134326452102233
+        },
+        {
+          "entity": 4,
+          "score": 0.252636771210199
+        },
+        {
+          "entity": 218,
+          "score": 0.011500122679959453
+        },
+        {
+          "entity": 199,
+          "score": 0.010879926037275217
+        },
+        {
+          "entity": 7,
+          "score": 0.0012080023627541632
+        },
+        {
+          "entity": 5,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 10,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 26,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 30,
+          "score": 0.0007402544337899283
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              199
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1590
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1590,
+              "head": 4,
+              "relation": 26,
+              "tail": 199,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              199
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1239
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1239,
+              "head": 1,
+              "relation": 21,
+              "tail": 199,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            199,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              199
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1456
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1456,
+              "head": 1,
+              "relation": 16,
+              "tail": 199,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            199,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 215,
+      "base_score": 0.012658228166401386,
+      "base_rank": 19,
+      "raw_tie_rank": 19,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163470829326819,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4134326452102231
+        },
+        {
+          "entity": 4,
+          "score": 0.252636771210199
+        },
+        {
+          "entity": 218,
+          "score": 0.011500122679959451
+        },
+        {
+          "entity": 215,
+          "score": 0.010879926037275217
+        },
+        {
+          "entity": 7,
+          "score": 0.001208002362754163
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 35,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 42,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 43,
+          "score": 0.0007402544337899282
+        },
+        {
+          "entity": 48,
+          "score": 0.0007402544337899282
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              215
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1463
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1463,
+              "head": 4,
+              "relation": 26,
+              "tail": 215,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              215
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1594
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1594,
+              "head": 1,
+              "relation": 21,
+              "tail": 215,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            215,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              215
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1654
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1654,
+              "head": 1,
+              "relation": 16,
+              "tail": 215,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            215,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 53,
+      "base_score": 0.012500000186264515,
+      "base_rank": 20,
+      "raw_tie_rank": 20,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8163470829326823,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.41343264521022355
+        },
+        {
+          "entity": 4,
+          "score": 0.252636771210199
+        },
+        {
+          "entity": 218,
+          "score": 0.011500122679959453
+        },
+        {
+          "entity": 53,
+          "score": 0.010879926037275217
+        },
+        {
+          "entity": 7,
+          "score": 0.0012080023627541632
+        },
+        {
+          "entity": 5,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 10,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 11,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 26,
+          "score": 0.0007402544337899283
+        },
+        {
+          "entity": 30,
+          "score": 0.0007402544337899283
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              26,
+              53
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1352
+          ],
+          "relation_types": [
+            12,
+            26
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1352,
+              "head": 4,
+              "relation": 26,
+              "tail": 53,
+              "rho": 4.521307661693108,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.1543033499620919,
+              "transition_probability": 0.006021279317542426,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17803336664612038,
+          "transition_path_probability": 0.0032390001753067944,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              53
+            ]
+          ],
+          "edge_ids": [
+            652,
+            943
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 943,
+              "head": 1,
+              "relation": 21,
+              "tail": 53,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            53,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              53
+            ]
+          ],
+          "edge_ids": [
+            652,
+            888
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 888,
+              "head": 1,
+              "relation": 16,
+              "tail": 53,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            53,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17803336664612038,
+      "status": "ok"
+    },
+    {
+      "entity": 18,
+      "base_score": 0.0117647061124444,
+      "base_rank": 21,
+      "raw_tie_rank": 25,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8069203621716133,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995597
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 18,
+          "score": 0.005928721356624902
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              18
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1450
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1450,
+              "head": 1,
+              "relation": 21,
+              "tail": 18,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              18
+            ]
+          ],
+          "edge_ids": [
+            652,
+            848
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 848,
+              "head": 1,
+              "relation": 16,
+              "tail": 18,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06596696271271037,
+      "status": "ok"
+    },
+    {
+      "entity": 112,
+      "base_score": 0.0117647061124444,
+      "base_rank": 22,
+      "raw_tie_rank": 25,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8069203621716134,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4777076615099561
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 112,
+          "score": 0.005928721356624902
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              112
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1558
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1558,
+              "head": 1,
+              "relation": 21,
+              "tail": 112,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              112
+            ]
+          ],
+          "edge_ids": [
+            652,
+            980
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 980,
+              "head": 1,
+              "relation": 16,
+              "tail": 112,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06596696271271037,
+      "status": "ok"
+    },
+    {
+      "entity": 114,
+      "base_score": 0.0117647061124444,
+      "base_rank": 23,
+      "raw_tie_rank": 25,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8069499660279437,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995614
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 114,
+          "score": 0.005962013037083863
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              114
+            ]
+          ],
+          "edge_ids": [
+            652,
+            150
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 150,
+              "head": 1,
+              "relation": 3,
+              "tail": 114,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              114
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1588
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1588,
+              "head": 1,
+              "relation": 16,
+              "tail": 114,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06736925123856967,
+      "status": "ok"
+    },
+    {
+      "entity": 128,
+      "base_score": 0.0117647061124444,
+      "base_rank": 24,
+      "raw_tie_rank": 25,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8069113074744759,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995614
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371482
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363442
+        },
+        {
+          "entity": 128,
+          "score": 0.005918580168421518
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781093
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              19,
+              128
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1000
+          ],
+          "relation_types": [
+            7,
+            19
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1000,
+              "head": 1,
+              "relation": 19,
+              "tail": 128,
+              "rho": 4.020540697343786,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06613008967736944,
+              "transition_probability": 0.0015555152618738446,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06554127563639385,
+          "transition_path_probability": 0.00071876381086191,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              128
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1230
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1230,
+              "head": 1,
+              "relation": 16,
+              "tail": 128,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06554127563639385,
+      "status": "ok"
+    },
+    {
+      "entity": 216,
+      "base_score": 0.0117647061124444,
+      "base_rank": 25,
+      "raw_tie_rank": 25,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8069113074744759,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995614
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371482
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363442
+        },
+        {
+          "entity": 216,
+          "score": 0.005918580168421518
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781093
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781093
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              19,
+              216
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1629
+          ],
+          "relation_types": [
+            7,
+            19
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1629,
+              "head": 1,
+              "relation": 19,
+              "tail": 216,
+              "rho": 4.020540697343786,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06613008967736944,
+              "transition_probability": 0.0015555152618738446,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06554127563639385,
+          "transition_path_probability": 0.00071876381086191,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              16,
+              216
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1465
+          ],
+          "relation_types": [
+            7,
+            16
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1465,
+              "head": 1,
+              "relation": 16,
+              "tail": 216,
+              "rho": 3.7325469941388008,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.05945765100723403,
+              "transition_probability": 0.0013985658272677593,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.058928247524987334,
+          "transition_path_probability": 0.0006462414920553453,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06554127563639385,
+      "status": "ok"
+    },
+    {
+      "entity": 133,
+      "base_score": 0.011627906933426857,
+      "base_rank": 26,
+      "raw_tie_rank": 26,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 1,
+      "is_cross_community": false,
+      "ppr_affinity_score": 0.8070141063605883,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.38207320236453374
+        },
+        {
+          "entity": 4,
+          "score": 0.2753982548803371
+        },
+        {
+          "entity": 218,
+          "score": 0.01293894391988813
+        },
+        {
+          "entity": 133,
+          "score": 0.009662947204241561
+        },
+        {
+          "entity": 7,
+          "score": 0.0012144270815513869
+        },
+        {
+          "entity": 5,
+          "score": 0.0007383533357457628
+        },
+        {
+          "entity": 10,
+          "score": 0.0007383533357457628
+        },
+        {
+          "entity": 11,
+          "score": 0.0007383533357457628
+        },
+        {
+          "entity": 26,
+          "score": 0.0007383533357457628
+        },
+        {
+          "entity": 30,
+          "score": 0.0007383533357457628
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              12,
+              4
+            ],
+            [
+              4,
+              18,
+              133
+            ]
+          ],
+          "edge_ids": [
+            727,
+            1079
+          ],
+          "relation_types": [
+            12,
+            18
+          ],
+          "edges": [
+            {
+              "edge_id": 727,
+              "head": 218,
+              "relation": 12,
+              "tail": 4,
+              "rho": 4.518656472219624,
+              "degree_weight": 0.5773502691896257,
+              "weight": 1.1537880848980808,
+              "transition_probability": 0.5379255810090514,
+              "is_bridge": false
+            },
+            {
+              "edge_id": 1079,
+              "head": 4,
+              "relation": 18,
+              "tail": 133,
+              "rho": 4.47442147753867,
+              "degree_weight": 0.07715167498104596,
+              "weight": 0.15214699207705856,
+              "transition_probability": 0.005937133165579033,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.17554538661159289,
+          "transition_path_probability": 0.00319373580762221,
+          "contains_bridge": false,
+          "bridge_nodes": []
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              10,
+              133
+            ]
+          ],
+          "edge_ids": [
+            652,
+            175
+          ],
+          "relation_types": [
+            7,
+            10
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 175,
+              "head": 1,
+              "relation": 10,
+              "tail": 133,
+              "rho": 2.9098411490509903,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.04039662906883729,
+              "transition_probability": 0.000950211520223249,
+              "is_bridge": true
+            }
+          ],
+          "path_weight": 0.04003694254005955,
+          "transition_path_probability": 0.0004390684361256638,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            133,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.17554538661159289,
+      "status": "ok"
+    },
+    {
+      "entity": 191,
+      "base_score": 0.01149425283074379,
+      "base_rank": 27,
+      "raw_tie_rank": 27,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.805390514639506,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.477707661509956
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 191,
+          "score": 0.004163509250731568
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              9,
+              191
+            ]
+          ],
+          "edge_ids": [
+            652,
+            832
+          ],
+          "relation_types": [
+            7,
+            9
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 832,
+              "head": 1,
+              "relation": 9,
+              "tail": 191,
+              "rho": 2.062412817252168,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.020762819341969174,
+              "transition_probability": 0.000488384070300375,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.02057794979743301,
+          "transition_path_probability": 0.0002256697855284804,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              27,
+              191
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1339
+          ],
+          "relation_types": [
+            7,
+            27
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1339,
+              "head": 1,
+              "relation": 27,
+              "tail": 191,
+              "rho": 2.0624128172521665,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.020762819341969142,
+              "transition_probability": 0.0004883840703003743,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.02057794979743298,
+          "transition_path_probability": 0.00022566978552848006,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        },
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              1,
+              191
+            ]
+          ],
+          "edge_ids": [
+            652,
+            354
+          ],
+          "relation_types": [
+            7,
+            1
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 354,
+              "head": 1,
+              "relation": 1,
+              "tail": 191,
+              "rho": 2.0624128172521643,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.02076281934196909,
+              "transition_probability": 0.0004883840703003731,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.020577949797432927,
+          "transition_path_probability": 0.0002256697855284795,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.02057794979743301,
+      "status": "ok"
+    },
+    {
+      "entity": 139,
+      "base_score": 0.010526316240429878,
+      "base_rank": 28,
+      "raw_tie_rank": 35,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8054627527967985,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4777076615099562
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 139,
+          "score": 0.00435248171537621
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              3,
+              139
+            ]
+          ],
+          "edge_ids": [
+            652,
+            185
+          ],
+          "relation_types": [
+            7,
+            3
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 185,
+              "head": 1,
+              "relation": 3,
+              "tail": 139,
+              "rho": 4.100148020066478,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06797448756749543,
+              "transition_probability": 0.0015988992808742102,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06736925123856967,
+          "transition_path_probability": 0.0007388104562349963,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06736925123856967,
+      "status": "ok"
+    },
+    {
+      "entity": 145,
+      "base_score": 0.010526316240429878,
+      "base_rank": 29,
+      "raw_tie_rank": 35,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8054212093190276,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.47770766150995614
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 145,
+          "score": 0.004306855191723507
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              145
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1025
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1025,
+              "head": 1,
+              "relation": 21,
+              "tail": 145,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06596696271271037,
+      "status": "ok"
+    },
+    {
+      "entity": 165,
+      "base_score": 0.010526316240429878,
+      "base_rank": 30,
+      "raw_tie_rank": 35,
+      "score_kind": "reciprocal_raw_rank",
+      "community_head": 1,
+      "community_tail": 0,
+      "is_cross_community": true,
+      "ppr_affinity_score": 0.8054212093190276,
+      "meeting_nodes": [
+        {
+          "entity": 1,
+          "score": 0.4777076615099562
+        },
+        {
+          "entity": 4,
+          "score": 0.19034110566371484
+        },
+        {
+          "entity": 218,
+          "score": 0.007177511679363443
+        },
+        {
+          "entity": 165,
+          "score": 0.004306855191723507
+        },
+        {
+          "entity": 7,
+          "score": 0.00119312014998734
+        },
+        {
+          "entity": 48,
+          "score": 0.0007446010358781095
+        },
+        {
+          "entity": 11,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 35,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 42,
+          "score": 0.0007446010358781094
+        },
+        {
+          "entity": 43,
+          "score": 0.0007446010358781094
+        }
+      ],
+      "evidence_paths": [
+        {
+          "triples": [
+            [
+              218,
+              7,
+              1
+            ],
+            [
+              1,
+              21,
+              165
+            ]
+          ],
+          "edge_ids": [
+            652,
+            1078
+          ],
+          "relation_types": [
+            7,
+            21
+          ],
+          "edges": [
+            {
+              "edge_id": 652,
+              "head": 218,
+              "relation": 7,
+              "tail": 1,
+              "rho": 4.045945019031085,
+              "degree_weight": 0.5773502691896257,
+              "weight": 0.9910961251701268,
+              "transition_probability": 0.46207441899094864,
+              "is_bridge": true
+            },
+            {
+              "edge_id": 1078,
+              "head": 1,
+              "relation": 21,
+              "tail": 165,
+              "rho": 4.039079133208505,
+              "degree_weight": 0.038866103716823586,
+              "weight": 0.06655960106935822,
+              "transition_probability": 0.001565618250220704,
+              "is_bridge": false
+            }
+          ],
+          "path_weight": 0.06596696271271037,
+          "transition_path_probability": 0.0007234321433323575,
+          "contains_bridge": true,
+          "bridge_nodes": [
+            1,
+            218
+          ]
+        }
+      ],
+      "max_path_weight": 0.06596696271271037,
+      "status": "ok"
+    }
+  ],
+  "subgraph": {
+    "nodes": [
+      1,
+      4,
+      7,
+      18,
+      29,
+      43,
+      53,
+      58,
+      61,
+      94,
+      95,
+      101,
+      112,
+      114,
+      122,
+      126,
+      127,
+      128,
+      133,
+      139,
+      141,
+      144,
+      145,
+      154,
+      161,
+      165,
+      167,
+      168,
+      184,
+      190,
+      191,
+      199,
+      201,
+      204,
+      205,
+      210,
+      215,
+      216,
+      217,
+      218,
+      221,
+      223
+    ],
+    "edge_ids": [
+      27,
+      80,
+      150,
+      158,
+      163,
+      165,
+      175,
+      185,
+      187,
+      216,
+      250,
+      273,
+      345,
+      354,
+      421,
+      442,
+      448,
+      508,
+      511,
+      553,
+      576,
+      610,
+      644,
+      652,
+      682,
+      691,
+      720,
+      727,
+      742,
+      743,
+      824,
+      828,
+      831,
+      832,
+      848,
+      860,
+      874,
+      888,
+      897,
+      901,
+      913,
+      943,
+      952,
+      954,
+      961,
+      980,
+      991,
+      998,
+      1000,
+      1023,
+      1025,
+      1049,
+      1067,
+      1074,
+      1078,
+      1079,
+      1083,
+      1084,
+      1148,
+      1178,
+      1218,
+      1225,
+      1230,
+      1239,
+      1275,
+      1322,
+      1339,
+      1341,
+      1344,
+      1352,
+      1354,
+      1365,
+      1386,
+      1409,
+      1416,
+      1433,
+      1434,
+      1436,
+      1450,
+      1456,
+      1463,
+      1465,
+      1469,
+      1470,
+      1477,
+      1515,
+      1524,
+      1531,
+      1553,
+      1558,
+      1576,
+      1588,
+      1590,
+      1594,
+      1626,
+      1629,
+      1643,
+      1654,
+      1657,
+      1663
+    ],
+    "directed_edges": [
+      {
+        "edge_id": 27,
+        "head": 1,
+        "relation": 3,
+        "tail": 29
+      },
+      {
+        "edge_id": 80,
+        "head": 29,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 150,
+        "head": 1,
+        "relation": 3,
+        "tail": 114
+      },
+      {
+        "edge_id": 158,
+        "head": 122,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 163,
+        "head": 1,
+        "relation": 3,
+        "tail": 126
+      },
+      {
+        "edge_id": 165,
+        "head": 127,
+        "relation": 7,
+        "tail": 1
+      },
+      {
+        "edge_id": 175,
+        "head": 1,
+        "relation": 10,
+        "tail": 133
+      },
+      {
+        "edge_id": 185,
+        "head": 1,
+        "relation": 3,
+        "tail": 139
+      },
+      {
+        "edge_id": 187,
+        "head": 1,
+        "relation": 8,
+        "tail": 141
+      },
+      {
+        "edge_id": 216,
+        "head": 154,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 250,
+        "head": 167,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 273,
+        "head": 1,
+        "relation": 3,
+        "tail": 168
+      },
+      {
+        "edge_id": 345,
+        "head": 1,
+        "relation": 3,
+        "tail": 190
+      },
+      {
+        "edge_id": 354,
+        "head": 1,
+        "relation": 1,
+        "tail": 191
+      },
+      {
+        "edge_id": 421,
+        "head": 1,
+        "relation": 11,
+        "tail": 201
+      },
+      {
+        "edge_id": 442,
+        "head": 1,
+        "relation": 3,
+        "tail": 167
+      },
+      {
+        "edge_id": 448,
+        "head": 1,
+        "relation": 11,
+        "tail": 7
+      },
+      {
+        "edge_id": 508,
+        "head": 204,
+        "relation": 5,
+        "tail": 1
+      },
+      {
+        "edge_id": 511,
+        "head": 1,
+        "relation": 3,
+        "tail": 205
+      },
+      {
+        "edge_id": 553,
+        "head": 190,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 576,
+        "head": 1,
+        "relation": 3,
+        "tail": 122
+      },
+      {
+        "edge_id": 610,
+        "head": 1,
+        "relation": 3,
+        "tail": 210
+      },
+      {
+        "edge_id": 644,
+        "head": 204,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 652,
+        "head": 218,
+        "relation": 7,
+        "tail": 1
+      },
+      {
+        "edge_id": 682,
+        "head": 221,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 691,
+        "head": 205,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 720,
+        "head": 1,
+        "relation": 3,
+        "tail": 154
+      },
+      {
+        "edge_id": 727,
+        "head": 218,
+        "relation": 12,
+        "tail": 4
+      },
+      {
+        "edge_id": 742,
+        "head": 1,
+        "relation": 3,
+        "tail": 144
+      },
+      {
+        "edge_id": 743,
+        "head": 127,
+        "relation": 4,
+        "tail": 4
+      },
+      {
+        "edge_id": 824,
+        "head": 1,
+        "relation": 3,
+        "tail": 221
+      },
+      {
+        "edge_id": 828,
+        "head": 1,
+        "relation": 2,
+        "tail": 223
+      },
+      {
+        "edge_id": 831,
+        "head": 1,
+        "relation": 6,
+        "tail": 141
+      },
+      {
+        "edge_id": 832,
+        "head": 1,
+        "relation": 9,
+        "tail": 191
+      },
+      {
+        "edge_id": 848,
+        "head": 1,
+        "relation": 16,
+        "tail": 18
+      },
+      {
+        "edge_id": 860,
+        "head": 29,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 874,
+        "head": 4,
+        "relation": 26,
+        "tail": 43
+      },
+      {
+        "edge_id": 888,
+        "head": 1,
+        "relation": 16,
+        "tail": 53
+      },
+      {
+        "edge_id": 897,
+        "head": 4,
+        "relation": 26,
+        "tail": 58
+      },
+      {
+        "edge_id": 901,
+        "head": 4,
+        "relation": 26,
+        "tail": 61
+      },
+      {
+        "edge_id": 913,
+        "head": 4,
+        "relation": 26,
+        "tail": 29
+      },
+      {
+        "edge_id": 943,
+        "head": 1,
+        "relation": 21,
+        "tail": 53
+      },
+      {
+        "edge_id": 952,
+        "head": 1,
+        "relation": 21,
+        "tail": 94
+      },
+      {
+        "edge_id": 954,
+        "head": 4,
+        "relation": 26,
+        "tail": 95
+      },
+      {
+        "edge_id": 961,
+        "head": 4,
+        "relation": 26,
+        "tail": 101
+      },
+      {
+        "edge_id": 980,
+        "head": 1,
+        "relation": 16,
+        "tail": 112
+      },
+      {
+        "edge_id": 991,
+        "head": 4,
+        "relation": 26,
+        "tail": 122
+      },
+      {
+        "edge_id": 998,
+        "head": 1,
+        "relation": 21,
+        "tail": 127
+      },
+      {
+        "edge_id": 1000,
+        "head": 1,
+        "relation": 19,
+        "tail": 128
+      },
+      {
+        "edge_id": 1023,
+        "head": 1,
+        "relation": 16,
+        "tail": 144
+      },
+      {
+        "edge_id": 1025,
+        "head": 1,
+        "relation": 21,
+        "tail": 145
+      },
+      {
+        "edge_id": 1049,
+        "head": 4,
+        "relation": 26,
+        "tail": 154
+      },
+      {
+        "edge_id": 1067,
+        "head": 4,
+        "relation": 26,
+        "tail": 126
+      },
+      {
+        "edge_id": 1074,
+        "head": 1,
+        "relation": 16,
+        "tail": 161
+      },
+      {
+        "edge_id": 1078,
+        "head": 1,
+        "relation": 21,
+        "tail": 165
+      },
+      {
+        "edge_id": 1079,
+        "head": 4,
+        "relation": 18,
+        "tail": 133
+      },
+      {
+        "edge_id": 1083,
+        "head": 4,
+        "relation": 26,
+        "tail": 167
+      },
+      {
+        "edge_id": 1084,
+        "head": 4,
+        "relation": 26,
+        "tail": 168
+      },
+      {
+        "edge_id": 1148,
+        "head": 1,
+        "relation": 21,
+        "tail": 184
+      },
+      {
+        "edge_id": 1178,
+        "head": 190,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1218,
+        "head": 4,
+        "relation": 18,
+        "tail": 161
+      },
+      {
+        "edge_id": 1225,
+        "head": 1,
+        "relation": 16,
+        "tail": 184
+      },
+      {
+        "edge_id": 1230,
+        "head": 1,
+        "relation": 16,
+        "tail": 128
+      },
+      {
+        "edge_id": 1239,
+        "head": 1,
+        "relation": 21,
+        "tail": 199
+      },
+      {
+        "edge_id": 1275,
+        "head": 167,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1322,
+        "head": 1,
+        "relation": 16,
+        "tail": 126
+      },
+      {
+        "edge_id": 1339,
+        "head": 1,
+        "relation": 27,
+        "tail": 191
+      },
+      {
+        "edge_id": 1341,
+        "head": 1,
+        "relation": 19,
+        "tail": 204
+      },
+      {
+        "edge_id": 1344,
+        "head": 205,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1352,
+        "head": 4,
+        "relation": 26,
+        "tail": 53
+      },
+      {
+        "edge_id": 1354,
+        "head": 4,
+        "relation": 26,
+        "tail": 94
+      },
+      {
+        "edge_id": 1365,
+        "head": 1,
+        "relation": 16,
+        "tail": 94
+      },
+      {
+        "edge_id": 1386,
+        "head": 4,
+        "relation": 26,
+        "tail": 190
+      },
+      {
+        "edge_id": 1409,
+        "head": 122,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1416,
+        "head": 1,
+        "relation": 16,
+        "tail": 210
+      },
+      {
+        "edge_id": 1433,
+        "head": 1,
+        "relation": 19,
+        "tail": 161
+      },
+      {
+        "edge_id": 1434,
+        "head": 1,
+        "relation": 21,
+        "tail": 101
+      },
+      {
+        "edge_id": 1436,
+        "head": 1,
+        "relation": 16,
+        "tail": 168
+      },
+      {
+        "edge_id": 1450,
+        "head": 1,
+        "relation": 21,
+        "tail": 18
+      },
+      {
+        "edge_id": 1456,
+        "head": 1,
+        "relation": 16,
+        "tail": 199
+      },
+      {
+        "edge_id": 1463,
+        "head": 4,
+        "relation": 26,
+        "tail": 215
+      },
+      {
+        "edge_id": 1465,
+        "head": 1,
+        "relation": 16,
+        "tail": 216
+      },
+      {
+        "edge_id": 1469,
+        "head": 7,
+        "relation": 25,
+        "tail": 217
+      },
+      {
+        "edge_id": 1470,
+        "head": 1,
+        "relation": 16,
+        "tail": 101
+      },
+      {
+        "edge_id": 1477,
+        "head": 4,
+        "relation": 26,
+        "tail": 204
+      },
+      {
+        "edge_id": 1515,
+        "head": 4,
+        "relation": 26,
+        "tail": 221
+      },
+      {
+        "edge_id": 1524,
+        "head": 4,
+        "relation": 26,
+        "tail": 205
+      },
+      {
+        "edge_id": 1531,
+        "head": 4,
+        "relation": 26,
+        "tail": 144
+      },
+      {
+        "edge_id": 1553,
+        "head": 154,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1558,
+        "head": 1,
+        "relation": 21,
+        "tail": 112
+      },
+      {
+        "edge_id": 1576,
+        "head": 4,
+        "relation": 18,
+        "tail": 127
+      },
+      {
+        "edge_id": 1588,
+        "head": 1,
+        "relation": 16,
+        "tail": 114
+      },
+      {
+        "edge_id": 1590,
+        "head": 4,
+        "relation": 26,
+        "tail": 199
+      },
+      {
+        "edge_id": 1594,
+        "head": 1,
+        "relation": 21,
+        "tail": 215
+      },
+      {
+        "edge_id": 1626,
+        "head": 4,
+        "relation": 18,
+        "tail": 184
+      },
+      {
+        "edge_id": 1629,
+        "head": 1,
+        "relation": 19,
+        "tail": 216
+      },
+      {
+        "edge_id": 1643,
+        "head": 4,
+        "relation": 18,
+        "tail": 210
+      },
+      {
+        "edge_id": 1654,
+        "head": 1,
+        "relation": 16,
+        "tail": 215
+      },
+      {
+        "edge_id": 1657,
+        "head": 221,
+        "relation": 17,
+        "tail": 1
+      },
+      {
+        "edge_id": 1663,
+        "head": 1,
+        "relation": 14,
+        "tail": 223
+      }
+    ]
+  },
+  "budget": {
+    "max_nodes": 50,
+    "max_edges": 100,
+    "max_paths_per_candidate": 10,
+    "hops": 3
+  },
+  "seconds": 0.05171434200019576,
+  "provenance": {
+    "candidate_source": "B0 unfiltered reciprocal raw rank",
+    "candidates_sha256": "e28a8684fe9bd52ce8292a8746c0de0b7b3eb5d6f890ab28fcc222811631e492",
+    "run_fingerprint": "d48ae432a2533cdaaec0",
+    "ground_truth_used": false,
+    "topology_submode": "gated_model",
+    "gate_checkpoint": "T_gate_only_0p25_s1024_step500.pth"
+  }
+}
