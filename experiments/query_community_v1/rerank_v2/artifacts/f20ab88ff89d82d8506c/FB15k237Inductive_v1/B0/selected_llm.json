@@ -1,0 +1,37 @@
+{
+  "strength": 0.0,
+  "grid": [
+    {
+      "strength": 0.0,
+      "MRR": 0.5161884418894724
+    },
+    {
+      "strength": 0.01,
+      "MRR": 0.5161884418894724
+    },
+    {
+      "strength": 0.03,
+      "MRR": 0.5149748496564627
+    },
+    {
+      "strength": 0.05,
+      "MRR": 0.5149478809401735
+    },
+    {
+      "strength": 0.1,
+      "MRR": 0.5153524116845101
+    }
+  ],
+  "validation_queries": 412,
+  "calibration_calls_max": 64,
+  "selection_split": "valid",
+  "test_used": false,
+  "stats": {
+    "queries": 412,
+    "eligible": 199,
+    "processed": 64,
+    "cache_hits": 3,
+    "network_requests": 61
+  },
+  "model": "deepseek-flash"
+}

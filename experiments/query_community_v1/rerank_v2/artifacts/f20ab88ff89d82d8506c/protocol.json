@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "source": {
+    "run.sh": "2542560d7f79e9088bbe645febb4ddf5ca96bfa3688f99e5287c377f13199527",
+    "scripts/run_route_a_rerank.py": "1f2eebe1d30dea295d9aa885c64d0a23695ad03e3f82a31871178d73bee8fb97",
+    "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/edge_weighter.py": "3b5d29f2843990d63d5bc2f782ec3b3ae8343b1cd58c2849825eb01ae344ffc4",
+    "src/inference.py": "8c4ae19a4b93a2a96a6bd9d2803a0206e2833c612b1625ad6474fc7d0fe60f9c",
+    "src/llm_reranker.py": "c56ac8835f6225a0fe50ea063bcd2e3cde3ea252efd14e5567e8184b15813cd1",
+    "src/offline.py": "b61c165bda73c760ceba23c16f4af514942c8f1813af65ce84a4d3a5f655fd59",
+    "src/pipeline.py": "ffc55c7136db867b888d236b861f8d299a74174c51cee618e7d3a8791e3868bc",
+    "src/report.py": "1cadc7572b80528903387f6de6a63d0a133b1e9c76a97d0edc367eaf3224344d",
+    "src/smoke.py": "7648d17d81ce58f19479014531a09dd6b5c8a0449fad4972b4427cdc8314ce4a",
+    "src/structural_reranker.py": "314e492cdcba38b6d82d7108b28e176bfc2480578248f363753b12ea57860b43",
+    "src/util.py": "b745ff7cf73aa6ae3f3fadb9f6f3f2088a2baaee13da8684d5b29c79bf10d8fd",
+    "src/verbalizer.py": "106d2d56c4f71ad975f4d1b927a78cec8e8608f319ded05ec7e0a785c10d66c8"
+  },
+  "smoke": false,
+  "skip_llm": false,
+  "datasets": [
+    "FB15k237Inductive_v1",
+    "WN18RRInductive_v1",
+    "NELLInductive_v1",
+    "FBIngram_25"
+  ],
+  "families": [
+    "B0",
+    "T-4D"
+  ],
+  "seed": 1024,
+  "validation_max_facts": 256,
+  "bootstrap": 2000,
+  "filter_protocol": "answer isolation; all positives filtered offline only",
+  "llm_model": "deepseek-flash",
+  "llm_calibration_max_queries": 64
+}

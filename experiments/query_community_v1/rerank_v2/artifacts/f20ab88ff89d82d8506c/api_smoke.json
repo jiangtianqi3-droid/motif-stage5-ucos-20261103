@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "model": "deepseek-flash",
+  "initial_network_requests": 0,
+  "replay_network_requests": 0,
+  "rss_bytes": 52305920,
+  "usage": {
+    "prompt_tokens": 80,
+    "completion_tokens": 33,
+    "total_tokens": 113,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 80
+  },
+  "decision": {
+    "abstain": true,
+    "top_candidates": [],
+    "reasoning": "No knowledge graph evidence was provided, so no candidate can be supported."
+  }
+}
