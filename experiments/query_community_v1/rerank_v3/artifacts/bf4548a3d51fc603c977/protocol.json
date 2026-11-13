@@ -1,0 +1,63 @@
+{
+  "schema": 3,
+  "source": {
+    "run.sh": "27c65dea3141816ba88e90379dbdd9313597464bfda1c03157fdaff2dfae5cce",
+    "scripts/check_cached_pipeline.py": "861dbb5fc746ee66f8c3acdc3cdf91cde29573e6c3cd6c0524d0e33597df7969",
+    "scripts/run_repair.py": "aa065d5f4f8802c955a4dc7b1de6ad90d221a7031c91ac08387e981b976a19e9",
+    "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/edge_weighter.py": "3b5d29f2843990d63d5bc2f782ec3b3ae8343b1cd58c2849825eb01ae344ffc4",
+    "src/inference.py": "bc98325624b12413c449c21a3176ee290cb8da1f57c7a6df2f4c3e71e3e79af2",
+    "src/llm_reranker.py": "74d87e2aa85113b7c5046cadd860f2aa1ccb5dbb25ef41006135694321a86cb7",
+    "src/offline.py": "5eff9b5e4f5a52d86d1b1de25ec3893d62190865c381e63d447d62de0901114a",
+    "src/pipeline.py": "46e560e3b9dd536bc70663d1f57a8ec958e5862422485421f8529171ed8590b0",
+    "src/repair_report.py": "e72364ad0ff89d90b4e61dbb735d9d1fd46aef99947d257aead01f69afcc2474",
+    "src/report.py": "1cadc7572b80528903387f6de6a63d0a133b1e9c76a97d0edc367eaf3224344d",
+    "src/retrieval_jobs.py": "d75ce721f085d3df0374142d348c13c924f730b9a9bf1ca221e11733d41951a7",
+    "src/selection.py": "3336ceae4cdc56c09039a9533176d957f500eb3531311c1200d3f284c5a3cb9e",
+    "src/smoke.py": "7648d17d81ce58f19479014531a09dd6b5c8a0449fad4972b4427cdc8314ce4a",
+    "src/statistics.py": "1b79c8dd786ea527c5ab46c2a0a18f15df2730a230fa499e4055533f3e1c499d",
+    "src/structural_reranker.py": "eb96257473e0dadf85ac843a08b9e69d3a2e2ce7363b625778683038296df3d0",
+    "src/util.py": "67f4fda757a61b607c60adda2bd494acfa0efab356c325c685da849bb1f89668",
+    "src/verbalizer.py": "106d2d56c4f71ad975f4d1b927a78cec8e8608f319ded05ec7e0a785c10d66c8"
+  },
+  "dependency_fingerprint": "ef0fa5b5e5d29c0adbd912fafddcc1cfd38f6ebd01cd209d206f3b1c793baff5",
+  "training_frozen_sha256": "d81e5dd7ef17b1cc817315e94d42846e642926e81e95019a4012889c5d2527f2",
+  "datasets": [
+    "FB15k237Inductive_v1",
+    "WN18RRInductive_v1",
+    "NELLInductive_v1",
+    "FBIngram_25"
+  ],
+  "families": [
+    "B0",
+    "T-4D-s1024",
+    "T-4D-s2026",
+    "T-4D-s3407"
+  ],
+  "smoke": false,
+  "skip_llm": false,
+  "seed": 20261112,
+  "validation_max_facts_per_role": 512,
+  "structure_grid_strengths": [
+    0.0,
+    0.15,
+    0.3
+  ],
+  "llm_grid_strengths": [
+    0.0,
+    0.05
+  ],
+  "validation_partition": "fact components connected by shared public queries; no query or fact crossover",
+  "selection": "unique-query macro MRR paired one-SE simplicity rule",
+  "llm_min_unique_queries": 32,
+  "llm_max_unique_queries": 64,
+  "primary_comparisons": [
+    "R4_vs_R1",
+    "R4_vs_R3",
+    "R5_vs_R4"
+  ],
+  "primary_metric": "MRR",
+  "guardrail": "Hits10",
+  "multiplicity": "Holm across all reported primary graph/family/comparison cells",
+  "boundary": "historically exposed repair replication; no first-blind-test or broad generalization claim"
+}

@@ -1,0 +1,24 @@
+{
+  "workflow": "6d5974ae2589fd71",
+  "pid": 28,
+  "started": "2026-11-12T11:53:51.338753+08:00",
+  "completed_steps": [
+    "tests",
+    "cached_integration",
+    "train",
+    "training_verification",
+    "gpu_smoke",
+    "full_evaluation",
+    "final_verification"
+  ],
+  "check_only": false,
+  "state": "complete",
+  "stage": "verified",
+  "updated": "2026-11-12T16:49:27.360085+08:00",
+  "log": "/mnt/d/motif-phase4-work/route-a-repair-20261112/logs/6d5974ae2589fd71_final_verification.log",
+  "report": "/mnt/d/motif-phase4-work/route-a-repair-20261112/report.md",
+  "limitations": [
+    "small existing test sets",
+    "historically exposed targets; new independent blind data still required"
+  ]
+}

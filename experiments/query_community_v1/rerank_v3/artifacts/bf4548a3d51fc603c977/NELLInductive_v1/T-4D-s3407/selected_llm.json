@@ -1,0 +1,28 @@
+{
+  "strength": 0.0,
+  "grid": [],
+  "selection_audit": {
+    "chosen": 0,
+    "groups": 0,
+    "reason": "no_independent_validation_queries",
+    "means": [],
+    "stability": []
+  },
+  "reason": "fewer_than_32_unique_calibration_prompts",
+  "unique_prompts": 0,
+  "validation_queries": 0,
+  "calibration_calls_max": 64,
+  "selection_split": "calibration",
+  "test_used": false,
+  "stats": {
+    "queries": 96,
+    "eligible_query_groups": 12,
+    "eligible": 12,
+    "processed": 0,
+    "cache_hits": 0,
+    "selected_aliases": [],
+    "selection": "insufficient independent eligible queries; no API calls",
+    "network_requests": 0
+  },
+  "model": "deepseek-flash"
+}

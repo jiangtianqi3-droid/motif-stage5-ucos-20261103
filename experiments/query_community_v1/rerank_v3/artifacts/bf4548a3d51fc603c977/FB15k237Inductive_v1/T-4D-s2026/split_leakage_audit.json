@@ -1,0 +1,13 @@
+{
+  "dataset": "FB15k237Inductive_v1",
+  "valid_facts": 206,
+  "test_facts": 205,
+  "legacy_facts": 411,
+  "observation_only": true,
+  "direct_inverse_leakage": 0,
+  "split_overlap": 0,
+  "validation_evaluation_filter": "observed+valid; test truths excluded from selection",
+  "test_evaluation_filter": "observed+valid+test; offline only",
+  "candidate_filter": "valid: observed; test: observed+valid; no test truth or current answer reinstatement",
+  "legacy_protocol": "Grail legacy valid+test pooled; official test reported separately"
+}

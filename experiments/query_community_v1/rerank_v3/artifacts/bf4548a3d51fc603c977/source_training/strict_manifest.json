@@ -1,0 +1,146 @@
+{
+  "codex_medium_train": {
+    "fold_checks": [
+      {
+        "fold": 0,
+        "observed": 148467,
+        "passed": true,
+        "supervised": 37117
+      },
+      {
+        "fold": 1,
+        "observed": 148467,
+        "passed": true,
+        "supervised": 37117
+      },
+      {
+        "fold": 2,
+        "observed": 148467,
+        "passed": true,
+        "supervised": 37117
+      },
+      {
+        "fold": 3,
+        "observed": 148467,
+        "passed": true,
+        "supervised": 37117
+      },
+      {
+        "fold": 4,
+        "observed": 148468,
+        "passed": true,
+        "supervised": 37116
+      }
+    ],
+    "source_test_files_opened": false,
+    "train": {
+      "facts": 185584,
+      "path": "data/codex_medium_train_train_truth.npy",
+      "sha256": "c51f1d95cf18c5a5ddbfb0242c779dfc7554ec326a16ea1254bd59eb2ee44895"
+    },
+    "train_input_sha256": "d99c3437ab51690391a26d96976adf6e5494dba7ef6902e77000551bfa566556",
+    "validation": {
+      "facts": 195894,
+      "path": "data/codex_medium_train_validation_truth.npy",
+      "sha256": "a19dc6107fa0034d9a1f4a7bdfe962e0df69af46ef8581714fdb62ee2aa3ecad"
+    },
+    "validation_input_sha256": "11c323096367354940846b9ed940c5dabddc1d20a70474222babe7e7fd28b28d",
+    "vocabulary_sha256": "b5251f60120d698460cbc4fde0d5c54d31c407c2ecf860500015b27ec5a2eb0d"
+  },
+  "fb15k237_train": {
+    "fold_checks": [
+      {
+        "fold": 0,
+        "observed": 217692,
+        "passed": true,
+        "supervised": 54423
+      },
+      {
+        "fold": 1,
+        "observed": 217692,
+        "passed": true,
+        "supervised": 54423
+      },
+      {
+        "fold": 2,
+        "observed": 217692,
+        "passed": true,
+        "supervised": 54423
+      },
+      {
+        "fold": 3,
+        "observed": 217692,
+        "passed": true,
+        "supervised": 54423
+      },
+      {
+        "fold": 4,
+        "observed": 217692,
+        "passed": true,
+        "supervised": 54423
+      }
+    ],
+    "source_test_files_opened": false,
+    "train": {
+      "facts": 272115,
+      "path": "data/fb15k237_train_train_truth.npy",
+      "sha256": "55bd0c3d3aaf868cb1f649ed58184d8d6bd9a879a71f4ec641347a4c40c0468a"
+    },
+    "train_input_sha256": "6e4c2782169af21e9743f3b1d200886f5d595bf6bc504ec1351720949c5cdfae",
+    "validation": {
+      "facts": 289650,
+      "path": "data/fb15k237_train_validation_truth.npy",
+      "sha256": "725cfd937abe3512b7a9aebb7c22555c0634fb547f267c08184c0b566df99034"
+    },
+    "validation_input_sha256": "cf6309010852f6a8d47a45df830a426415d1ee6f7a3970a8376ff1fb81db4a5c",
+    "vocabulary_sha256": "b5251f60120d698460cbc4fde0d5c54d31c407c2ecf860500015b27ec5a2eb0d"
+  },
+  "wn18rr_train": {
+    "fold_checks": [
+      {
+        "fold": 0,
+        "observed": 73810,
+        "passed": true,
+        "supervised": 13025
+      },
+      {
+        "fold": 1,
+        "observed": 73810,
+        "passed": true,
+        "supervised": 13025
+      },
+      {
+        "fold": 2,
+        "observed": 73810,
+        "passed": true,
+        "supervised": 13025
+      },
+      {
+        "fold": 3,
+        "observed": 73810,
+        "passed": true,
+        "supervised": 13025
+      },
+      {
+        "fold": 4,
+        "observed": 73810,
+        "passed": true,
+        "supervised": 13025
+      }
+    ],
+    "source_test_files_opened": false,
+    "train": {
+      "facts": 86835,
+      "path": "data/wn18rr_train_train_truth.npy",
+      "sha256": "5a69112c9beadd0930026e1d5bdb3dc0a7b9bb8467fe1534fb75a334b41f516e"
+    },
+    "train_input_sha256": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df",
+    "validation": {
+      "facts": 89869,
+      "path": "data/wn18rr_train_validation_truth.npy",
+      "sha256": "83a9b838b85bccf14d320b6fa3e963699ed7ec5e893d6161cb0618a334bfc104"
+    },
+    "validation_input_sha256": "453ce7202afa58094a04d2b1560ee2b02660f1c260b32ce6651c8ccedd1028ab",
+    "vocabulary_sha256": "b5251f60120d698460cbc4fde0d5c54d31c407c2ecf860500015b27ec5a2eb0d"
+  }
+}

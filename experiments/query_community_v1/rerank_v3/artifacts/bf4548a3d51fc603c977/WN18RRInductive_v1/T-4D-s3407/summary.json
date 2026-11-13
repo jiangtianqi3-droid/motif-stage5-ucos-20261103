@@ -1,0 +1,684 @@
+{
+  "dataset": "WN18RRInductive_v1",
+  "family": "T-4D-s3407",
+  "queries": 376,
+  "metrics": {
+    "M0": {
+      "MRR": 0.6622125455256082,
+      "Hits1": 0.6037234042553191,
+      "Hits3": 0.6941489361702128,
+      "Hits10": 0.776595744680851
+    },
+    "ReverseThenM0": {
+      "MRR": 0.6931553939639288,
+      "Hits1": 0.6409574468085106,
+      "Hits3": 0.723404255319149,
+      "Hits10": 0.7952127659574468
+    },
+    "R1": {
+      "MRR": 0.6671912661803168,
+      "Hits1": 0.6090425531914894,
+      "Hits3": 0.699468085106383,
+      "Hits10": 0.7819148936170213
+    },
+    "R2": {
+      "MRR": 0.6715514020101565,
+      "Hits1": 0.6143617021276596,
+      "Hits3": 0.699468085106383,
+      "Hits10": 0.7872340425531915
+    },
+    "R3": {
+      "MRR": 0.6727924221686755,
+      "Hits1": 0.6170212765957447,
+      "Hits3": 0.7021276595744681,
+      "Hits10": 0.7872340425531915
+    },
+    "R4": {
+      "MRR": 0.6622125455256082,
+      "Hits1": 0.6037234042553191,
+      "Hits3": 0.6941489361702128,
+      "Hits10": 0.776595744680851
+    },
+    "R5": {
+      "MRR": 0.6622125455256082,
+      "Hits1": 0.6037234042553191,
+      "Hits3": 0.6941489361702128,
+      "Hits10": 0.776595744680851
+    }
+  },
+  "expansion": {
+    "R1": {
+      "eligible": 28,
+      "promoted": 2,
+      "demoted": 0
+    },
+    "R2": {
+      "eligible": 28,
+      "promoted": 4,
+      "demoted": 0
+    },
+    "R3": {
+      "eligible": 28,
+      "promoted": 4,
+      "demoted": 0
+    },
+    "R4": {
+      "eligible": 28,
+      "promoted": 0,
+      "demoted": 0
+    },
+    "R5": {
+      "eligible": 28,
+      "promoted": 0,
+      "demoted": 0
+    }
+  },
+  "llm": {
+    "queries": 376,
+    "eligible": 171,
+    "calls": 0,
+    "abstain": 0,
+    "parse_failures": 0,
+    "positive_flips": 0,
+    "negative_flips": 0,
+    "total_tokens": 0,
+    "total_latency_seconds": 0.0,
+    "cache_hits": 0,
+    "trigger_rate": 0.45478723404255317
+  },
+  "filtered_candidate_difference": {
+    "queries": 376,
+    "candidate_pools_differ": 45,
+    "filtered_top30_missing_entities": 46
+  },
+  "structural_diagnostics": {
+    "R1": {
+      "top10_answers": 292,
+      "top10_rr_sum": 69.3093035619352,
+      "rank11_30_answers": 28,
+      "strict_expansion_potential": 0,
+      "top10_conditional_structural_MRR": 0.23736062863676435
+    },
+    "R2": {
+      "top10_answers": 292,
+      "top10_rr_sum": 126.9039949816267,
+      "rank11_30_answers": 28,
+      "strict_expansion_potential": 4,
+      "top10_conditional_structural_MRR": 0.43460272253981747
+    },
+    "R3": {
+      "top10_answers": 292,
+      "top10_rr_sum": 225.8738564926645,
+      "rank11_30_answers": 28,
+      "strict_expansion_potential": 9,
+      "top10_conditional_structural_MRR": 0.7735406044269332
+    },
+    "R4": {
+      "top10_answers": 292,
+      "top10_rr_sum": 114.95136705399871,
+      "rank11_30_answers": 28,
+      "strict_expansion_potential": 2,
+      "top10_conditional_structural_MRR": 0.3936690652534202
+    }
+  },
+  "paired_bootstrap": {
+    "R1": {
+      "MRR": {
+        "delta": 0.0049787206547086595,
+        "lo": -0.000291883142010402,
+        "hi": 0.011719151116102495,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": 0.005319148936170213,
+        "lo": 0.0,
+        "hi": 0.013297872340425532,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": 0.005319148936170213,
+        "lo": -0.007978723404255319,
+        "hi": 0.018617021276595744,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": 0.005319148936170213,
+        "lo": 0.0,
+        "hi": 0.013297872340425532,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R2": {
+      "MRR": {
+        "delta": 0.009338856484548469,
+        "lo": 0.0007823222277762495,
+        "hi": 0.020146031877369564,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": 0.010638297872340425,
+        "lo": -0.0026595744680851063,
+        "hi": 0.026595744680851064,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": 0.005319148936170213,
+        "lo": -0.010638297872340425,
+        "hi": 0.02127659574468085,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": 0.010638297872340425,
+        "lo": 0.0026595744680851063,
+        "hi": 0.02127659574468085,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R3": {
+      "MRR": {
+        "delta": 0.010579876643067403,
+        "lo": 0.0031101221357030424,
+        "hi": 0.019799537690333845,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": 0.013297872340425532,
+        "lo": 0.0026595744680851063,
+        "hi": 0.026595744680851064,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": 0.007978723404255319,
+        "lo": -0.007978723404255319,
+        "hi": 0.026595744680851064,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": 0.010638297872340425,
+        "lo": 0.0026595744680851063,
+        "hi": 0.02127659574468085,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R4": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R5": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    }
+  },
+  "llm_vs_R4_bootstrap": {
+    "MRR": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 188
+    },
+    "Hits1": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 188
+    },
+    "Hits3": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 188
+    },
+    "Hits10": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 188
+    }
+  },
+  "paired_method_comparisons": {
+    "R4_vs_R1": {
+      "MRR": {
+        "delta": -0.0049787206547086595,
+        "lo": -0.011719151116102496,
+        "hi": 0.0002918831420103995,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": -0.005319148936170213,
+        "lo": -0.013297872340425532,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": -0.005319148936170213,
+        "lo": -0.018617021276595744,
+        "hi": 0.007978723404255319,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": -0.005319148936170213,
+        "lo": -0.013297872340425532,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R4_vs_R2": {
+      "MRR": {
+        "delta": -0.009338856484548469,
+        "lo": -0.02014603187736957,
+        "hi": -0.0007823222277762622,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": -0.010638297872340425,
+        "lo": -0.026595744680851064,
+        "hi": 0.0026595744680851063,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": -0.005319148936170213,
+        "lo": -0.02127659574468085,
+        "hi": 0.010638297872340425,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": -0.010638297872340425,
+        "lo": -0.02127659574468085,
+        "hi": -0.0026595744680851063,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    },
+    "R4_vs_R3": {
+      "MRR": {
+        "delta": -0.010579876643067403,
+        "lo": -0.019799537690333855,
+        "hi": -0.0031101221357030468,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits1": {
+        "delta": -0.013297872340425532,
+        "lo": -0.026595744680851064,
+        "hi": -0.0026595744680851063,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits3": {
+        "delta": -0.007978723404255319,
+        "lo": -0.026595744680851064,
+        "hi": 0.007978723404255319,
+        "replicates": 2000,
+        "clusters": 188
+      },
+      "Hits10": {
+        "delta": -0.010638297872340425,
+        "lo": -0.02127659574468085,
+        "hi": -0.0026595744680851063,
+        "replicates": 2000,
+        "clusters": 188
+      }
+    }
+  },
+  "primary_comparisons": {
+    "R4_vs_R1": {
+      "delta_MRR": -0.0049787206547086595,
+      "delta_Hits10": -0.005319148936170248,
+      "fact_sign_flip": {
+        "p": 0.11118888111188881,
+        "nonzero_units": 29,
+        "exact": false,
+        "repetitions": 10000
+      },
+      "query_clusters": {
+        "groups": 352,
+        "delta": -0.00497872065470866,
+        "lo": -0.01086296696095078,
+        "hi": -0.00031790477550102796,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 6,
+        "delta": -0.0049787206547086595,
+        "lo": -0.03199931647300068,
+        "hi": 0.003979100535164441,
+        "few_groups": true,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 29
+    },
+    "R4_vs_R3": {
+      "delta_MRR": -0.010579876643067403,
+      "delta_Hits10": -0.010638297872340496,
+      "fact_sign_flip": {
+        "p": 0.0091990800919908,
+        "nonzero_units": 35,
+        "exact": false,
+        "repetitions": 10000
+      },
+      "query_clusters": {
+        "groups": 352,
+        "delta": -0.010579876643067403,
+        "lo": -0.019277765198750085,
+        "hi": -0.0033524382050970827,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 6,
+        "delta": -0.010579876643067402,
+        "lo": -0.09033573327257538,
+        "hi": -0.0034190082340508493,
+        "few_groups": true,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 35
+    },
+    "R5_vs_R4": {
+      "delta_MRR": 0.0,
+      "delta_Hits10": 0.0,
+      "fact_sign_flip": {
+        "p": 1.0,
+        "nonzero_units": 0,
+        "exact": true
+      },
+      "query_clusters": {
+        "groups": 352,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 6,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": true,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 0
+    }
+  },
+  "boundary": "historically exposed repair replication; no blind or universal advantage claim",
+  "stratified": {
+    "seen_development_query": {
+      "yes": {
+        "queries": 52,
+        "metrics": {
+          "M0": {
+            "MRR": 0.7753961093758015,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8076923076923077,
+            "Hits10": 0.9038461538461539
+          },
+          "ReverseThenM0": {
+            "MRR": 0.7930243145040066,
+            "Hits1": 0.7307692307692307,
+            "Hits3": 0.8269230769230769,
+            "Hits10": 0.9038461538461539
+          },
+          "R1": {
+            "MRR": 0.7727251692048612,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8076923076923077,
+            "Hits10": 0.9038461538461539
+          },
+          "R2": {
+            "MRR": 0.7787614939911859,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8269230769230769,
+            "Hits10": 0.9038461538461539
+          },
+          "R3": {
+            "MRR": 0.7765407980204901,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8076923076923077,
+            "Hits10": 0.9038461538461539
+          },
+          "R4": {
+            "MRR": 0.7753961093758015,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8076923076923077,
+            "Hits10": 0.9038461538461539
+          },
+          "R5": {
+            "MRR": 0.7753961093758015,
+            "Hits1": 0.7115384615384616,
+            "Hits3": 0.8076923076923077,
+            "Hits10": 0.9038461538461539
+          }
+        }
+      },
+      "no": {
+        "queries": 324,
+        "metrics": {
+          "M0": {
+            "MRR": 0.6440472821916264,
+            "Hits1": 0.5864197530864198,
+            "Hits3": 0.6759259259259259,
+            "Hits10": 0.7561728395061729
+          },
+          "ReverseThenM0": {
+            "MRR": 0.6771270486920644,
+            "Hits1": 0.6265432098765432,
+            "Hits3": 0.7067901234567902,
+            "Hits10": 0.7777777777777778
+          },
+          "R1": {
+            "MRR": 0.6502537261887232,
+            "Hits1": 0.5925925925925926,
+            "Hits3": 0.6820987654320988,
+            "Hits10": 0.7623456790123457
+          },
+          "R2": {
+            "MRR": 0.6543448440378926,
+            "Hits1": 0.5987654320987654,
+            "Hits3": 0.6790123456790124,
+            "Hits10": 0.7685185185185185
+          },
+          "R3": {
+            "MRR": 0.6561414482665324,
+            "Hits1": 0.6018518518518519,
+            "Hits3": 0.6851851851851852,
+            "Hits10": 0.7685185185185185
+          },
+          "R4": {
+            "MRR": 0.6440472821916264,
+            "Hits1": 0.5864197530864198,
+            "Hits3": 0.6759259259259259,
+            "Hits10": 0.7561728395061729
+          },
+          "R5": {
+            "MRR": 0.6440472821916264,
+            "Hits1": 0.5864197530864198,
+            "Hits3": 0.6759259259259259,
+            "Hits10": 0.7561728395061729
+          }
+        }
+      }
+    },
+    "same_relation_reverse_observed": {
+      "yes": {
+        "queries": 234,
+        "metrics": {
+          "M0": {
+            "MRR": 0.9314221191414175,
+            "Hits1": 0.905982905982906,
+            "Hits3": 0.9444444444444444,
+            "Hits10": 0.9700854700854701
+          },
+          "ReverseThenM0": {
+            "MRR": 0.9829059829059829,
+            "Hits1": 0.9658119658119658,
+            "Hits3": 1.0,
+            "Hits10": 1.0
+          },
+          "R1": {
+            "MRR": 0.9348506431839766,
+            "Hits1": 0.905982905982906,
+            "Hits3": 0.9572649572649573,
+            "Hits10": 0.9786324786324786
+          },
+          "R2": {
+            "MRR": 0.9388373971707304,
+            "Hits1": 0.9145299145299145,
+            "Hits3": 0.9572649572649573,
+            "Hits10": 0.9786324786324786
+          },
+          "R3": {
+            "MRR": 0.9412608995942329,
+            "Hits1": 0.9145299145299145,
+            "Hits3": 0.9658119658119658,
+            "Hits10": 0.9786324786324786
+          },
+          "R4": {
+            "MRR": 0.9314221191414175,
+            "Hits1": 0.905982905982906,
+            "Hits3": 0.9444444444444444,
+            "Hits10": 0.9700854700854701
+          },
+          "R5": {
+            "MRR": 0.9314221191414175,
+            "Hits1": 0.905982905982906,
+            "Hits3": 0.9444444444444444,
+            "Hits10": 0.9700854700854701
+          }
+        }
+      },
+      "no": {
+        "queries": 142,
+        "metrics": {
+          "M0": {
+            "MRR": 0.21858550167983792,
+            "Hits1": 0.1056338028169014,
+            "Hits3": 0.28169014084507044,
+            "Hits10": 0.45774647887323944
+          },
+          "ReverseThenM0": {
+            "MRR": 0.21567907134110711,
+            "Hits1": 0.1056338028169014,
+            "Hits3": 0.2676056338028169,
+            "Hits10": 0.45774647887323944
+          },
+          "R1": {
+            "MRR": 0.22611877168132816,
+            "Hits1": 0.11971830985915492,
+            "Hits3": 0.2746478873239437,
+            "Hits10": 0.45774647887323944
+          },
+          "R2": {
+            "MRR": 0.23109419871737988,
+            "Hits1": 0.11971830985915492,
+            "Hits3": 0.2746478873239437,
+            "Hits10": 0.47183098591549294
+          },
+          "R3": {
+            "MRR": 0.2303866213406443,
+            "Hits1": 0.1267605633802817,
+            "Hits3": 0.2676056338028169,
+            "Hits10": 0.47183098591549294
+          },
+          "R4": {
+            "MRR": 0.21858550167983792,
+            "Hits1": 0.1056338028169014,
+            "Hits3": 0.28169014084507044,
+            "Hits10": 0.45774647887323944
+          },
+          "R5": {
+            "MRR": 0.21858550167983792,
+            "Hits1": 0.1056338028169014,
+            "Hits3": 0.28169014084507044,
+            "Hits10": 0.45774647887323944
+          }
+        }
+      }
+    }
+  },
+  "data_counts": {
+    "test_facts": 188,
+    "test_queries": 376,
+    "unique_test_queries": 352,
+    "structure_facts": 93,
+    "calibration_facts": 92,
+    "unique_development_queries": 338,
+    "test_relations": 6
+  }
+}

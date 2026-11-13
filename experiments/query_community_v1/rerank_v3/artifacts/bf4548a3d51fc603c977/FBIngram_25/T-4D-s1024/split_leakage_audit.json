@@ -1,0 +1,13 @@
+{
+  "dataset": "FBIngram_25",
+  "valid_facts": 5716,
+  "test_facts": 5716,
+  "legacy_facts": 5716,
+  "observation_only": true,
+  "direct_inverse_leakage": 0,
+  "split_overlap": 0,
+  "validation_evaluation_filter": "observed+valid; test truths excluded from selection",
+  "test_evaluation_filter": "observed+valid+test; offline only",
+  "candidate_filter": "valid: observed; test: observed+valid; no test truth or current answer reinstatement",
+  "legacy_protocol": "Grail legacy valid+test pooled; official test reported separately"
+}

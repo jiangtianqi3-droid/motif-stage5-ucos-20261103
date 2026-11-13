@@ -1,0 +1,682 @@
+{
+  "dataset": "FB15k237Inductive_v1",
+  "family": "T-4D-s1024",
+  "queries": 410,
+  "metrics": {
+    "M0": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    },
+    "ReverseThenM0": {
+      "MRR": 0.49291370610811136,
+      "Hits1": 0.3926829268292683,
+      "Hits3": 0.5585365853658537,
+      "Hits10": 0.6853658536585366
+    },
+    "R1": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    },
+    "R2": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    },
+    "R3": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    },
+    "R4": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    },
+    "R5": {
+      "MRR": 0.48817458187476376,
+      "Hits1": 0.3878048780487805,
+      "Hits3": 0.5536585365853659,
+      "Hits10": 0.6804878048780488
+    }
+  },
+  "expansion": {
+    "R1": {
+      "eligible": 26,
+      "promoted": 0,
+      "demoted": 0
+    },
+    "R2": {
+      "eligible": 26,
+      "promoted": 0,
+      "demoted": 0
+    },
+    "R3": {
+      "eligible": 26,
+      "promoted": 0,
+      "demoted": 0
+    },
+    "R4": {
+      "eligible": 26,
+      "promoted": 0,
+      "demoted": 0
+    },
+    "R5": {
+      "eligible": 26,
+      "promoted": 0,
+      "demoted": 0
+    }
+  },
+  "llm": {
+    "queries": 410,
+    "eligible": 209,
+    "calls": 0,
+    "abstain": 0,
+    "parse_failures": 0,
+    "positive_flips": 0,
+    "negative_flips": 0,
+    "total_tokens": 0,
+    "total_latency_seconds": 0.0,
+    "cache_hits": 0,
+    "trigger_rate": 0.5097560975609756
+  },
+  "filtered_candidate_difference": {
+    "queries": 410,
+    "candidate_pools_differ": 43,
+    "filtered_top30_missing_entities": 49
+  },
+  "structural_diagnostics": {
+    "R1": {
+      "top10_answers": 279,
+      "top10_rr_sum": 80.33373146461395,
+      "rank11_30_answers": 25,
+      "strict_expansion_potential": 0,
+      "top10_conditional_structural_MRR": 0.28793452137854464
+    },
+    "R2": {
+      "top10_answers": 279,
+      "top10_rr_sum": 151.6414504999646,
+      "rank11_30_answers": 25,
+      "strict_expansion_potential": 4,
+      "top10_conditional_structural_MRR": 0.5435177437274717
+    },
+    "R3": {
+      "top10_answers": 279,
+      "top10_rr_sum": 169.8030399339223,
+      "rank11_30_answers": 25,
+      "strict_expansion_potential": 5,
+      "top10_conditional_structural_MRR": 0.6086130463581444
+    },
+    "R4": {
+      "top10_answers": 279,
+      "top10_rr_sum": 127.00246909952799,
+      "rank11_30_answers": 25,
+      "strict_expansion_potential": 3,
+      "top10_conditional_structural_MRR": 0.4552059824355842
+    }
+  },
+  "paired_bootstrap": {
+    "R1": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R2": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R3": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R4": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R5": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    }
+  },
+  "llm_vs_R4_bootstrap": {
+    "MRR": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 205
+    },
+    "Hits1": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 205
+    },
+    "Hits3": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 205
+    },
+    "Hits10": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "replicates": 2000,
+      "clusters": 205
+    }
+  },
+  "paired_method_comparisons": {
+    "R4_vs_R1": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R4_vs_R2": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    },
+    "R4_vs_R3": {
+      "MRR": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits3": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      },
+      "Hits10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "replicates": 2000,
+        "clusters": 205
+      }
+    }
+  },
+  "primary_comparisons": {
+    "R4_vs_R1": {
+      "delta_MRR": 0.0,
+      "delta_Hits10": 0.0,
+      "fact_sign_flip": {
+        "p": 1.0,
+        "nonzero_units": 0,
+        "exact": true
+      },
+      "query_clusters": {
+        "groups": 365,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 68,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 0
+    },
+    "R4_vs_R3": {
+      "delta_MRR": 0.0,
+      "delta_Hits10": 0.0,
+      "fact_sign_flip": {
+        "p": 1.0,
+        "nonzero_units": 0,
+        "exact": true
+      },
+      "query_clusters": {
+        "groups": 365,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 68,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 0
+    },
+    "R5_vs_R4": {
+      "delta_MRR": 0.0,
+      "delta_Hits10": 0.0,
+      "fact_sign_flip": {
+        "p": 1.0,
+        "nonzero_units": 0,
+        "exact": true
+      },
+      "query_clusters": {
+        "groups": 365,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "relation_clusters": {
+        "groups": 68,
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "few_groups": false,
+        "interpretation": "dependence sensitivity, not independent confirmation"
+      },
+      "changed_facts": 0
+    }
+  },
+  "boundary": "historically exposed repair replication; no blind or universal advantage claim",
+  "stratified": {
+    "seen_development_query": {
+      "yes": {
+        "queries": 82,
+        "metrics": {
+          "M0": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "ReverseThenM0": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "R1": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "R2": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "R3": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "R4": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          },
+          "R5": {
+            "MRR": 0.22337762804562497,
+            "Hits1": 0.14634146341463414,
+            "Hits3": 0.24390243902439024,
+            "Hits10": 0.3780487804878049
+          }
+        }
+      },
+      "no": {
+        "queries": 328,
+        "metrics": {
+          "M0": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          },
+          "ReverseThenM0": {
+            "MRR": 0.560297725623733,
+            "Hits1": 0.45426829268292684,
+            "Hits3": 0.6371951219512195,
+            "Hits10": 0.7621951219512195
+          },
+          "R1": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          },
+          "R2": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          },
+          "R3": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          },
+          "R4": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          },
+          "R5": {
+            "MRR": 0.5543738203320485,
+            "Hits1": 0.4481707317073171,
+            "Hits3": 0.6310975609756098,
+            "Hits10": 0.7560975609756098
+          }
+        }
+      }
+    },
+    "same_relation_reverse_observed": {
+      "yes": {
+        "queries": 50,
+        "metrics": {
+          "M0": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          },
+          "ReverseThenM0": {
+            "MRR": 0.97,
+            "Hits1": 0.94,
+            "Hits3": 1.0,
+            "Hits10": 1.0
+          },
+          "R1": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          },
+          "R2": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          },
+          "R3": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          },
+          "R4": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          },
+          "R5": {
+            "MRR": 0.9309169590643275,
+            "Hits1": 0.9,
+            "Hits3": 0.96,
+            "Hits10": 0.96
+          }
+        }
+      },
+      "no": {
+        "queries": 360,
+        "metrics": {
+          "M0": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "ReverseThenM0": {
+            "MRR": 0.42665172084534914,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "R1": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "R2": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "R3": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "R4": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          },
+          "R5": {
+            "MRR": 0.42668258504288,
+            "Hits1": 0.31666666666666665,
+            "Hits3": 0.49722222222222223,
+            "Hits10": 0.6416666666666667
+          }
+        }
+      }
+    }
+  },
+  "data_counts": {
+    "test_facts": 205,
+    "test_queries": 410,
+    "unique_test_queries": 365,
+    "structure_facts": 103,
+    "calibration_facts": 103,
+    "unique_development_queries": 360,
+    "test_relations": 68
+  }
+}

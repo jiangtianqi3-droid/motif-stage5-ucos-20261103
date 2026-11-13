@@ -1,0 +1,310 @@
+{
+  "R1": {
+    "config": {
+      "strength": 0.0,
+      "beta_w": 0.5,
+      "beta_p": 0.25,
+      "expansion_quantile": 0.8,
+      "lock_margin": 0.1,
+      "lock_support": 0.8,
+      "margin_trigger": 0.05
+    },
+    "validation_MRR": 0.5952426175020407,
+    "base_MRR": 0.5952426175020407,
+    "selection_audit": {
+      "chosen": 0,
+      "groups": 179,
+      "reason": "paired_one_standard_error_simplest",
+      "means": [
+        0.5952426175020407,
+        0.5910952185012898,
+        0.5852071276969978
+      ],
+      "best_raw": 0,
+      "paired_standard_errors": [
+        0.0,
+        0.0035686768726616047,
+        0.005071196312759394
+      ],
+      "stability": [
+        0.97,
+        0.03,
+        0.0
+      ],
+      "resamples": 200
+    },
+    "validation_queries": 206,
+    "grid_size": 3,
+    "selection_split": "valid",
+    "test_used": false,
+    "grid": [
+      {
+        "config": {
+          "strength": 0.0,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5952426175020407
+      },
+      {
+        "config": {
+          "strength": 0.15,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5910952185012898
+      },
+      {
+        "config": {
+          "strength": 0.3,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5852071276969978
+      }
+    ]
+  },
+  "R2": {
+    "config": {
+      "strength": 0.0,
+      "beta_w": 0.5,
+      "beta_p": 0.25,
+      "expansion_quantile": 0.8,
+      "lock_margin": 0.1,
+      "lock_support": 0.8,
+      "margin_trigger": 0.05
+    },
+    "validation_MRR": 0.5952426175020407,
+    "base_MRR": 0.5952426175020407,
+    "selection_audit": {
+      "chosen": 0,
+      "groups": 179,
+      "reason": "paired_one_standard_error_simplest",
+      "means": [
+        0.5952426175020407,
+        0.5894450343753416,
+        0.5903248032718702
+      ],
+      "best_raw": 0,
+      "paired_standard_errors": [
+        0.0,
+        0.004665693333375953,
+        0.006474185955355631
+      ],
+      "stability": [
+        0.94,
+        0.01,
+        0.05
+      ],
+      "resamples": 200
+    },
+    "validation_queries": 206,
+    "grid_size": 3,
+    "selection_split": "valid",
+    "test_used": false,
+    "grid": [
+      {
+        "config": {
+          "strength": 0.0,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5952426175020407
+      },
+      {
+        "config": {
+          "strength": 0.15,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5894450343753416
+      },
+      {
+        "config": {
+          "strength": 0.3,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5903248032718702
+      }
+    ]
+  },
+  "R3": {
+    "config": {
+      "strength": 0.0,
+      "beta_w": 0.5,
+      "beta_p": 0.25,
+      "expansion_quantile": 0.8,
+      "lock_margin": 0.1,
+      "lock_support": 0.8,
+      "margin_trigger": 0.05
+    },
+    "validation_MRR": 0.5952426175020407,
+    "base_MRR": 0.5952426175020407,
+    "selection_audit": {
+      "chosen": 0,
+      "groups": 179,
+      "reason": "paired_one_standard_error_simplest",
+      "means": [
+        0.5952426175020407,
+        0.5945078451906992,
+        0.5946408592901937
+      ],
+      "best_raw": 0,
+      "paired_standard_errors": [
+        0.0,
+        0.0026156881422729115,
+        0.0033417944743886793
+      ],
+      "stability": [
+        0.84,
+        0.105,
+        0.055
+      ],
+      "resamples": 200
+    },
+    "validation_queries": 206,
+    "grid_size": 3,
+    "selection_split": "valid",
+    "test_used": false,
+    "grid": [
+      {
+        "config": {
+          "strength": 0.0,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5952426175020407
+      },
+      {
+        "config": {
+          "strength": 0.15,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5945078451906992
+      },
+      {
+        "config": {
+          "strength": 0.3,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5946408592901937
+      }
+    ]
+  },
+  "R4": {
+    "config": {
+      "strength": 0.0,
+      "beta_w": 0.5,
+      "beta_p": 0.25,
+      "expansion_quantile": 0.8,
+      "lock_margin": 0.1,
+      "lock_support": 0.8,
+      "margin_trigger": 0.05
+    },
+    "validation_MRR": 0.5952426175020407,
+    "base_MRR": 0.5952426175020407,
+    "selection_audit": {
+      "chosen": 0,
+      "groups": 179,
+      "reason": "paired_one_standard_error_simplest",
+      "means": [
+        0.5952426175020407,
+        0.5899776776002293,
+        0.5825418483766904
+      ],
+      "best_raw": 0,
+      "paired_standard_errors": [
+        0.0,
+        0.0036637771859257488,
+        0.0067744964122041
+      ],
+      "stability": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "resamples": 200
+    },
+    "validation_queries": 206,
+    "grid_size": 3,
+    "selection_split": "valid",
+    "test_used": false,
+    "grid": [
+      {
+        "config": {
+          "strength": 0.0,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5952426175020407
+      },
+      {
+        "config": {
+          "strength": 0.15,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5899776776002293
+      },
+      {
+        "config": {
+          "strength": 0.3,
+          "beta_w": 0.5,
+          "beta_p": 0.25,
+          "expansion_quantile": 0.8,
+          "lock_margin": 0.1,
+          "lock_support": 0.8,
+          "margin_trigger": 0.05
+        },
+        "MRR": 0.5825418483766904
+      }
+    ]
+  }
+}
