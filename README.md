@@ -1,4 +1,18 @@
-# 新阶段五（修正版）
+# MOTIF 实验归档
+
+最新代码见 [11 图零样本评测](experiments/universal_11g_v1/README.md)。[实验目录](experiments/README.md)列出当前分支的代码、依赖和运行入口。
+
+| 实验阶段 | 入口 |
+| --- | --- |
+| 11 图零样本结构与词面协同 | [代码与运行说明](experiments/universal_11g_v1/README.md) |
+| ConceptNet100k 专项实验 | [代码与运行说明](experiments/conceptnet_zeroshot_v1/README.md) |
+| 查询社区与 Route A | [Route A 研究归档](https://github.com/jiangtianqi3-droid/motif-stage5-ucos-20261103/blob/experiment/query-community-v1/experiments/query_community_v1/ROUTE_A_LATEST.md) |
+| 阶段六 TSDC 与阶段七多环境代理 | [历史分支索引](https://github.com/jiangtianqi3-droid/motif-stage5-ucos-20261103/blob/stage6-tsdc/LATEST_EXPERIMENTS.md) |
+| 阶段五余弦语义门控 | [原始报告](report.md) |
+
+阶段五的归档文件继续使用原有路径，后续独立实验从 `experiments/` 进入。
+
+## 阶段五（修正版）
 
 独立实验目录。旧阶段和项目sources只读。**全部完成：21条训练轨迹、10,500次更新、275份目标结果，最终完整性核验通过。**
 
