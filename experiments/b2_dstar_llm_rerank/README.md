@@ -32,7 +32,7 @@ bash scripts/run.sh scripts/preflight_large.py
 bash scripts/run.sh scripts/run_experiment.py
 ```
 
-Windows: `scripts/launch_background.ps1` starts a hidden WSL worker. `scripts/Show-Progress.ps1` displays a live progress bar. GPU batches and query-mode work also have tqdm bars in `logs/full.log`. `status.json` records progress, elapsed time, ETA, token use, calls and a conservative USD cost estimate.
+Windows: `scripts/launch_background.ps1` starts a hidden WSL worker. Double-click `monitor/LaunchProgress.cmd` for the native live progress window. The native viewer opens status with ReadWrite and Delete sharing so it cannot block the worker's atomic status replacement. The older PowerShell status readers are superseded; do not use them while the worker is running. GPU batches and query-mode work also have tqdm bars in `logs/full.log`. `status.json` records progress, elapsed time, ETA, token use, calls and a conservative USD cost estimate.
 
 Credentials remain in the user's existing credential document or `LLM_API_KEY`; they are never copied into this repository. Defaults reuse the previous DeepSeek endpoint/model. Override with `LLM_API_BASE_URL` and `LLM_MODEL_NAME`; an override requires fresh smoke qualification.
 
