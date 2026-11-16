@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "entities": 78334,
+  "batch_facts": 16,
+  "peak_gpu_reserved_bytes": 4712300544,
+  "backbone": {
+    "family": "B2+D*",
+    "seed": 1024,
+    "parameter_hash": "329cec9b4c64e839596d6c0f8de5eab26a8cdb0ca976f71a3cf9786fee6ab121",
+    "parameter_hash_unchanged": true,
+    "public_query_hash": "60a2d5da2d5a128a275ee4d10c98c7cb19584bcd2d373a8ed766b2d3259241e3",
+    "shards": {
+      "0000000.npy": "6b5e43058cb32357f0d8454173cf0973b3ddcecf11873fbf3376830f52bef99e"
+    },
+    "raw_alignment": [
+      {
+        "batch": 0,
+        "raw_score_bitwise_equal": true,
+        "compared": "original Stage-7 all_negative operator replay"
+      }
+    ],
+    "checkpoint_sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790"
+  }
+}

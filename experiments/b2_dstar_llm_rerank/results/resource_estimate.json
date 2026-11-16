@@ -1,0 +1,73 @@
+{
+  "per_graph": [
+    {
+      "dataset": "NELLInductive_v2",
+      "test_unique_queries": 1195,
+      "valid_unique_queries": 1153
+    },
+    {
+      "dataset": "NELLInductive_v3",
+      "test_unique_queries": 2067,
+      "valid_unique_queries": 2197
+    },
+    {
+      "dataset": "NELLInductive_v4",
+      "test_unique_queries": 1584,
+      "valid_unique_queries": 1099
+    },
+    {
+      "dataset": "NLIngram_50",
+      "test_unique_queries": 1010,
+      "valid_unique_queries": 943
+    },
+    {
+      "dataset": "NELLInductive_v1",
+      "test_unique_queries": 208,
+      "valid_unique_queries": 624
+    },
+    {
+      "dataset": "NLIngram_25",
+      "test_unique_queries": 882,
+      "valid_unique_queries": 848
+    },
+    {
+      "dataset": "FB15k237Inductive_v1",
+      "test_unique_queries": 669,
+      "valid_unique_queries": 755
+    },
+    {
+      "dataset": "WN18RRInductive_v1",
+      "test_unique_queries": 645,
+      "valid_unique_queries": 1155
+    },
+    {
+      "dataset": "FBIngram_25",
+      "test_unique_queries": 6656,
+      "valid_unique_queries": 6681
+    },
+    {
+      "dataset": "WKIngram_25",
+      "test_unique_queries": 1165,
+      "valid_unique_queries": 1155
+    },
+    {
+      "dataset": "ConceptNet100k_external",
+      "test_unique_queries": 1794,
+      "valid_unique_queries": 1980
+    }
+  ],
+  "max_api_calls_before_gating": 437580,
+  "observed_smoke_rate_query_modes_per_second": 0.23305949937244,
+  "naive_seconds_including_observed_timeouts": 1877546.2968824396,
+  "no_timeout_lower_planning_seconds": 218790.0,
+  "input_tokens_estimate": 607743922.5,
+  "output_tokens_estimate": 21017514.375,
+  "qualifications": [
+    "Tiny NELL smoke is not representative of larger graphs.",
+    "Includes validation, all test queries, three seeds and four LLM ablations.",
+    "No-evidence and token gates reduce calls; no automatic paid retries.",
+    "Retrieval/scoring time and variable provider latency are additional uncertainty."
+  ],
+  "peak_cache_miss_usd_upper_estimate": 207.544194,
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/"
+}

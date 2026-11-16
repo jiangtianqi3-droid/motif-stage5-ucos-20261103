@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "directory": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/results/smoke/9a4c9acde8601b99",
+  "query_count": 8,
+  "scored_queries_per_seed": 32,
+  "backbones": [
+    {
+      "family": "B2+D*",
+      "seed": 1024,
+      "parameter_hash": "329cec9b4c64e839596d6c0f8de5eab26a8cdb0ca976f71a3cf9786fee6ab121",
+      "parameter_hash_unchanged": true,
+      "public_query_hash": "76fc87bc69bee85aabbe524f4a6ceb5810b79fb5dd95880c01157540b887e88e",
+      "shards": {
+        "0000000.npy": "bbb979149e85ebeefccab15873a19fbc80579bb11131a277a251cd4bc22161eb"
+      },
+      "raw_alignment": [
+        {
+          "batch": 0,
+          "raw_score_bitwise_equal": true,
+          "compared": "original Stage-7 all_negative operator replay"
+        }
+      ],
+      "checkpoint_sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790"
+    },
+    {
+      "family": "B2+D*",
+      "seed": 2026,
+      "parameter_hash": "3f1a3426742853f1bd4c718ab2cecfed0e02b4b49c04637da06bba4a2660bedd",
+      "parameter_hash_unchanged": true,
+      "public_query_hash": "76fc87bc69bee85aabbe524f4a6ceb5810b79fb5dd95880c01157540b887e88e",
+      "shards": {
+        "0000000.npy": "d584e0764891cdc624d6d16f3fe46f1a1092e531c1b537c97c501cde0e2858e8"
+      },
+      "raw_alignment": [
+        {
+          "batch": 0,
+          "raw_score_bitwise_equal": true,
+          "compared": "original Stage-7 all_negative operator replay"
+        }
+      ],
+      "checkpoint_sha256": "a1ccc15d33ecf5c188d087514b533ede27e4f2ccdf4b92c2bd32b3b8964fff7c"
+    },
+    {
+      "family": "B2+D*",
+      "seed": 3407,
+      "parameter_hash": "8b43124d325f93a2b7bf5a86f79f9d732d52737db799f0ee2a7e47525770d637",
+      "parameter_hash_unchanged": true,
+      "public_query_hash": "76fc87bc69bee85aabbe524f4a6ceb5810b79fb5dd95880c01157540b887e88e",
+      "shards": {
+        "0000000.npy": "ab7b2be535a68d4fb0363e035d71b5da623d7fe2eeead8b728ca6449fb959927"
+      },
+      "raw_alignment": [
+        {
+          "batch": 0,
+          "raw_score_bitwise_equal": true,
+          "compared": "original Stage-7 all_negative operator replay"
+        }
+      ],
+      "checkpoint_sha256": "8a0c972817a7ee4bf0ba43d0e0e39d527c72cbe8020b52ce0d237d86999e5bd1"
+    }
+  ],
+  "statuses": {
+    "reranked": 21,
+    "abstain": 9,
+    "parse_or_validation_fallback": 2
+  },
+  "llm": {
+    "unique_queries": 8,
+    "query_modes": 32,
+    "seconds": 137.3039935560082,
+    "api_calls": 32,
+    "prompt_tokens": 44444,
+    "completion_tokens": 1537,
+    "cache_hits": 0
+  },
+  "cache_replay_api_calls": 0,
+  "seconds": 147.31663520401344,
+  "raw_score_comparison": "bitwise vs independent historical Stage-7 all_negative computation; historical raw arrays unavailable",
+  "historical_filtered_rank_alignment": true
+}

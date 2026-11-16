@@ -1,0 +1,438 @@
+{
+  "family": "B2+D*",
+  "config": {
+    "family": "B2",
+    "seeds": [
+      1024,
+      2026,
+      3407
+    ],
+    "calibration": {
+      "kind": "D-Sender",
+      "gamma": 0.75,
+      "alpha": 0.2,
+      "anchor": true
+    },
+    "adaptive": false,
+    "top_k": 30,
+    "decision_pool": 8,
+    "guaranteed_front": 5,
+    "max_hops": 3,
+    "paths_per_candidate": 3,
+    "eta_out": 0.5,
+    "eta_rel": 0.5,
+    "ppr_restart": 0.2,
+    "local_nodes": 256,
+    "prompt_budget": 2500,
+    "high_margin_gate": false,
+    "no_evidence_gate": true,
+    "concurrency": 4,
+    "bootstrap": 2000,
+    "validation_seed": 20261116,
+    "test_protocol": "historical Stage-7 including merged GraIL valid_ind+test_ind",
+    "validation_protocol": "independent training graph valid for GraIL; target disjoint valid otherwise",
+    "parameter_selection": "fixed a priori; no test tuning"
+  },
+  "checkpoints": {
+    "1024": {
+      "path": "/mnt/d/motif-phase4-work/topology-semantic-stage4-20261102/checkpoints/B2_s1024_step1000.pth",
+      "sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790",
+      "config": {
+        "id": "B2",
+        "method": "topology",
+        "variant": "name",
+        "dim": 16,
+        "control": "real",
+        "mapping_seed": 7103,
+        "alpha": 1.0,
+        "optimization": "joint",
+        "reg": 0.0,
+        "topology": "pmi"
+      }
+    },
+    "2026": {
+      "path": "/mnt/d/motif-phase4-work/topology-semantic-stage4-20261102/checkpoints/B2_s2026_step1500.pth",
+      "sha256": "a1ccc15d33ecf5c188d087514b533ede27e4f2ccdf4b92c2bd32b3b8964fff7c",
+      "config": {
+        "id": "B2",
+        "method": "topology",
+        "variant": "name",
+        "dim": 16,
+        "control": "real",
+        "mapping_seed": 7103,
+        "alpha": 1.0,
+        "optimization": "joint",
+        "reg": 0.0,
+        "topology": "pmi"
+      }
+    },
+    "3407": {
+      "path": "/mnt/d/motif-phase4-work/topology-semantic-stage4-20261102/checkpoints/B2_s3407_step1000.pth",
+      "sha256": "8a0c972817a7ee4bf0ba43d0e0e39d527c72cbe8020b52ce0d237d86999e5bd1",
+      "config": {
+        "id": "B2",
+        "method": "topology",
+        "variant": "name",
+        "dim": 16,
+        "control": "real",
+        "mapping_seed": 7103,
+        "alpha": 1.0,
+        "optimization": "joint",
+        "reg": 0.0,
+        "topology": "pmi"
+      }
+    }
+  },
+  "dependencies": {
+    "torch": "2.1.0+cu118",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "networkx": "3.2.1",
+    "tiktoken": "0.14.0",
+    "pytest": "8.4.2",
+    "tqdm": "4.70.1"
+  },
+  "main_commit": "c0324b432b3651a3bd2d81338836475c72ebbf8b",
+  "query_community_commit": "f61ab20f445523cadfe0308613becc83cac8b53f",
+  "protected_sources": {
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/analyze.py": "48aeffee3f8e6c107385383e87927f1ceeebe443be5806a8927405451dc3be8e",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/calibration.py": "b315af8bc17807548a00c1429d06caf0b51768cdba16666051d236a9d73e272f",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/common.py": "6657272c730e8eb83f8fc04b64b9d8e2a6843a2bc7d9238172c559473cf09eed",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/engine.py": "a2e420aa5aaf8bbd02125025b39351eb96836ef695627eda813bc4e74c14d966",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/entity_normalization.py": "c40b3516771b1df7d7811c256d14fd38b7433b2d54e66c6322b0fbcf0182d734",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/experiment.py": "69d07799df610c6b2b9d8e2b1b7e7cdf1f8ef5075bed2d31434988760157633d",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/fusion.py": "b087871f790672cc611331baa0bf85f8952e42ef40451453842e4d0c64121185",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/gated_model.py": "97b6c4c0498c51746bdfa9227a635aab1cde3474ab2ec0efd70ab92e6318c049",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/package_results.py": "e1ecadf0528e6f4cc2b0c0ff11ba1f1f4bb5379683a725db6727887a09c174bc",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/plans.py": "59055f4aa12e2ad55b990214700fe80771194fb5573915b0575ae647d476b91f",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/plot_results.py": "459f3b9a223980c78ce003ff6752759209c8e2328b019e991fe0ae967d6e70ea",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/s7util.py": "50f62345c8c78f55414855f830ebca5738082cc9f4c62525576cc9410e3df1f5",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/test_operator.py": "8a6dd7103e0df9b693afb783eb295b4353c01540a3e81d5cfd9a3ffd13045990",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/topology.py": "5a16b7cacfc45a53f7e9e071876ddc49a17e19acd787cae43732ae149bd24add",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/watch_status.py": "c4c0a659b8dbdd6e433450508fb648f8278d316e14990a06e644a11ac6ede893",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/weighted.py": "42e1884e46091eae00095b325b0f4d659d0d5ac858ae48e23a610f93a1a5761d",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/analysis/final_review.py": "90faf4d1695f5a2dbd0bcb7e37c788fa31c98035d3c45b5328a7c77e31e8c214",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/base_nbfnet.py": "9b8e88358afa14e8f32f1f2d49a6df66bcd7375801fee009343f65dc60de573c",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/datasets.py": "791fd8a25ff726423ed04200c28d571e19ec0329e7d680d865cb2d3e9a450899",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/layers.py": "30416664b6ccb34e64cce59eb194d048ad9ac7b8c24ddf3924bc3483ca02e6d5",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/models.py": "3af5b27da4f175a317baa138b2fc4661ccc2af7304cb1d5e25ba2d0c9d304a5f",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/tasks.py": "749345eb429ab29a2206aafdfafdc07968e9294d485bb2a006c3960d224212c1",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/util.py": "5fc84422d6a77c54ffb5c8140f4210bfbfb04e102fa3c58cd69b4199fa4f24ce",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/rspmm/rspmm.py": "876fac698e436c33e306972919b36fb2812acbfea5de08d0896b44843eea272e",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/rspmm/triton_hyper_segment.py": "9462042569e4842f1286932e6f749b285387750864ef90ddc1c53723591e8c04",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/rspmm/triton_rspmm.py": "d126e4c3ab259d93b8c32f4d05c8f0f32271fca9f64e4b5155f83b8caa650b2e",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/runtime/motif/rspmm/__init__.py": "a481f25fce7f46b5d0e947defcb85651866cc506ff8d0ac2a454e548123c33e8",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/adaptive_backbone.py": "42f4dbfddaf619821ff2885a8de25c24f6b173d9438f4786bc49f91e0c30073b",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/backbone.py": "dad64f601c4a8d5cd03a99cc211e06d80e6a7e4665aee66adec33c5afbf87b12",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/context_features.py": "138e60d89210691a3de7fe7895de2eecf7d2cf25e2d8291caf0259fb8677f1e0",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/lexical.py": "55697ce1a4d10c0520fa402b8ea4339290c6d6a33f3fdaf01494715ac879cd53",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/micro_probe_calibrator.py": "886ee06c7ba11c20514ceea1aea9463d7aa26dd534ec09490c6e571016a5c662",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/protocol_data.py": "5b80696bbc5f19431fcdf9422b6a2d8d1f2f4d9f3a5493c5d6fa89063cfd567b",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/regime_inspector.py": "0b853f16e2e8308e6df7cf227faeafe14a6d194ab9468cca3f10d26ae2949c22",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/reporting.py": "b9cd3ef2813690f18ed3704c969d5315b85693d7bdffd9fef1be7aec58d5926a",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/stage7_replay.py": "4d125132ba2ba84b3c1861cb7f2ea20b241cb6038188dad2e9c9c0707b97c92b",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/universal_11g_v1/src/streaming.py": "8c2b5832c47217e79857fff020643b76f47dc3cb04610984c12e17d7381f20a2",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/conceptnet_zeroshot_v1/src/dataset_inspector.py": "6c97fc9067e8e31bf2661229e0828ea9e2a15e76dca715c541ed52aadf6a4d67",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/conceptnet_zeroshot_v1/src/evaluator.py": "fc85c2966706a1b14fb7cd52e81a4d14a8e2c50871f5d2e0e59eb7f67daf3431",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/conceptnet_zeroshot_v1/src/fusion_prober.py": "ad52738d8132bb9ddf60333019c8e97d6eb34b04da1809b42dae19d48ca05270",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/conceptnet_zeroshot_v1/src/semantic_calibrator.py": "8d060a02b5cfea13e79af82ad441a0738f9ead1fcb6fde8ca99140e2c21831f2",
+    "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/conceptnet_zeroshot_v1/src/structural_calibrator.py": "54749816bf42d4064249cb1e47f5e4cfce0b6e3c597feac10d9de85cc834c3be",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/model_manifest.json": "3479e041ef5d9e1a99112b3590df27b93973e2a5776be3ca5a4dfc8c1b976e9f",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/inputs.json": "985c4d372e3874668c7e470176df70ae0b953c8818e8af4e081915f2c900c9bd",
+    "/mnt/d/motif-phase4-work/motif-stage7-asymmetric-20261106/frozen.json": "417b5272a3927273b37b0783bda44009e22b5f1b6f44d68254131ab978752394"
+  },
+  "target_graphs": [
+    {
+      "key": "NELLInductive_v2",
+      "n": 2086,
+      "forward_relations": 88,
+      "observation_sha256": "fcb2c6d60c698e34d97f07d98887363cad831818e77a4933973e716b388069cb",
+      "query_count": 1870,
+      "lexical": {
+        "entities": 2086,
+        "real_text_entities": 2086,
+        "real_text_coverage": 1.0,
+        "relation_text_coverage": 0.8977272727272727,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NELLInductive_v2/rankings.npz",
+      "m5_sha256": "07c82f960e311f3ecd610f5f45dc66ca8db257b51a4e8f3e69852dc2af0b209f"
+    },
+    {
+      "key": "NELLInductive_v3",
+      "n": 3566,
+      "forward_relations": 142,
+      "observation_sha256": "42a790263f742c555ccb7e303f66cb1e60ca02eeae0e2d5e131f58ad011cc303",
+      "query_count": 3240,
+      "lexical": {
+        "entities": 3566,
+        "real_text_entities": 3563,
+        "real_text_coverage": 0.9991587212563096,
+        "relation_text_coverage": 0.8591549295774648,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NELLInductive_v3/rankings.npz",
+      "m5_sha256": "5b7a5e0c0d0b63f05788fc3d371867db2df5c9634cbefcefe1842d67cee24d41"
+    },
+    {
+      "key": "NELLInductive_v4",
+      "n": 2795,
+      "forward_relations": 76,
+      "observation_sha256": "a06d39788e00f31bd1b9d5a282173ee8ecfa9c905c92ba0c6dc3adb9ef329d3c",
+      "query_count": 2894,
+      "lexical": {
+        "entities": 2795,
+        "real_text_entities": 2795,
+        "real_text_coverage": 1.0,
+        "relation_text_coverage": 0.8026315789473685,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NELLInductive_v4/rankings.npz",
+      "m5_sha256": "628f2c71b2cd5f6c183003401ddea1cb7dcee66090a8f873487127d223295e45"
+    },
+    {
+      "key": "NLIngram_50",
+      "n": 2335,
+      "forward_relations": 119,
+      "observation_sha256": "552ac77ec2d8a2ad2225eabbfac672a1b2a024bb7ead1fc0f27828b3e6139ab2",
+      "query_count": 1718,
+      "lexical": {
+        "entities": 2335,
+        "real_text_entities": 2333,
+        "real_text_coverage": 0.9991434689507495,
+        "relation_text_coverage": 1.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NLIngram_50/rankings.npz",
+      "m5_sha256": "a6aee3e0aec979d6042ebf89699ba874755b421cea1097625662c1b5347cf0a3"
+    },
+    {
+      "key": "NELLInductive_v1",
+      "n": 225,
+      "forward_relations": 14,
+      "observation_sha256": "c6e03393010ed6f6d81ea5072a2c326cb9610451ff4145666c52e2587bacdeba",
+      "query_count": 402,
+      "lexical": {
+        "entities": 225,
+        "real_text_entities": 225,
+        "real_text_coverage": 1.0,
+        "relation_text_coverage": 1.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NELLInductive_v1/rankings.npz",
+      "m5_sha256": "77e2ce05bb856aea0280829c1d9a439ac3a7b0e409579294f75891025b1c23d0"
+    },
+    {
+      "key": "NLIngram_25",
+      "n": 2146,
+      "forward_relations": 120,
+      "observation_sha256": "03e78c30835edf75ad6fe464569d79e5629db5c22cb962131f4429e733aee23b",
+      "query_count": 1488,
+      "lexical": {
+        "entities": 2146,
+        "real_text_entities": 2142,
+        "real_text_coverage": 0.9981360671015843,
+        "relation_text_coverage": 1.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/NLIngram_25/rankings.npz",
+      "m5_sha256": "59f03bd784185b526cce4359928419292689195d8f0fc6a3b9ecbfeb1e595882"
+    },
+    {
+      "key": "FB15k237Inductive_v1",
+      "n": 1093,
+      "forward_relations": 180,
+      "observation_sha256": "edf4c0ca21fee5ef98777a3713788fd04af5a698e0515256105340fb9f67cb9f",
+      "query_count": 822,
+      "lexical": {
+        "entities": 1093,
+        "real_text_entities": 1092,
+        "real_text_coverage": 0.9990850869167429,
+        "relation_text_coverage": 0.7888888888888889,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/FB15k237Inductive_v1/rankings.npz",
+      "m5_sha256": "928ddc16dc2588269ec90fa3b5bf6de0f7f13f8ffed22f7fa0c973df4cd70dac"
+    },
+    {
+      "key": "WN18RRInductive_v1",
+      "n": 922,
+      "forward_relations": 9,
+      "observation_sha256": "cbb7dedb8ed6240b398c727b054665bce6228414f51f46a800a6b09d0f932002",
+      "query_count": 746,
+      "lexical": {
+        "entities": 922,
+        "real_text_entities": 922,
+        "real_text_coverage": 1.0,
+        "relation_text_coverage": 0.8888888888888888,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/WN18RRInductive_v1/rankings.npz",
+      "m5_sha256": "eb35b9d467af2de22194c771784e6ff4fdc85e060e85045b7dd62b7e49c5ad04"
+    },
+    {
+      "key": "FBIngram_25",
+      "n": 4097,
+      "forward_relations": 216,
+      "observation_sha256": "bf59a75267d31a6c40e5a26395b9f858ec1773d86c1931ed4b2bc180529d8415",
+      "query_count": 11432,
+      "lexical": {
+        "entities": 4097,
+        "real_text_entities": 4097,
+        "real_text_coverage": 1.0,
+        "relation_text_coverage": 1.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/FBIngram_25/rankings.npz",
+      "m5_sha256": "c64d3ffb4719aeb5351c6e3284f5ff479b1adad8177a7454e0ec341831cd6a2a"
+    },
+    {
+      "key": "WKIngram_25",
+      "n": 3228,
+      "forward_relations": 74,
+      "observation_sha256": "79e00d5cfc905df1eddaf93e951cf88eafa42f977446c96c9b65f3e1b54f8ec8",
+      "query_count": 2262,
+      "lexical": {
+        "entities": 3228,
+        "real_text_entities": 0,
+        "real_text_coverage": 0.0,
+        "relation_text_coverage": 0.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/WKIngram_25/rankings.npz",
+      "m5_sha256": "3a6f7cc16cbfacf39d14c189984c49fe400196e14d234e5c894c273528523c16"
+    },
+    {
+      "key": "ConceptNet100k_external",
+      "n": 78334,
+      "forward_relations": 34,
+      "observation_sha256": "e03a13e36f7c80edb457cac5b3b940f4556ae565333d6fdd9a42661e288fa5ab",
+      "query_count": 2400,
+      "lexical": {
+        "entities": 78334,
+        "real_text_entities": 78298,
+        "real_text_coverage": 0.9995404294431537,
+        "relation_text_coverage": 1.0,
+        "fallback": "Top-5 observed directional relation frequency signature; opaque IDs only as references",
+        "sources": [
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/FB15k-237.tsv",
+            "sha256": "16beedcfad3d32696e8b0b98cfa0f5eeb144f5142225f227a64fd9ce37447da5"
+          },
+          {
+            "path": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/cache/lexical/WN18RR.tsv",
+            "sha256": "8f5c6f11753dafa879917b9bdf73d398ceb3bd4bed8d5553177e1e0f2c37521f"
+          }
+        ]
+      },
+      "m5_rankings": "/mnt/d/motif-phase4-work/conceptnet-zeroshot-boost/experiments/universal_11g_v1/results/runs/5443b773ab1db4353493/per_graph/ConceptNet100k_external/rankings.npz",
+      "m5_sha256": "ce0926c3c138efca13572a9624a5c959e60e623f1edab0755ba105a07a0fe214"
+    }
+  ],
+  "model_actually_loaded": true,
+  "qualification": "Checkpoint SHA and source audit only. Actual load/state hash proof is produced by score smoke.",
+  "historical_protocol": "GraIL valid_ind+test_ind; independent training graph validation; all targets previously exposed",
+  "actual_loaded_proof": "/mnt/d/motif-phase4-work/b2-dstar-local-llm-rerank/experiments/b2_dstar_llm_rerank/results/smoke_verification.json",
+  "actual_family": "B2+D*"
+}
