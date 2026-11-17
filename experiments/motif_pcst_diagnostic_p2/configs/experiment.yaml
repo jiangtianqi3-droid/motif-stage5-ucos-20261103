@@ -1,0 +1,17 @@
+stage: P2
+structural_only: true
+enable_llm: false
+enable_api: false
+train_backbone: false
+seed: 20261117
+audit_queries_per_primary: 150
+source_fit_facts: 180
+source_probe_facts: 90
+source_validation_facts: 192
+source_control_count: 3
+candidate_topk: 12
+evidence_budget: 32
+lambda_grid: [0.0, 0.025, 0.075, 0.15, 0.35]
+tau_grid: [0.08, 0.25]
+motif_weight: 0.20
+bootstrap: 1000
