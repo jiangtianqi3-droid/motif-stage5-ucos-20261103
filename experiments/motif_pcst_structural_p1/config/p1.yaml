@@ -1,0 +1,37 @@
+experiment:
+  stage: P1
+  structural_only: true
+  enable_llm: false
+  enable_api: false
+  enable_krlm: false
+  allow_backbone_training: false
+retrieval:
+  candidate_topk: 12
+  max_hops: 3
+  max_local_nodes: 300
+  max_local_edges: 800
+  use_query_ppr: true
+  preserve_direction: true
+evidence_budget:
+  primary_max_facts: 32
+  sensitivity_max_facts: [16, 32, 48]
+candidate_sensitivity:
+  topk: [8, 12, 30]
+random_seed: 20261117
+source:
+  graph: wn18rr_train
+  tuning_facts: 48
+  mask_fit: 280
+  mask_probe: 100
+  lambdas: [0.0, 0.05, 0.15, 0.30]
+  gate_margin: 0.23
+target:
+  primary: [WN18RRInductive_v1, FBIngram_25]
+  transfer: [NELLInductive_v1, FB15k237Inductive_v1]
+  quick_facts: 100
+  expanded_facts: 500
+  transfer_facts: 100
+  sensitivity_facts: 50
+  bootstrap: 1000
+memory:
+  slots: 64
