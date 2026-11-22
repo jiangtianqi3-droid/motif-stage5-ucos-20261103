@@ -122,6 +122,12 @@ class FactTests(unittest.TestCase):
                     [node.module or ''] if isinstance(node,ast.ImportFrom) else [])
                 self.assertFalse({part for m in mods for part in m.split('.')} & forbidden)
 
+    def test_plot_runtime_is_available(self):
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        self.assertTrue(callable(plt.subplots))
+
     def test_full_dstar_is_frozen_after_subset(self):
         import torch
         from calibration import factors

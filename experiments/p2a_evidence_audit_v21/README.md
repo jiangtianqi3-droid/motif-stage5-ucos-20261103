@@ -9,3 +9,5 @@ Windows 统一入口：`python scripts/run_all.py`。只跑前 10 条冒烟：`p
 路径枚举与效用直接复用 P1，固定聚合温度 0.08。实体级高阶模体实例缺少历史定义，字段保留 NA。模型保真度按规范原事实预算恢复完整逆向消息记录。随机删除仅在同一个 Gq 里分层匹配，按配置记录每次放宽和重叠。
 
 复用 G-Retriever PCST 的来源、MIT 声明及改造见相邻 `motif_pcst_api_poc_v1/THIRD_PARTY_PROVENANCE.md`。原始源码和所有历史权重保持只读。
+
+图形依赖使用 configs/requirements-plot.txt，在实验 dependencies 目录隔离安装，沿用共享环境已有 NumPy 与 PyTorch。若数值阶段完成后报告阶段中断，可在工作进程结束后运行 `bash scripts/run.sh scripts/generate_report.py`，从已验证的查询检查点恢复图表和报告。
