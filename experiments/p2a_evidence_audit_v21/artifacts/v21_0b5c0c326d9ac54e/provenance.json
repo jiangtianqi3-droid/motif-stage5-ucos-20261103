@@ -1,0 +1,108 @@
+{
+  "python": "3.9.23",
+  "torch": "2.1.0+cu118",
+  "cuda": "11.8",
+  "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_bytes": 6441926656,
+  "cfg": {
+    "experiment": {
+      "name": "p2a_evidence_audit_v21",
+      "seed": 20261122,
+      "dataset": "FBIngram_25",
+      "query_count": 100,
+      "smoke_queries": 10,
+      "enable_api": false,
+      "enable_llm": false,
+      "train_backbone": false
+    },
+    "hardware": {
+      "device": "cuda",
+      "max_gpu_memory_gb": 5.5
+    },
+    "audit": {
+      "max_path_hops": 3,
+      "candidate_k": 12,
+      "random_deletion_repeats": 10,
+      "bootstrap_repeats": 10000,
+      "bootstrap_confidence": 0.95,
+      "aggregation_temperature": 0.08
+    },
+    "retrieval_groups": [
+      "R0",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "evaluation": {
+      "preserve_full_entity_space": true,
+      "freeze_relation_embeddings": true,
+      "freeze_full_graph_sender_degrees": true,
+      "freeze_global_edge_weight_anchor": true,
+      "use_original_filtered_ranking": true
+    }
+  },
+  "code": {
+    "v21/audit.py": "f0b4f2bcfbb26f9f697f2ab78bbb56c3f16b5b0f0f8d9d0752ebffb2060b88c7",
+    "v21/backbone.py": "7ed903d57c632e7082fca2286d6d2d415f15191451a3c0dbd5b715bbd1f82002",
+    "v21/common.py": "2a0ab8c46ffffeea89c435fb7745d84ba9764fc797dfa0daac6abaa637aed944",
+    "v21/evaluate.py": "7e569f595ccb3758d677435a0f6cb52c1daca69f846bbdc3fec1c0786cc7849f",
+    "v21/graph.py": "ba3b0a0df944927a6d5cf67cecf52b65b8a18f2a7c31674ce7857dc7a2522b47",
+    "v21/preflight.py": "e0dff8fb3a8a1016fda39d6c2a03ce30b4a771ed217847725f71d2d97c7b5850",
+    "v21/run.py": "e43bb2266fcc39ad9e5e8b09b37ceec88f43d44ceee9a23b447ebc4ba1cfd425",
+    "v21/statistics.py": "8321680d635e06fe1b7f4c2a89aa095f0b8151771057c30f0de9353f1b2ff6cd"
+  },
+  "dependency_code": {
+    "motif_pcst_structural_p1/p1/assets.py": "bd1bec1fcfac5b035af791c65f0e9188c385d56aaf160b8a7e274083d0059999",
+    "motif_pcst_structural_p1/p1/config.py": "745a3f2cf8c72caff4175a09d69864359342a0b6792fb4f44a0787d09c0e84a6",
+    "motif_pcst_structural_p1/p1/memory.py": "08d2047378ada19c0a562b1bac92da4b587815f8618f20c9bf766c52b1d261a6",
+    "motif_pcst_structural_p1/p1/paths.py": "4bbb6bbdc700606db0327b885951e362929d48393fa25f437b887c2ce4380ac8",
+    "motif_pcst_structural_p1/p1/report.py": "9a897749501f58b9fb1979c3e1b462911c0a7474d141db39ecaacedee978bc11",
+    "motif_pcst_structural_p1/p1/retrieval.py": "1d9a3611f6cb9f0e13d8b4650e07ce15a13ccf6d51ea2a24becc2245d2e61080",
+    "motif_pcst_structural_p1/p1/run.py": "e74acca18c1fda7bf1f7a6f51a790d6e073c29b1d5c267622f412ff89d298aae",
+    "motif_pcst_structural_p1/p1/scoring.py": "954a52166e64958b13315f66dc227b93e071c955bf66f4af85f68f69a442b755",
+    "motif_pcst_structural_p1/p1/source.py": "26c626167e3485a5e06cd078a6c70343749485a88c2a53439dba63884c7f17b4",
+    "motif_pcst_diagnostic_p2/p2/assets.py": "f4ba1d2c08fa92bf41e9677f8dd9bf07c81f22a74f368ab6b427f57ec9aec821",
+    "motif_pcst_diagnostic_p2/p2/audit.py": "2d94d07ee97fce87fefd56c0d00ecfede8bea88111ca325e9e8461d4a62cb669",
+    "motif_pcst_diagnostic_p2/p2/features.py": "9e2d09fb659b84b91b4d23052ec8e1ccdb092a795a441784d5d4e136c54c278a",
+    "motif_pcst_diagnostic_p2/p2/report.py": "ee889ef63c2a5a0ac0d9104ff335a322d14b5b1aea762fed8547ee7519b8e161",
+    "motif_pcst_diagnostic_p2/p2/run.py": "196514dd0045939495692b16f25879777c02b903d4186b2c3bbbb159783ebc67",
+    "motif_pcst_diagnostic_p2/p2/scoring.py": "46405957919f21df5477f4d43c1ffb829ef85bb9bf5027b6883e3485ba831e90",
+    "motif_pcst_diagnostic_p2/p2/source.py": "d7db0e8d700ddc0bbc51ac12db994401048e5af9d7c7fe6673eb1f8f229198ea"
+  },
+  "git_commit": "6c30d004a106bef0ee4a31562c897799f9b768b9",
+  "checkpoint": "/mnt/d/motif-phase4-work/topology-semantic-stage4-20261102/checkpoints/B2_s1024_step1000.pth",
+  "checkpoint_sha256": "1e85a7e85b57afa14b5b79813bab85c0fd075323b16ac05a5948f200c2aed790",
+  "p1_commit": "180f77feccfea1f7dfc26a86cb2162073444df55",
+  "p1_run_id": "b2273b01f095035cf925fd78ab456213ecf706d21e90c130024c41fc458997b4",
+  "p2_previous_state": "complete",
+  "observations": "bf59a75267d31a6c40e5a26395b9f858ec1773d86c1931ed4b2bc180529d8415",
+  "observed_arrays": "af592ea8fcccd3283de084e77ad1f0933449300437c6a26467f513378b37f2e5",
+  "expected_model_parameters": "329cec9b4c64e839596d6c0f8de5eab26a8cdb0ca976f71a3cf9786fee6ab121",
+  "runtime": {
+    "calibration.py": "b315af8bc17807548a00c1429d06caf0b51768cdba16666051d236a9d73e272f",
+    "common.py": "6657272c730e8eb83f8fc04b64b9d8e2a6843a2bc7d9238172c559473cf09eed",
+    "engine.py": "a2e420aa5aaf8bbd02125025b39351eb96836ef695627eda813bc4e74c14d966",
+    "entity_normalization.py": "c40b3516771b1df7d7811c256d14fd38b7433b2d54e66c6322b0fbcf0182d734",
+    "gated_model.py": "97b6c4c0498c51746bdfa9227a635aab1cde3474ab2ec0efd70ab92e6318c049",
+    "plans.py": "59055f4aa12e2ad55b990214700fe80771194fb5573915b0575ae647d476b91f",
+    "runtime/motif/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/motif/base_nbfnet.py": "9b8e88358afa14e8f32f1f2d49a6df66bcd7375801fee009343f65dc60de573c",
+    "runtime/motif/datasets.py": "791fd8a25ff726423ed04200c28d571e19ec0329e7d680d865cb2d3e9a450899",
+    "runtime/motif/layers.py": "30416664b6ccb34e64cce59eb194d048ad9ac7b8c24ddf3924bc3483ca02e6d5",
+    "runtime/motif/models.py": "3af5b27da4f175a317baa138b2fc4661ccc2af7304cb1d5e25ba2d0c9d304a5f",
+    "runtime/motif/rspmm/__init__.py": "a481f25fce7f46b5d0e947defcb85651866cc506ff8d0ac2a454e548123c33e8",
+    "runtime/motif/rspmm/rspmm.py": "876fac698e436c33e306972919b36fb2812acbfea5de08d0896b44843eea272e",
+    "runtime/motif/rspmm/triton_hyper_segment.py": "9462042569e4842f1286932e6f749b285387750864ef90ddc1c53723591e8c04",
+    "runtime/motif/rspmm/triton_rspmm.py": "d126e4c3ab259d93b8c32f4d05c8f0f32271fca9f64e4b5155f83b8caa650b2e",
+    "runtime/motif/tasks.py": "749345eb429ab29a2206aafdfafdc07968e9294d485bb2a006c3960d224212c1",
+    "runtime/motif/util.py": "5fc84422d6a77c54ffb5c8140f4210bfbfb04e102fa3c58cd69b4199fa4f24ce",
+    "s7util.py": "50f62345c8c78f55414855f830ebca5738082cc9f4c62525576cc9410e3df1f5",
+    "weighted.py": "42e1884e46091eae00095b325b0f4d659d0d5ac858ae48e23a610f93a1a5761d"
+  },
+  "run_id": "0b5c0c326d9ac54ea8af36ed4a291e93daf8c44d06d545ee4a05c848b9f9138e",
+  "selection_sha256": "8ed2d36e8b1a8310e16acae4644a891dda45c270eac8920732c86f9f93c69f82",
+  "llm_api_requests": 0
+}

@@ -1,0 +1,6 @@
+# Preserve original CSV bytes and recognize their standard CRLF line endings.
+*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.gz binary
+*.npz binary
+# Matplotlib SVG path formatting is preserved as generated.
+*.svg -text -whitespace

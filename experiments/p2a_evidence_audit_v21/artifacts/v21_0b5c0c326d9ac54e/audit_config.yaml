@@ -1,0 +1,26 @@
+experiment:
+  name: p2a_evidence_audit_v21
+  seed: 20261122
+  dataset: FBIngram_25
+  query_count: 100
+  smoke_queries: 10
+  enable_api: false
+  enable_llm: false
+  train_backbone: false
+hardware:
+  device: cuda
+  max_gpu_memory_gb: 5.5
+audit:
+  max_path_hops: 3
+  candidate_k: 12
+  random_deletion_repeats: 10
+  bootstrap_repeats: 10000
+  bootstrap_confidence: 0.95
+  aggregation_temperature: 0.08
+retrieval_groups: [R0, R1, R2, R3, R4, R5]
+evaluation:
+  preserve_full_entity_space: true
+  freeze_relation_embeddings: true
+  freeze_full_graph_sender_degrees: true
+  freeze_global_edge_weight_anchor: true
+  use_original_filtered_ranking: true

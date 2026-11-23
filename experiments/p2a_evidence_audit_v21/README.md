@@ -13,3 +13,7 @@ Windows 统一入口：`python scripts/run_all.py`。只跑前 10 条冒烟：`p
 图形依赖使用 configs/requirements-plot.txt，在实验 dependencies 目录隔离安装，沿用共享环境已有 NumPy 与 PyTorch。若数值阶段完成后报告阶段中断，可在工作进程结束后运行 `bash scripts/run.sh scripts/generate_report.py`，从已验证的查询检查点恢复图表和报告。
 
 关系表示的预计算严格重放阶段七原查询访问产生的首次缺失关系批次，包括单关系余项。每次启动先核验全部 100 条查询的全实体排序代理，结果见 outputs 下新运行的 baseline_verification.json。2026-11-23 的修复证据见 repair_notes.md。
+
+## 最新正式结果
+
+[完整中文报告与图表](artifacts/v21_0b5c0c326d9ac54e/report_p2a.md)已归档，包含 100 条查询、全部随机重复和逐查询检查点。[归档说明](artifacts/v21_0b5c0c326d9ac54e/README.md)列出统计表、解压方法和逐文件哈希。发布脚本为 `python scripts/publish_results.py`，会先核验运行完成清单，再将大文本记录无损压缩到 artifacts 目录。
