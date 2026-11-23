@@ -14,6 +14,31 @@ from calibration import factors
 from src.io_utils import dump, sha, identity
 
 
+def historical_relation_groups(queries, batch_size, required):
+    """Replay Stage-7 cache misses, including singletons and original companions."""
+    queries=np.asarray(queries)
+    verify(queries.ndim==3 and queries.shape[1:]==(2,2) and batch_size>0,
+           'invalid historical query layout or batch size')
+    pending=set(map(int,required))
+    verify(pending<=set(map(int,queries[:,:,1].ravel())),'requested relation absent from history')
+    seen=set()
+    groups=[]
+    if not pending:
+        return groups
+    for at in range(0,len(queries),batch_size):
+        for direction in (0,1):
+            missing=sorted(set(map(int,queries[at:at+batch_size,direction,1]))-seen)
+            for offset in range(0,len(missing),2):
+                group=missing[offset:offset+2]
+                groups.append(group)
+                seen.update(group)
+                pending.difference_update(group)
+                if not pending:
+                    return groups
+    verify(not pending,'incomplete historical relation schedule')
+    return groups
+
+
 class FrozenBackbone:
     def __init__(self, asset, demands, directory, cfg):
         self.asset=asset
@@ -48,9 +73,13 @@ class FrozenBackbone:
             return original(hyper,query)
         rel.forward=count_forward
         relation_cache=RelationCache(self.net)
+        groups=historical_relation_groups(asset.queries,asset.meta['batch'],demand)
         with torch.no_grad():
-            for at in range(0,len(demand),2):
-                rel(self.data.relation_hypergraph,torch.tensor(demand[at:at+2],device='cuda'))
+            for group in groups:
+                rel(self.data.relation_hypergraph,torch.tensor(group,device='cuda'))
+        dump(directory/'relation_cache_schedule.json',dict(
+             historical_batch=asset.meta['batch'],query_projection_sha256=arrsha(asset.queries),
+             groups=groups,requested=demand,precompute_only=True))
         self.reps={q:relation_cache.memory[q].detach().clone() for q in demand}
         save_npz(directory/'full_relation_embeddings.npz',relations=np.array(demand),
                  representations=torch.stack([self.reps[q] for q in demand]).cpu().numpy())
@@ -63,7 +92,8 @@ class FrozenBackbone:
             return torch.stack([self.reps[q] for q in qs])
         rel.forward=frozen_lookup
         self.static_fingerprint=identity(dict(checkpoint=self.parameter_before,
-              observation=asset.entry['observed_sha256'],relations=relation_digest,buffers=self.buffer_before))
+              observation=asset.entry['observed_sha256'],relations=relation_digest,buffers=self.buffer_before,
+              relation_schedule=identity(groups)))
         self.precompute_peak_allocated=torch.cuda.max_memory_allocated()
         self.precompute_peak_reserved=torch.cuda.max_memory_reserved()
         torch.cuda.reset_peak_memory_stats()
@@ -124,6 +154,7 @@ class FrozenBackbone:
           dstar_cache_sha256=sha(self.directory/'full_dstar.npz'),buffer_hash=self.buffer_before,
           dstar_stats=self.stats,entity_space=self.graph.n,relation_precompute_calls=self.relation_precompute_calls,
           counterfactual_relation_encoder_calls=self.relation_calls-self.relation_precompute_calls,
+          relation_schedule_sha256=sha(self.directory/'relation_cache_schedule.json'),
           full_statistics_fixed=True,batch_adjustments=self.adjustments,forward_calls=self.calls,
           peak_allocated=max(self.precompute_peak_allocated,torch.cuda.max_memory_allocated()),
           peak_reserved=max(self.precompute_peak_reserved,torch.cuda.max_memory_reserved()))

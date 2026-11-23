@@ -18,7 +18,7 @@ from v21.preflight import setup
 from v21.graph import FactIndex
 from v21.audit import collect
 from v21.backbone import FrozenBackbone
-from v21.evaluate import evaluate_queries
+from v21.evaluate import evaluate_queries,baseline
 from v21.statistics import analyze,figures,make_report
 
 TZ=timezone(timedelta(hours=8))
@@ -77,6 +77,10 @@ def main(smoke_only=False):
                                                       torch.cuda.get_device_properties(0).total_memory))
         backbone=FrozenBackbone(view.asset,demands,directory,cfg)
         done.append('strict_checkpoint_load_and_full_graph_freeze')
+        phase='full_100_query_baseline_validation'
+        state('running',phase)
+        baseline(backbone,view,selection,directory)
+        done.append('100_query_exact_historical_baseline')
         smoke=selection[:cfg['experiment']['smoke_queries']]
         smoke_proof=directory/'smoke_verified.json'
         if not smoke_proof.is_file():

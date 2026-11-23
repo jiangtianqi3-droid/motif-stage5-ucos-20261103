@@ -49,18 +49,29 @@ def baseline(backbone,view,selection,directory):
         dump(proof,dict(sha256=sha(path),static=static,historical_batch=view.asset.meta['batch']))
     offline=Evaluator(view.asset)
     result={}
+    checks=[]
     for i,d in selection:
         h,r=map(int,view.asset.queries[i,d])
         old=view.raw[i][d]
         target,excluded,expected=offline.query(i,d,h,r,old)
         row=matrix[i,d]
         score=score_summary(row,target,excluded,offline)
-        verify(score['rank']==expected,'full graph historical filtered rank changed')
+        verify(score['rank']==expected,f'{view.key}:{i}:{d}: full graph historical filtered rank changed')
         order=np.sort(row)
         raw_rank=len(row)-np.searchsorted(order,row,side='left')
         reconstructed=np.float32(1.)/(60+raw_rank.astype(np.float32))
-        verify(np.array_equal(reconstructed,old),'full graph unfiltered candidate proxy differs from archived matrix')
+        differences=np.flatnonzero(reconstructed!=old)
+        checks.append(dict(query_id=f'{view.key}:{i}:{d}',filtered_rank=score['rank'],
+                           expected_filtered_rank=expected,proxy_differences=len(differences),
+                           proxy_exact=not bool(len(differences))))
+        if len(differences):
+            dump(directory/'baseline_failure.json',dict(checks=checks,failing_query=f'{view.key}:{i}:{d}',
+                   entities=differences.tolist(),new_raw_ranks=raw_rank[differences].tolist(),
+                   old_proxy=old[differences].tolist(),new_proxy=reconstructed[differences].tolist()))
+            raise ValueError(f'{view.key}:{i}:{d}: {len(differences)} full-entity proxies differ from archive')
         result[i,d]=score
+    dump(directory/'baseline_verification.json',dict(queries=len(checks),all_exact=True,checks=checks,
+         static=static,full_scores_sha256=sha(path)))
     return matrix,result,offline
 
 

@@ -142,6 +142,16 @@ class FactTests(unittest.TestCase):
         self.assertFalse(torch.equal(factors(subset,6,cfg)[0],a))
         self.assertTrue(all(torch.equal(t,u) for t,u in zip((a,b,z),before)))
 
+    def test_relation_cache_uses_original_first_miss_batches(self):
+        from v21.backbone import historical_relation_groups
+        queries=np.array([[[0,2],[0,12]],[[0,1],[0,11]],
+                          [[0,3],[0,13]],[[0,1],[0,11]],
+                          [[0,4],[0,14]]])
+        groups=historical_relation_groups(queries,2,{1,2,3,4,11,12,13,14})
+        self.assertEqual(groups,[[1,2],[11,12],[3],[13],[4],[14]])
+        # Restricting the requested relations must preserve their original companions.
+        self.assertEqual(historical_relation_groups(queries,2,{2,13}),[[1,2],[11,12],[3],[13]])
+
 
 if __name__=='__main__':
     unittest.main()
